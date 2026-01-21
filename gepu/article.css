@@ -58,7 +58,7 @@
 .article-content h2 {
     font-size: 1.875rem;
     color: var(--text-primary);
-    margin: var(--space-2xl) 0 var(--space-lg);
+    margin: var(--space-lg) 0 var(--space-sm);
     padding-bottom: var(--space-sm);
     border-bottom: 2px solid var(--border-subtle);
     position: relative;
@@ -77,26 +77,26 @@
 .article-content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin: var(--space-xl) 0 var(--space-md);
+    margin: var(--space-md) 0 var(--space-sm);
 }
 
 .article-content p {
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: var(--space-md);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
     font-size: 1.0625rem;
 }
 
 .article-content ul,
 .article-content ol {
-    margin: var(--space-lg) 0;
+    margin: var(--space-sm) 0;
     padding-left: var(--space-xl);
     color: var(--text-secondary);
 }
 
 .article-content li {
-    margin-bottom: var(--space-md);
-    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
 }
 
 .article-content li::marker {
@@ -120,11 +120,11 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .article-content section:last-of-type {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 /* Related Articles */

@@ -58,8 +58,8 @@
 .article-content h2 {
     font-size: 1.875rem;
     color: var(--text-primary);
-    margin: var(--space-lg) 0 var(--space-sm);
-    padding-bottom: var(--space-sm);
+    margin: var(--space-xs) 0 var(--space-xs);
+    padding-bottom: var(--space-xs);
     border-bottom: 2px solid var(--border-subtle);
     position: relative;
 }
@@ -77,7 +77,7 @@
 .article-content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin: var(--space-md) 0 var(--space-sm);
+    margin: var(--space-sm) 0 var(--space-xs);
 }
 
 .article-content p {
@@ -120,11 +120,11 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 .article-content section:last-of-type {
-    margin-bottom: var(--space-sm);
+    margin-bottom: 0;
 }
 
 /* Related Articles */

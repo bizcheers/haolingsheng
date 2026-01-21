@@ -120,11 +120,11 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-3xl);
+    margin-bottom: var(--space-xl);
 }
 
 .article-content section:last-of-type {
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-lg);
 }
 
 /* Related Articles */

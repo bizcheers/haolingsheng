@@ -83,7 +83,7 @@
 .article-content p {
     color: var(--text-secondary);
     line-height: 1.8;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     font-size: 1.0625rem;
 }
 
@@ -120,11 +120,11 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
 }
 
 .article-content section:last-of-type {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 /* Related Articles */

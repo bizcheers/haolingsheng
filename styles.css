@@ -157,6 +157,25 @@ header .container {
     font-weight: 400;
 }
 
+/* Logo link styling */
+a.logo-text {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+a.logo-text:hover {
+    opacity: 0.8;
+}
+
+a.logo-text h1 {
+    margin: 0;
+}
+
+a.logo-text .tagline {
+    margin: 0;
+}
+
 /* Navigation */
 nav ul {
     display: flex;

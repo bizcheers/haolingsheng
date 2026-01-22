@@ -669,3 +669,19 @@ footer {
         grid-template-columns: 1fr !important;
     }
 }
+
+/* Responsive Fixes for Homepage - Added via Automation to fix Cascade issues - RETRY */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-lg);
+    }
+
+    .sheet-music-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .theory-grid {
+        grid-template-columns: 1fr !important;
+    }
+}

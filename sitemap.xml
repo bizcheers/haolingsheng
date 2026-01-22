@@ -230,7 +230,7 @@
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/index.html</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -297,6 +297,12 @@
   <url>
     <loc>https://www.haolingsheng.com/music-production/eq-basics.html</loc>
     <lastmod>2026-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ai-music-technology-masters.html</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

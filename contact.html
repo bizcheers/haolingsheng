@@ -5,14 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact Hao Ling Sheng - Get in touch with us for questions, suggestions, or feedback about our music education resources.">
-    <title>Contact Us | Hao Ling Sheng</title>
+        content="Contact Hao Ling Sheng - Advertising inquiries and guest post opportunities. Boost your SEO with our high-authority backlink services.">
+    <title>Contact & Advertising | Hao Ling Sheng</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="legal-pages.css">
+    <style>
+        /* Custom Styles for Service Section */
+        .service-card {
+            background: linear-gradient(145deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--accent-green);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-3xl);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+            flex-wrap: wrap;
+        }
+
+        .service-title h2 {
+            font-size: 2rem;
+            margin-bottom: var(--space-xs);
+            color: var(--text-primary);
+        }
+
+        .service-badge {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stats-image {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-default);
+            margin-bottom: var(--space-xl);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .pricing-item {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .pricing-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-green);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: var(--space-md) 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .contact-minimal {
+            text-align: center;
+            padding: var(--space-2xl);
+            background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .email-large {
+            font-size: 2rem;
+            color: var(--accent-green);
+            font-weight: 700;
+            margin: var(--space-md) 0;
+            word-break: break-all;
+        }
+    </style>
 </head>
 
 <body>
-        <header>
+    <header>
         <div class="container">
             <div class="logo">
                 <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
@@ -36,111 +141,79 @@
     <main class="legal-page">
         <div class="container">
             <div class="legal-header">
-                <h1>Contact Us</h1>
-                <p class="last-updated">We'd love to hear from you!</p>
+                <h1>Contact & Advertising</h1>
+                <p class="last-updated">Grow your business with Hao Ling Sheng</p>
             </div>
 
-            <div class="about-content">
-                <div class="about-section">
-                    <h2>Get in Touch</h2>
-                    <p>Have a question about music theory? Want to suggest a topic for us to cover? Found an error in
-                        one of our guides? We're here to help!</p>
-                    <p>Whether you're a beginner just starting your musical journey or an experienced musician looking
-                        to expand your knowledge, we welcome your feedback, questions, and suggestions.</p>
-                </div>
-
-                <form class="contact-form" action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" required
-                            placeholder="Tell us what's on your mind..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-
-                <div class="about-section">
-                    <h2>Other Ways to Reach Us</h2>
-                    <div class="contact-info">
-                        <p><strong>General Inquiries:</strong> info@haolingsheng.com</p>
-                        <p><strong>Content Suggestions:</strong> content@haolingsheng.com</p>
-                        <p><strong>Technical Support:</strong> support@haolingsheng.com</p>
-                        <p><strong>Privacy Concerns:</strong> privacy@haolingsheng.com</p>
-                        <p><strong>Legal Matters:</strong> legal@haolingsheng.com</p>
+            <!-- Backlink Service Section -->
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-title">
+                        <span class="service-badge">SEO Powerhouse</span>
+                        <h2>Boost Your Website Ranking</h2>
                     </div>
                 </div>
 
-                <div class="about-section">
-                    <h2>Frequently Asked Questions</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Leverage the authority of a 12-year-old domain. Our site has a <strong>Domain Rating (DR) of
+                        65</strong> and over <strong>1.2 Million Backlinks</strong>. A backlink from us signals trust
+                    and authority to search engines, helping your site climb the rankings faster.
+                </p>
 
-                    <h3>How long does it take to get a response?</h3>
-                    <p>We typically respond to all inquiries within 24-48 hours during business days. During weekends or
-                        holidays, it may take a bit longer.</p>
+                <img src="images/site-stats.jpg" alt="Hao Ling Sheng Domain Authority Stats - DR 65"
+                    class="stats-image">
 
-                    <h3>Can you help me with my specific music question?</h3>
-                    <p>While we can't provide personalized music lessons or one-on-one tutoring, we're happy to point
-                        you to relevant resources on our website or suggest topics for future content.</p>
+                <div class="pricing-grid">
+                    <div class="pricing-item">
+                        <h3>Standard Contextual Link</h3>
+                        <p>Inserted into existing high-traffic articles</p>
+                        <div class="price">$89 <span>/ link</span></div>
+                        <ul
+                            style="list-style: none; color: var(--text-secondary); margin-bottom: 1.5rem; text-align: left; padding-left: 1rem;">
+                            <li>✅ Permanent Do-Follow</li>
+                            <li>✅ Natural Context Placement</li>
+                            <li>✅ Fast Indexing</li>
+                        </ul>
+                        <a href="mailto:info@haolingsheng.com?subject=Standard Backlink Inquiry"
+                            class="btn btn-secondary" style="width: 100%; justify-content: center;">Order Now</a>
+                    </div>
 
-                    <h3>How can I suggest a topic for a new guide?</h3>
-                    <p>We love hearing your ideas! Use the contact form above or email us at content@haolingsheng.com
-                        with your suggestions. We review all submissions and prioritize based on community interest.</p>
-
-                    <h3>I found an error in one of your articles. How do I report it?</h3>
-                    <p>Thank you for helping us maintain quality! Please email us at content@haolingsheng.com with the
-                        article URL and a description of the error. We'll review and correct it as soon as possible.</p>
-
-                    <h3>Can I contribute content to your website?</h3>
-                    <p>We appreciate your interest! While we currently create all content in-house to maintain
-                        consistency and quality, we're always open to collaboration ideas. Contact us at
-                        content@haolingsheng.com to discuss possibilities.</p>
-                </div>
-
-                <div class="about-section">
-                    <h2>Connect With Us</h2>
-                    <p>Follow us on social media for music tips, updates, and community discussions:</p>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">📘</div>
-                            <h3>Facebook</h3>
-                            <p>Join our community discussions</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">🐦</div>
-                            <h3>Twitter</h3>
-                            <p>Daily music tips and updates</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">📸</div>
-                            <h3>Instagram</h3>
-                            <p>Visual music education content</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">📺</div>
-                            <h3>YouTube</h3>
-                            <p>Video tutorials and guides</p>
-                        </div>
+                    <div class="pricing-item"
+                        style="border-color: var(--accent-green); background: rgba(16, 185, 129, 0.05);">
+                        <h3>Premium Feature</h3>
+                        <p>Dedicated Guest Post or Homepage Sidebar</p>
+                        <div class="price">$199 <span>/ post</span></div>
+                        <ul
+                            style="list-style: none; color: var(--text-secondary); margin-bottom: 1.5rem; text-align: left; padding-left: 1rem;">
+                            <li>✅ 1000+ Word Dedicated Article</li>
+                            <li>✅ Homepage Link Placement</li>
+                            <li>✅ Maximum SEO Juice Transfer</li>
+                        </ul>
+                        <a href="mailto:info@haolingsheng.com?subject=Premium Backlink Inquiry" class="btn btn-primary"
+                            style="width: 100%; justify-content: center;">Get Started</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Minimal Contact Section -->
+            <div class="contact-minimal">
+                <h2>Get in Touch</h2>
+                <p>For advertising inquiries, content collaborations, or general questions, please email us directly.
+                </p>
+
+                <div class="email-large">
+                    <a href="mailto:info@haolingsheng.com">info@haolingsheng.com</a>
+                </div>
+
+                <p style="color: var(--text-tertiary); font-size: 0.9rem;">
+                    We aim to respond to all inquiries within 24 hours.
+                </p>
+            </div>
+
         </div>
     </main>
 
-        <footer>
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

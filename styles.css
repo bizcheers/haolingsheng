@@ -641,19 +641,23 @@ footer {
 }
 
 /* Section Spacing */
+/* Section Spacing */
 .featured-content,
 .recent-additions,
-.music-theory-preview {
+.music-theory-preview,
+.tools-preview {
     padding: var(--space-3xl) 0;
 }
 
 .featured-content h2,
 .recent-additions h2,
-.music-theory-preview h2 {
+.music-theory-preview h2,
+.tools-preview h2 {
     text-align: center;
     margin-bottom: var(--space-md);
     font-size: 2.5rem;
 }
+
 /* Responsive Fixes for Homepage - Added via Automation to fix Cascade issues */
 @media (max-width: 768px) {
     .category-grid {

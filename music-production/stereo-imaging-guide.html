@@ -16,8 +16,18 @@
                 <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
                 <a href="../index.html" class="logo-text">
                     <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
                 </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -32,43 +42,148 @@
                     </div>
                 </header>
 
-                <section>
-                    <h2>Creating a 3D Mix</h2>
+                <section title="Introduction">
+                    <h2>Creating a 3D Mix: Width, Depth, and Height</h2>
                     <p>Stereo imaging is the art of placing sounds within the horizontal (left-to-right) and depth
-                        (front-to-back) planes of a mix. A mix with poor imaging sounds "cluttered" and "small," while a
-                        great image feels wide, immersive, and detailed.</p>
+                        (front-to-back) planes of a mix. While frequency balance is handled by EQ, imaging handles the
+                        "physical" space of the record. A mix with poor imaging sounds "cluttered," "small," and "flat,"
+                        while a professional image feels wide, immersive, and detailed—allowing the listener to mentally
+                        "locate" every instrument in the room.</p>
                 </section>
 
-                <section>
-                    <h2>The Foundation: L-C-R Panning</h2>
-                    <p>One of the most powerful imaging techniques is the "L-C-R" method. This involves placing elements
-                        only and exclusively in the **Left (100%)**, **Center (0%)**, or **Right (100%)** positions.
-                        This creates a massive sense of width by leaving the "in-between" spaces completely clear for
-                        effects and detail.</p>
+                <section id="basics">
+                    <h2>The Foundation: L-C-R Panning Strategy</h2>
+                    <p>The most powerful imaging technique is also the simplest: the <strong>L-C-R method</strong>. This
+                        approach involves placing elements only and exclusively in three positions:
+                        <strong>Left (100%)</strong>, <strong>Center (0%)</strong>, or <strong>Right (100%)</strong>.
+                    </p>
+
+                    <div class="info-card tip">
+                        <h3>🎧 Why L-C-R Works</h3>
+                        <p>By avoiding the "in-between" panning positions (like 30% left), you create maximum contrast.
+                            The center becomes extremely focused for the Kick, Snare, Bass, and Lead Vocal, while the
+                            guitars and synths pushed to the hard sides create a massive sense of width without
+                            blurring the stereo field.</p>
+                    </div>
                 </section>
 
-                <section>
-                    <h2>Advanced Imaging Tools</h2>
+                <section id="depth">
+                    <h2>The front-to-back Plane: Depth Perception</h2>
+                    <p>Depth is created by manipulating three main variables: <strong>Volume</strong>,
+                        <strong>Brilliance</strong>,
+                        and <strong>Reverb</strong>. To push a sound "back" in the mix:
+                    </p>
                     <ul>
-                        <li><strong>Mid-Side EQ:</strong> Boost the high frequencies on the "Sides" (the signal that is
-                            different between L and R) to make a sound feel wider without affecting its center punch.
-                        </li>
-                        <li><strong>The Haas Effect:</strong> Delay one side of a signal by 15-30 milliseconds. The
-                            brain perceives this as a single, ultra-wide sound source.</li>
-                        <li><strong>Stereo Widening Plugins:</strong> Tools like the Ozone Imager or Polyverse Comet can
-                            artificially create width by manipulating the phase of the signal.</li>
+                        <li><strong>Lower the Volume:</strong> Naturally, quieter things sound farther away.</li>
+                        <li><strong>Roll off the Highs:</strong> Because high frequencies lose energy faster over
+                            distance,
+                            muffled sounds seem deeper in the room.</li>
+                        <li><strong>Increase Reverb/Delay:</strong> A high wet/dry ratio places the instrument in the
+                            back
+                            of the virtual stage.</li>
                     </ul>
                 </section>
 
-                <div class="info-card note">
-                    <h3>⚠️ Phase Correlation</h3>
-                    <p>Always check your mix in **Mono**. If your stereo-widened tracks disappear or sound "hollow" when
-                        summed to mono, you have phase cancellation issues. Use a correlation meter to ensure your width
-                        isn't breaking your mix's integrity.</p>
-                </div>
+                <section id="tools">
+                    <h2>Advanced Imaging Tools & The Haas Effect</h2>
+                    <p>Modern production allows for width that extends beyond the speakers themselves:</p>
+                    <ul>
+                        <li><strong>The Haas Effect (Precedence Effect):</strong> Delay one side of a signal by
+                            15-30 milliseconds. The brain perceives the sound as coming from the non-delayed side first,
+                            creating an artificial, super-wide stereo image. <strong>Warning:</strong> This can cause
+                            severe phase issues in mono.</li>
+                        <li><strong>Mid-Side (M/S) Processing:</strong> Using an M/S EQ to boost the high frequencies
+                            <em>only on the sides</em>. This adds "shimmer" to the wide elements of the mix without
+                            making the center-panned vocal sound thin.
+                        </li>
+                        <li><strong>Micro-Shifting:</strong> Using subtle pitch-shifting (e.g., +5 cents left, -5 cents
+                            right)
+                            to create a thick, wide ensemble sound for lead synths or vocals.</li>
+                    </ul>
+                </section>
+
+                <section id="phase">
+                    <h2>Mono Compatibility: The Ultimate Test</h2>
+                    <p>In 2026, many people still listen to music on mono Bluetooth speakers or in clubs. If your
+                        stereo width is achieved through phase manipulation, your mix might completely collapse
+                        (disappear) when summed to mono.</p>
+
+                    <div class="info-card note">
+                        <h3>📋 The Correlation Check</h3>
+                        <p>Always use a <strong>Correlation Meter</strong>. It ranges from -1 to +1. You want to stay
+                            between 0 and +1. If you hit -1, it means your Left and Right channels are
+                            perflectly out of phase, and the sound will vanish in mono. Always check your "wide" tracks
+                            in mono to ensure the core energy remains intact.</p>
+                    </div>
+                </section>
             </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>In this Guide</h4>
+                    <ul>
+                        <li><a href="#basics">L-C-R Panning</a></li>
+                        <li><a href="#depth">Depth Perception</a></li>
+                        <li><a href="#tools">Advanced Tools</a></li>
+                        <li><a href="#phase">Mono Compatibility</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Music Production Directory</h4>
+                    <ul>
+                        <li><a href="stereo-imaging-guide.html"><strong>Stereo Imaging</strong></a></li>
+                        <li><a href="sidechain-compression-guide.html">Sidechain Compression</a></li>
+                        <li><a href="parallel-processing-techniques.html">Parallel Processing</a></li>
+                        <li><a href="vocal-production-masterclass.html">Vocal Production</a></li>
+                        <li><a href="vocal-synthesis-guide.html">AI Vocal Synthesis</a></li>
+                        <li><a href="drum-programming-basics.html">Drum Programming</a></li>
+                        <li><a href="foley-recording-guide.html">Foley Recording</a></li>
+                        <li><a href="automation-techniques-guide.html">Automation Secrets</a></li>
+                        <li><a href="mastering-chain-basics.html">Mastering Chain</a></li>
+                        <li><a href="eq-basics.html">EQ Basics</a></li>
+                        <li><a href="compression-basics-guide.html">Compression Basics</a></li>
+                    </ul>
+                    <p style="margin-top: 15px;"><a href="index.html" class="view-all">View All Articles →</a></p>
+                </div>
+            </aside>
         </div>
     </main>
-</body>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
 
 </html>

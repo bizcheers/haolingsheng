@@ -4,9 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High-Pass Filter Philosophy - Clearing the Mud | Hao Ling Sheng</title>
+
+    <!-- SEO Meta Tags -->
+    <title>High-Pass Filter Philosophy | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Master the High-Pass Filter (HPF). Learn why, when, and how to use it to clean up your mix without destroying the body of your instruments.">
+    <meta name="keywords"
+        content="high pass filter, low cut, eq techniques, mixing mud, frequency spectrum, home studio mixing">
+    <link rel="canonical"
+        href="https://bizcheers.github.io/haolingsheng/music-production/high-pass-filter-philosophy.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="High-Pass Filter Philosophy">
+    <meta property="og:description"
+        content="Clear the mud. Learn professional HPF strategies for vocals, guitars, and the master bus.">
+    <meta property="og:url"
+        content="https://bizcheers.github.io/haolingsheng/music-production/high-pass-filter-philosophy.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="article.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "High-Pass Filter Philosophy",
+      "description": "Master the High-Pass Filter (HPF). Learn why, when, and how to use it to clean up your mix without destroying the body of your instruments.",
+      "author": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bizcheers.github.io/haolingsheng/logo.svg"
+        }
+      },
+      "datePublished": "2026-01-21",
+      "dateModified": "2026-01-21",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bizcheers.github.io/haolingsheng/music-production/high-pass-filter-philosophy.html"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -16,56 +63,150 @@
                 <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
                 <a href="../index.html" class="logo-text">
                     <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
                 </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main class="article-page">
         <div class="container">
             <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="./">Music Production</a> /
+                    <span>High-Pass Filter</span>
+                </div>
+
                 <header class="article-header">
-                    <span class="category-tag">🎛️ EQ</span>
+                    <span class="category-tag">🎛️ EQ Strategy</span>
                     <h1>High-Pass Philosophy: Clearing the Mix Mud</h1>
                     <div class="article-meta">
                         <span class="read-time">⏱️ 8 min read</span>
+                        <span>📅 January 2026</span>
                     </div>
                 </header>
 
-                <section>
-                    <h2>Clearing the Mud</h2>
-                    <p>The High-Pass Filter (HPF) is the single most powerful tool for creating a clean, professional
-                        mix. Most instruments (including vocals and guitars) contain low-frequency "rumble" that isn't
-                        necessary for their sound but takes up valuable "headroom" in the mix.</p>
+                <section title="Introduction">
+                    <h2>The "Mud" Problem</h2>
+                    <p>Low frequencies carry the most energy in a mix. If your acoustic guitar, vocal, snare, and synth
+                        pad all have energy at 100Hz, they will sum together to create "mud." The High-Pass Filter (HPF)
+                        is your primary weapon for carving out space.</p>
                 </section>
 
-                <section>
-                    <h2>The "High-Pass Everything" Myth</h2>
-                    <p>While clearing the low-end is important, over-filtering can make a mix sound thin and "sterile."
-                        The goal is to remove what is **unnecessary**, not what is **audible**.</p>
+                <section id="basics">
+                    <h2>When to Cut (and When NOT to)</h2>
+                    <p>A common beginner mistake is to "high-pass everything." This leads to thin, sterile mixes. Follow
+                        this philosophy:</p>
                     <ul>
-                        <li><strong>Vocals:</strong> Usually safe to HPF up to 80Hz-120Hz.</li>
-                        <li><strong>Guitars:</strong> Can often be cut up to 100Hz to make room for the bass.</li>
-                        <li><strong>The 30Hz Rule:</strong> Many producers apply a steep HPF at 20Hz-30Hz on the entire
-                            master bus to remove sub-sonic noise that speakers can't even reproduce.</li>
+                        <li><strong>Safe Cleaning:</strong> Almost every channel (except Kick and Sub) can handle a cut
+                            at <strong>30-40Hz</strong>. This removes imperceptible rumble that eats up headroom.</li>
+                        <li><strong>Contextual Cleaning:</strong> If a guitar is playing alone, let the low end breathe
+                            (80Hz). If it's in a dense rock mix, cut deeply (up to 200Hz) to let the bass guitar own
+                            that space.</li>
                     </ul>
+
+                    <div class="info-card tip">
+                        <h3>🎧 The Slope Matters</h3>
+                        <p>Most EQs default to a 12dB/octave slope. This is gentle and musical.
+                            <br>For cleaning up a sub-bass or kick, try a steeper <strong>24dB or 48dB slope</strong>.
+                            This cuts the unwanted frequencies vertically, tightening the low end instantly.
+                        </p>
+                    </div>
                 </section>
 
-                <section>
-                    <h2>Fixed vs. Dynamic HPF</h2>
-                    <p>If a vocal sounds "thin" during some parts but "bassy" during others, use a **Dynamic EQ** or a
-                        multiband compressor instead of a static HPF. This allows you to tame the proximity effect only
-                        when it becomes a problem.</p>
+                <section id="advanced">
+                    <h2>Advanced: Dynamic High-Pass</h2>
+                    <p>Sometimes a static EQ cut removes too much "body" when the singer goes low. In 2026, use a
+                        <strong>Dynamic EQ</strong> (like Pro-Q 3). Set the high-pass band to only engage when the low
+                        frequencies exceed a threshold. This keeps the warmth during quiet sections but cleans up the
+                        mud during loud passages.</p>
                 </section>
 
-                <div class="info-card tip">
-                    <h3>🔊 Check Your Slopes</h3>
-                    <p>Standard HPF slopes are 12dB/octave. For a more transparent sound, use 6dB. For surgical cleaning
-                        of a kick drum, try a steeper 24dB or 48dB slope.</p>
+                <div class="related-articles">
+                    <h3>Related Topics</h3>
+                    <ul>
+                        <li><a href="eq-basics.html">EQ Basics</a></li>
+                        <li><a href="mastering-chain-basics.html">Mastering Chain</a></li>
+                    </ul>
                 </div>
             </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>In this Guide</h4>
+                    <ul>
+                        <li><a href="#basics">When to Cut</a></li>
+                        <li><a href="#advanced">Dynamic HPF</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Music Production Directory</h4>
+                    <ul>
+                        <li><a href="high-pass-filter-philosophy.html"><strong>High-Pass Philosophy</strong></a></li>
+                        <li><a href="eq-basics.html">EQ Basics</a></li>
+                        <li><a href="compression-basics-guide.html">Compression Basics</a></li>
+                        <li><a href="mastering-chain-basics.html">Mastering Chain</a></li>
+                        <li><a href="automation-techniques-guide.html">Automation Secrets</a></li>
+                        <li><a href="foley-recording-guide.html">Foley Recording</a></li>
+                        <li><a href="drum-programming-basics.html">Drum Programming</a></li>
+                        <li><a href="sidechain-compression-guide.html">Sidechain Compression</a></li>
+                        <li><a href="parallel-processing-techniques.html">Parallel Processing</a></li>
+                        <li><a href="stereo-imaging-guide.html">Stereo Imaging</a></li>
+                        <li><a href="vocal-production-masterclass.html">Vocal Production</a></li>
+                    </ul>
+                    <p style="margin-top: 15px;"><a href="index.html" class="view-all">View All Articles →</a></p>
+                </div>
+            </aside>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

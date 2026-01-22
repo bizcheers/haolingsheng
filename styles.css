@@ -183,7 +183,7 @@ nav ul {
 }
 
 nav a {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 0.9375rem;
     padding: var(--space-sm) var(--space-md);

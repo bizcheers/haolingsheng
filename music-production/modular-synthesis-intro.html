@@ -4,9 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modular Synthesis Intro - VCV Rack Basics | Hao Ling Sheng</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Modular Synthesis Intro - Eurorack & VCV Rack | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Beginner's guide to modular synthesis. Learn about VCOS, VCFs, VCAs, LFOs, and how to patch your first sound in Eurorack or VCV Rack.">
+    <meta name="keywords"
+        content="modular synthesis, eurorack, vcv rack, synthesizer basics, vco vcf vca, electronic music, sound design">
+    <link rel="canonical" href="https://bizcheers.github.io/haolingsheng/music-production/modular-synthesis-intro.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Modular Synthesis Intro - Eurorack & VCV Rack">
+    <meta property="og:description"
+        content="Untangle the wires. A step-by-step guide to your first patch in the world of modular synthesis.">
+    <meta property="og:url"
+        content="https://bizcheers.github.io/haolingsheng/music-production/modular-synthesis-intro.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="article.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Modular Synthesis Intro - Eurorack & VCV Rack",
+      "description": "Beginner's guide to modular synthesis. Learn about VCOS, VCFs, VCAs, LFOs, and how to patch your first sound in Eurorack or VCV Rack.",
+      "author": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bizcheers.github.io/haolingsheng/logo.svg"
+        }
+      },
+      "datePublished": "2026-01-21",
+      "dateModified": "2026-01-21",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bizcheers.github.io/haolingsheng/music-production/modular-synthesis-intro.html"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -16,60 +62,146 @@
                 <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
                 <a href="../index.html" class="logo-text">
                     <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
                 </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main class="article-page">
         <div class="container">
             <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="./">Music Production</a> /
+                    <span>Modular Synthesis</span>
+                </div>
+
                 <header class="article-header">
-                    <span class="category-tag">🎹 Synthesis</span>
-                    <h1>Modular Synthesis: Getting Started with VCV Rack</h1>
+                    <span class="category-tag">🎹 Sound Design</span>
+                    <h1>Modular Synthesis: Thinking Outside the Box</h1>
                     <div class="article-meta">
-                        <span class="read-time">⏱️ 15 min read</span>
+                        <span class="read-time">⏱️ 14 min read</span>
+                        <span>📅 January 2026</span>
                     </div>
                 </header>
 
-                <section>
-                    <h2>The Infinite Patch Cable</h2>
-                    <p>Modular synthesis is a method of sound synthesis where the different blocks (oscillators,
-                        filters, amplifiers) are separate "modules" connected by patch cables. This approach offers
-                        unparalleled creative freedom, allowing you to design sounds that are impossible with
-                        traditional fixed-architecture synths.</p>
+                <section title="Introduction">
+                    <h2>Spaghetti With A Purpose</h2>
+                    <p>Modular synthesis looks intimidating—a wall of blinking lights and tangled cables. But it
+                        operates on a very simple logic: <strong>Control Voltage (CV)</strong>. Every cable carries
+                        either Audio (sound) or CV (instructions). Mastering this teaches you how sound truly works.</p>
                 </section>
 
-                <section>
-                    <h2>Core Concepts: The Big Three</h2>
-                    <p>Every modular patch starts with these fundamental building blocks:</p>
+                <section id="basics">
+                    <h2>The Basic Patch (East Coast Style)</h2>
+                    <p>To make a sound, you usually need a specific signal path. Memorize this:</p>
+                    <div class="info-card note">
+                        <h3>📋 VCO → VCF → VCA</h3>
+                        <ol>
+                            <li><strong>VCO (Oscillator):</strong> Generates the raw buzz/hum (Pitch). It's annoying and
+                                always on.</li>
+                            <li><strong>VCF (Filter):</strong> Shapes the tone. Usually controlled by an Envelope
+                                (ADSR).</li>
+                            <li><strong>VCA (Amplifier):</strong> Controls the volume. Controlled by an Envelope.
+                                Without a VCA, the drone never stops.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="modulation">
+                    <h2>Everything Modulates Everything</h2>
+                    <p>The beauty of modular is that <em>any</em> output can plug into <em>any</em> input.
+                        <br><strong>Try this:</strong> Take an LFO (Low Frequency Oscillator).
+                        <br>- Plug it into the <strong>VCO Pitch</strong> = Vibrato.
+                        <br>- Plug it into the <strong>VCF Cutoff</strong> = "Wub Wub" filter sweep.
+                        <br>- Plug it into the <strong>VCA Level</strong> = Tremolo.
+                        <br>- Plug it into the <strong>LFO Rate</strong> of <em>another</em> LFO = Chaos!
+                    </p>
+                </section>
+
+                <div class="related-articles">
+                    <h3>Related Topics</h3>
                     <ul>
-                        <li><strong>VCO (Voltage Controlled Oscillator):</strong> The source of the sound. It generates
-                            raw waveforms like Sine, Saw, or Square.</li>
-                        <li><strong>VCF (Voltage Controlled Filter):</strong> The "tonal shaper." It removes frequencies
-                            (usually high-end) to create "subtractive" synthesis.</li>
-                        <li><strong>VCA (Voltage Controlled Amplifier):</strong> Controls the volume. In modular, you
-                            don't just "turn up" a knob; you use an **Envelope Generator** to tell the VCA how the
-                            volume should change over time (Attack, Decay, Sustain, Release).</li>
+                        <li><a href="stable-audio-guide.html">Stable Audio Guide</a></li>
+                        <li><a href="foley-recording-guide.html">Foley Recording</a></li>
                     </ul>
-                </section>
-
-                <section>
-                    <h2>VCV Rack: Your Free Gateway</h2>
-                    <p>You don't need to spend thousands on hardware to learn modular. **VCV Rack** is a free,
-                        open-source software that perfectly emulates the Eurorack hardware experience. It allows you to
-                        download thousands of modules and build massive patches right on your computer.</p>
-                </section>
-
-                <div class="info-card note">
-                    <h3>🔌 Modulation is Key</h3>
-                    <p>The "magic" of modular happens when you connect a source (like an LFO) to a destination (like
-                        filter cutoff). This creates movement and life in your sounds, moving away from static, "boring"
-                        synth tones.</p>
                 </div>
             </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>In this Guide</h4>
+                    <ul>
+                        <li><a href="#basics">The Basic Patch</a></li>
+                        <li><a href="#modulation">Modulation Madness</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Music Production Directory</h4>
+                    <ul>
+                        <li><a href="modular-synthesis-intro.html"><strong>Modular Synthesis</strong></a></li>
+                        <li><a href="midi-orchestration-realism.html">MIDI Orchestration</a></li>
+                        <li><a href="reverb-and-delay-guide.html">Reverb & Delay</a></li>
+                        <li><a href="automation-techniques-guide.html">Automation Secrets</a></li>
+                        <li><a href="drum-programming-basics.html">Drum Programming</a></li>
+                        <li><a href="mastering-chain-basics.html">Mastering Chain</a></li>
+                        <li><a href="eq-basics.html">EQ Basics</a></li>
+                        <li><a href="compression-basics-guide.html">Compression Basics</a></li>
+                        <li><a href="suno-ai-prompts-guide.html">Suno AI Prompts</a></li>
+                    </ul>
+                    <p style="margin-top: 15px;"><a href="index.html" class="view-all">View All Articles →</a></p>
+                </div>
+            </aside>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

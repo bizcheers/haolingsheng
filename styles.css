@@ -116,12 +116,10 @@ a:hover {
 
 /* Header */
 header {
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(12px);
+    background: var(--bg-primary);
     border-bottom: 1px solid var(--border-subtle);
     padding: var(--space-lg) 0;
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 1000;
 }
 

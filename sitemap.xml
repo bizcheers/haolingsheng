@@ -235,6 +235,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/note-to-hz-frequency-chart.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/clipping-vs-limiting-loudness.html</loc>
     <lastmod>2026-01-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -357,12 +363,6 @@
   <url>
     <loc>https://www.haolingsheng.com/music-production/reverb-and-delay-guide.html</loc>
     <lastmod>2026-01-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/lufs-loudness-meter.html</loc>
-    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

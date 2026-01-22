@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Note to Hz Chart: Music Frequency Physics & EQ Values | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Complete Note to Hz Frequency Chart. Understand the physics of A4=440Hz, the 12-Tone Equal Temperament formula, and how to use note frequencies for better EQ and synthesis.">
+    <meta name="keywords"
+        content="note to hz chart, music frequency table, a4 440hz math, frequency of middle c, eq mixing frequencies, synthesis tuning math, 12 tone equal temperament formula">
+    <link rel="canonical" href="https://www.haolingsheng.com/music-production/note-to-hz-frequency-chart.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../lufs-loudness-meter.html">LUFS Meter</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container">
+            <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="./">Music Production</a> /
+                    <span>Audio Physics</span>
+                </div>
+
+                <header class="article-header">
+                    <span class="category-tag">⚛️ Audio Physics</span>
+                    <h1>Note to Hz: The Physics of Music Frequencies</h1>
+                    <div class="article-meta">
+                        <span class="read-time">⏱️ 8 min read</span>
+                        <span>📅 January 2026</span>
+                    </div>
+                </header>
+
+                <section title="Introduction">
+                    <h2>Everything is Math</h2>
+                    <p>Music feels emotional, but it is built on rigid physics. Every note you play on a guitar or
+                        synthesizer corresponds to a specific number of vibrations per second, measured in **Hertz
+                        (Hz)**.</p>
+                    <p>Understanding this relationship is secret weapon for mixing. Instead of guessing where to boost
+                        an EQ, you can calculate the exact frequency of the song's key. This guide bridges the gap
+                        between <a href="../geci/">Music Theory</a> and Audio Engineering.</p>
+                </section>
+
+                <section id="math-formula">
+                    <h2>The Formula: 12-Tone Equal Temperament</h2>
+                    <p>Modern Western music uses a tuning system called <strong>12-Tone Equal Temperament
+                            (12-TET)</strong>. This system divides the octave into 12 mathematically equal steps.</p>
+                    <p>The standard reference pitch is <strong>A4 = 440 Hz</strong>. To find the frequency of any other
+                        note ($f_n$), we use this formula:</p>
+
+                    <div
+                        style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: var(--radius-lg); text-align: center; font-family: 'Monaco', monospace; margin: 1.5rem 0;">
+                        f(n) = 440 × 2^(n/12)
+                    </div>
+
+                    <p>Where <em>n</em> is the number of semitones away from A4.
+                    <ul>
+                        <li><strong>A#4</strong> is 1 semitone up ($n=1$).</li>
+                        <li><strong>A3</strong> is 12 semitones down ($n=-12$).</li>
+                    </ul>
+                    </p>
+                    <p>Since an octave is a doubling of frequency, A5 is exactly 880 Hz ($440 \times 2$).</p>
+                </section>
+
+                <section id="chart">
+                    <h2>Full Frequency Chart (C0 - C8)</h2>
+                    <p>Here is the reference chart for standard tuning ($A=440$).</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Frequency (Hz)</th>
+                                <th>Wavelength (cm)</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>C0</strong></td>
+                                <td>16.35 Hz</td>
+                                <td>2100 cm</td>
+                                <td>Felt, not heard (Sub-bass rumble)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A0</strong></td>
+                                <td>27.50 Hz</td>
+                                <td>1254 cm</td>
+                                <td>Lowest note on standard piano</td>
+                            </tr>
+                            <tr>
+                                <td><strong>E1</strong></td>
+                                <td>41.20 Hz</td>
+                                <td>837 cm</td>
+                                <td>Lowest string on 4-string Bass</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A2</strong></td>
+                                <td>110.00 Hz</td>
+                                <td>313 cm</td>
+                                <td>Punchy Kick / Snare fundamental</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C4 (Middle C)</strong></td>
+                                <td>261.63 Hz</td>
+                                <td>131 cm</td>
+                                <td>Center of vocal range</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A4</strong></td>
+                                <td>440.00 Hz</td>
+                                <td>78 cm</td>
+                                <td>Standard Tuning Reference</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C8</strong></td>
+                                <td>4186.01 Hz</td>
+                                <td>8 cm</td>
+                                <td>Highest note on standard piano</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="application">
+                    <h2>Practical Applications in Production</h2>
+
+                    <h3>1. Musical EQ</h3>
+                    <p>If your song is in the key of <strong>G Major</strong>, the root note is G. Looking at the chart,
+                        G2 is roughly <strong>98 Hz</strong>.</p>
+                    <p>When mixing the Bass or Kick, setting your <a href="eq-basics.html">EQ boost</a> exactly at 98 Hz
+                        (or its octave 49 Hz) will make the low-end feel "in tune" with the song. Boosting random
+                        frequencies creates dissonance.</p>
+
+                    <h3>2. Synthesizer Tuning</h3>
+                    <p>In <a href="modular-synthesis-intro.html">Modular Synthesis</a>, oscillators often track 1 Volt
+                        per Octave. Understanding that 1V adds exactly double the frequency helps you design complex FM
+                        (Frequency Modulation) patches where ratios must be precise integers (1:1, 2:1) to avoid harsh
+                        metallic noise.</p>
+                </section>
+
+                <div class="related-articles">
+                    <h3>Physics & Production</h3>
+                    <ul>
+                        <li><a href="eq-basics.html">EQ Basics: Frequencies Explained</a></li>
+                        <li><a href="modular-synthesis-intro.html">Modular Synthesis Introduction</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>Key Reference Points</h4>
+                    <ul>
+                        <li><strong>20 Hz:</strong> Lower limit of human hearing.</li>
+                        <li><strong>60 Hz:</strong> AC Mains Hum (USA).</li>
+                        <li><strong>440 Hz:</strong> Tuning Standard (A4).</li>
+                        <li><strong>20,000 Hz:</strong> Upper limit of hearing.</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Did You Know?</h4>
+                    <p>Some orchestras tune to <strong>A=442 Hz</strong> or <strong>A=444 Hz</strong> for a "brighter"
+                        sound. This changes every frequency in the chart slightly!</p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Production Tools</h4>
+                    <ul>
+                        <li><a href="../lufs-loudness-meter.html"><strong>Online LUFS Meter</strong></a></li>
+                        <li><a href="high-pass-filter-philosophy.html">HPF Guide</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

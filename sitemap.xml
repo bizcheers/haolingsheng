@@ -37,6 +37,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/geci/chord-progressions-guitar.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/geci/how-to-build-chords.html</loc>
     <lastmod>2026-01-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -50,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/index.html</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

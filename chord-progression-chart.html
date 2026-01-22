@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Chord Progression Chart & Generator - Interactive Music Theory Tool | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Free Chord Progression Generator. Create Pop, Jazz, Neo-Soul, and EDM progressions instantly. Includes audio playback and a diatonic chord chart reference.">
+    <meta name="keywords"
+        content="chord progression generator, chord chart, interactive music theory, pop chords, neo-soul chords, piano chord player, songwriting tool">
+    <link rel="canonical" href="https://www.haolingsheng.com/chord-progression-chart.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Hao Ling Sheng Chord Generator",
+      "url": "https://www.haolingsheng.com/chord-progression-chart.html",
+      "description": "Generate and play common chord progressions for Pop, Jazz, and Soul music.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        /* Tool Specific Styles */
+        :root {
+            --tool-accent: #6366f1;
+            /* Indigo-500 */
+        }
+
+        .tool-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-xl);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Controls */
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .input-box label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        select,
+        button {
+            width: 100%;
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid var(--border-default);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: inherit;
+        }
+
+        select:focus,
+        button:focus {
+            outline: none;
+            border-color: var(--tool-accent);
+        }
+
+        button.action-btn {
+            background: var(--tool-accent);
+            border: none;
+            font-weight: 600;
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        button.action-btn:hover {
+            background: #4f46e5;
+            transform: translateY(-2px);
+        }
+
+        button.play-btn {
+            background: var(--accent-green);
+            border: none;
+            font-weight: 600;
+            color: var(--bg-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        button.play-btn:hover {
+            background: var(--accent-green-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Chord Display */
+        .progression-area {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .chord-unit {
+            background: var(--bg-tertiary);
+            padding: 40px 10px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid transparent;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chord-unit:hover {
+            transform: translateY(-4px);
+            background: var(--bg-elevated);
+        }
+
+        .chord-unit.active {
+            border-color: var(--accent-green);
+            background: var(--bg-elevated);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .chord-unit .name {
+            font-size: 2.2rem;
+            font-weight: 900;
+            display: block;
+            color: var(--text-primary);
+        }
+
+        .chord-unit .num {
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+            font-weight: 600;
+        }
+
+        /* Fixed Chart Section */
+        .theory-table {
+            margin-top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            overflow: hidden;
+            font-size: 0.9rem;
+        }
+
+        .theory-table th {
+            background: var(--bg-elevated);
+            padding: 15px;
+            text-align: left;
+            color: var(--text-secondary);
+        }
+
+        .theory-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            font-family: 'Monaco', monospace;
+        }
+
+        /* Content Section */
+        .article-content {
+            max-width: 800px;
+            margin: 4rem auto 0;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content ul {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .progression-area {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="music-business/">Music Business</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 4rem 0;">
+        <div class="container">
+
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span
+                    style="color: var(--tool-accent); font-weight: 600; letter-spacing: 0.1em; font-size: 0.875rem;">SONGWRITING
+                    TOOL</span>
+                <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Chord Progression Generator</h1>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                    Instant professional inspiration. Generate Pop, Jazz, or Soul progressions in any key.
+                </p>
+            </div>
+
+            <div class="tool-card">
+                <div class="controls-grid">
+                    <div class="input-box">
+                        <label>Key Center</label>
+                        <select id="rootNote">
+                            <option value="C">C Major</option>
+                            <option value="D">D Major</option>
+                            <option value="E">E Major</option>
+                            <option value="F">F Major</option>
+                            <option value="G">G Major</option>
+                            <option value="A">A Major</option>
+                            <option value="B">B Major</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label>Musical Genre</label>
+                        <select id="genreSelect">
+                            <option value="pop">Pop (I-V-vi-IV)</option>
+                            <option value="jazz">Jazz (ii-V-I-VI)</option>
+                            <option value="soul">Neo-Soul (IV-iii-ii-I)</option>
+                            <option value="dark">Dark EDM (vi-IV-I-V)</option>
+                            <option value="blues">Blues (I-IV-I-V)</option>
+                        </select>
+                    </div>
+                    <div class="input-box" style="display: flex; align-items: flex-end;">
+                        <button class="action-btn" onclick="updateProgression()">Generate New</button>
+                    </div>
+                    <div class="input-box" style="display: flex; align-items: flex-end;">
+                        <button class="play-btn" onclick="playProgression()">▶ Play Audio</button>
+                    </div>
+                </div>
+
+                <div class="progression-area" id="display">
+                    <!-- Chords will appear here -->
+                </div>
+
+                <h3 style="margin-top:40px; color:var(--text-primary); font-size: 1.25rem;">Diatonic Chord Chart
+                    (Reference)</h3>
+                <div style="overflow-x: auto;">
+                    <table class="theory-table">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>I</th>
+                                <th>ii</th>
+                                <th>iii</th>
+                                <th>IV</th>
+                                <th>V</th>
+                                <th>vi</th>
+                                <th>vii°</th>
+                            </tr>
+                        </thead>
+                        <tbody id="referenceTable"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Theory Content -->
+            <article class="article-content">
+                <h2>Why Use a Chord Progression Chart?</h2>
+                <p>
+                    Every great song is built on a skeleton of chords. In Western music theory, chords aren't random;
+                    they follow patterns based on the <strong>Key Signature</strong>. This tool helps you visualize and
+                    hear these patterns instantly, saving you hours of trial and error.
+                </p>
+                <p>
+                    The "Diatonic Chord Chart" above shows you the 7 "legal" chords for any major key.
+                    - <strong>Major Chords (I, IV, V):</strong> These sound happy, stable, and powerful. They are the
+                    pillars of Pop and Rock music.
+                    - <strong>Minor Chords (ii, iii, vi):</strong> These sound sad, emotional, or introspective. Using
+                    the <strong>vi</strong> chord is essential for modern "Dark Pop" or "Sad Girl" aesthetics.
+                    - <strong>Diminished Chord (vii°):</strong> This sounds tense and unresolved. It's rarely used in
+                    pop loops but is great for jazz turnarounds.
+                </p>
+
+                <h2>How to Use This Tool for Songwriting</h2>
+                <p>
+                    <strong>1. Break Writer's Block:</strong> Stuck on a loop? Select a genre like "Neo-Soul" and hit
+                    Generate. You'll get a sophisticated <strong>IV-iii-ii-I</strong> progression that instantly sets a
+                    vibe different from standard radio pop.
+                </p>
+                <p>
+                    <strong>2. Transpose Instantly:</strong> Written a melody in C but it's too low for your singer?
+                    Switch the "Key Center" to F or G. The tool instantly calculates the new chords for you, so you
+                    don't have to do the math in your head.
+                </p>
+                <p>
+                    <strong>3. Ear Training:</strong> Click the individual chord blocks to hear what a "Major IV" sounds
+                    like compared to a "Minor ii". Over time, this trains your ear to recognize these intervals in songs
+                    you hear on the radio.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="gepu/">Music Notation</a></li>
+                        <li><a href="geci/">Music Theory</a></li>
+                        <li><a href="music-production/">Production</a></li>
+                        <li><a href="music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About This Tool</h4>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">
+                        This generator uses the Web Audio API to synthesize chords in real-time. No samples are loaded,
+                        ensuring instant playback on any device.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Free Online Music Tools.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const notes = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+        const scaleSteps = [0, 2, 4, 5, 7, 9, 11];
+        const chordTypes = ['', 'm', 'm', '', '', 'm', 'dim'];
+        const numerals = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
+
+        const genres = {
+            pop: [0, 4, 5, 3],
+            jazz: [1, 4, 0, 5],
+            soul: [3, 2, 1, 0],
+            dark: [5, 3, 0, 4],
+            blues: [0, 3, 0, 4]
+        };
+
+        let currentChords = [];
+
+        function getFreq(noteName, octave = 3) {
+            const n = notes.indexOf(noteName);
+            // Simple formula relative to A3 (220Hz) which is index 9 in our array if treating octave appropriately
+            // But let's use a standard ref A4=440
+            // note index in C major scale... lets just map linearly
+            // Find distance from A4 (440)
+            // This basic logic handles the demo range
+            const dist = n - 9 + (octave - 4) * 12;
+            return 440 * Math.pow(2, dist / 12);
+        }
+
+        function updateProgression() {
+            const root = document.getElementById('rootNote').value;
+            const genre = document.getElementById('genreSelect').value;
+            const rootIdx = notes.indexOf(root);
+            const display = document.getElementById('display');
+            display.innerHTML = '';
+            currentChords = [];
+
+            genres[genre].forEach((deg, i) => {
+                const noteIdx = (rootIdx + scaleSteps[deg]) % 12;
+                const chordName = notes[noteIdx] + chordTypes[deg];
+                currentChords.push({ name: chordName, root: notes[noteIdx], deg: deg });
+
+                const div = document.createElement('div');
+                div.className = 'chord-unit';
+                div.id = `chord-${i}`;
+                div.innerHTML = `<span class="num">${numerals[deg]}</span><span class="name">${chordName}</span>`;
+                div.onclick = () => playChord(notes[noteIdx], deg);
+                display.appendChild(div);
+            });
+            updateRefTable(root);
+        }
+
+        function updateRefTable(root) {
+            const rootIdx = notes.indexOf(root);
+            let html = '<tr><td>Chords</td>';
+            scaleSteps.forEach((step, i) => {
+                html += `<td>${notes[(rootIdx + step) % 12]}${chordTypes[i]}</td>`;
+            });
+            html += '</tr>';
+            document.getElementById('referenceTable').innerHTML = html;
+        }
+
+        function playChord(rootNote, degType) {
+            const now = audioCtx.currentTime;
+
+            // Octave selection logic to keep things near middle C
+            let octave = 3;
+            if (['A', 'Bb', 'B'].includes(rootNote)) octave = 2; // Drop lower notes so they aren't too high
+
+            const freq = getFreq(rootNote, octave);
+
+            // Major: 1, 1.2599 (Maj3), 1.4983 (P5) -> 0, 4, 7 semitones
+            // Minor: 1, 1.1892 (min3), 1.4983 (P5) -> 0, 3, 7 semitones
+            // Dim:   1, 1.1892 (min3), 1.4142 (dim5) -> 0, 3, 6 semitones
+
+            let semitones = [0, 4, 7]; // Major Default
+            if (chordTypes[degType] === 'm') semitones = [0, 3, 7];
+            if (chordTypes[degType] === 'dim') semitones = [0, 3, 6];
+
+            semitones.forEach(st => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+
+                // Use triangle for a softer "EPiano" like tone
+                osc.type = 'triangle';
+
+                // Calculate precise freq based on intervals
+                osc.frequency.setValueAtTime(freq * Math.pow(2, st / 12), now);
+
+                // Envelope for percussive sound
+                gain.gain.setValueAtTime(0, now);
+                gain.gain.linearRampToValueAtTime(0.15, now + 0.05); // Attack
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 1.5); // Decay
+
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(now + 1.5);
+            });
+        }
+
+        async function playProgression() {
+            // Resume context if suspended (browser autoplay policy)
+            if (audioCtx.state === 'suspended') await audioCtx.resume();
+
+            for (let i = 0; i < currentChords.length; i++) {
+                const el = document.getElementById(`chord-${i}`);
+                el.classList.add('active');
+                playChord(currentChords[i].root, currentChords[i].deg);
+                await new Promise(r => setTimeout(r, 1200));
+                el.classList.remove('active');
+            }
+        }
+
+        // Init
+        updateProgression();
+    </script>
+</body>
+
+</html>

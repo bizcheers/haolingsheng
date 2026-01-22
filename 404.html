@@ -128,6 +128,36 @@
                         目前網站已全面轉型為英文音樂教育與 AI 音樂創作平台，專注於音樂理論、作曲、編曲、製作教學與音樂平台介紹，為全球音樂愛好者提供學習資源。感謝您的理解與支持。
                     </p>
                 </div>
+
+                <!-- Hidden Block for Legacy MP3/Ringtone Visitors -->
+                <div id="ringtone-message"
+                    style="display: none; margin-top: 2rem; padding: 2rem; background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; border-radius: var(--radius-lg); text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: #ef4444; margin-bottom: 1rem; font-size: 1.25rem;">Looking for Ringtones? (找铃声?)
+                    </h3>
+                    <p style="color: var(--text-primary); margin-bottom: 1rem;">
+                        We noticed you accessed a <strong>Legacy Link</strong> (like <code>/lingsheng/mp3/</code>).<br>
+                        The ringtone service has been <strong>permanently discontinued</strong> as of 2024.
+                    </p>
+                    <p style="color: var(--text-secondary);">
+                        We invite you to explore our new <strong>Music Production Tools</strong> to create your OWN
+                        ringtones using AI!
+                    </p>
+                    <a href="/music-production/suno-ai-prompts-guide.html" class="btn btn-secondary"
+                        style="margin-top: 1rem; display: inline-block;">Try AI Music Creation →</a>
+                </div>
+
+                <script>
+                    // Simple logic to detect if user came from a legacy URL structure
+                    const path = window.location.pathname;
+                    if (path.includes('lingsheng') || path.includes('mp3') || path.includes('ring')) {
+                        const msg = document.getElementById('ringtone-message');
+                        if (msg) {
+                            msg.style.display = 'block';
+                            // Scroll to the message smoothly
+                            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+                </script>
             </div>
         </section>
 

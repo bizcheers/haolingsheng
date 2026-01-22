@@ -434,6 +434,10 @@ footer {
         width: 100%;
         justify-content: center;
     }
+
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Utility Classes */
@@ -451,7 +455,7 @@ footer {
 /* Homepage Specific Styles */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
     margin-top: var(--space-2xl);
 }

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Note to Frequency Converter (Hz) - Music Physics Tool | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Free online Note to Hz Converter. Calculate the exact frequency of any musical note. Customize Reference Pitch (A4=440Hz, 432Hz) and see wavelengths.">
+    <meta name="keywords"
+        content="note to hz converter, music frequency calculator, a4 432hz converter, note wavelength calculator, sound physics tool">
+    <link rel="canonical" href="https://www.haolingsheng.com/note-to-hz.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Hao Ling Sheng Note to Hz Converter",
+      "url": "https://www.haolingsheng.com/note-to-hz.html",
+      "description": "Calculate musical note frequencies and wavelengths with customizable reference pitch.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        /* Tool Specific Styles (Adapted from User Request) */
+        :root {
+            --tool-accent: #2dd4bf;
+            /* Teal-400 matching site accent */
+            --tool-panel: var(--bg-secondary);
+        }
+
+        .tool-card {
+            background: var(--tool-panel);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-xl);
+            width: 100%;
+            max-width: 700px;
+            border: 1px solid var(--border-default);
+            margin: 0 auto;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .input-wrapper label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .metro-input,
+        .metro-select {
+            width: 100%;
+            padding: 14px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-default);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-family: inherit;
+            transition: all 0.2s;
+            appearance: none;
+            /* Remove default arrow for custom styling if needed */
+        }
+
+        .metro-input:focus,
+        .metro-select:focus {
+            outline: none;
+            border-color: var(--tool-accent);
+            box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
+        }
+
+        .result-box {
+            background: rgba(45, 212, 191, 0.05);
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .result-freq {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--tool-accent);
+            margin: 10px 0;
+            font-family: 'Monaco', monospace;
+            letter-spacing: -2px;
+        }
+
+        .table-container {
+            margin-top: 40px;
+            width: 100%;
+            max-height: 400px;
+            overflow-y: auto;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        table.freq-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        table.freq-table th {
+            position: sticky;
+            top: 0;
+            background: var(--tool-panel);
+            padding: 15px;
+            text-align: left;
+            color: var(--text-secondary);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-default);
+        }
+
+        table.freq-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            font-family: 'Monaco', monospace;
+        }
+
+        table.freq-table tr:hover {
+            background: var(--bg-elevated);
+        }
+
+        table.freq-table .highlight {
+            color: var(--tool-accent);
+            font-weight: 800;
+            background: rgba(45, 212, 191, 0.08);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .input-group {
+                grid-template-columns: 1fr;
+            }
+
+            .result-freq {
+                font-size: 2.5rem;
+            }
+
+            .tool-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="music-business/">Music Business</a></li>
+                    <li><a href="lufs-loudness-meter.html">LUFS Meter</a></li>
+                    <li><a href="note-to-hz.html">Note to Hz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 4rem 0;">
+        <div class="container">
+
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span
+                    style="color: var(--tool-accent); font-weight: 600; letter-spacing: 0.1em; font-size: 0.875rem;">PHYSICS
+                    TOOL</span>
+                <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Note to Frequency Converter</h1>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                    Calculate frequency (Hz) and wavelength (cm) for any note. Perfect for tuning synthesizers and
+                    setting EQ frequencies.
+                </p>
+            </div>
+
+            <div class="tool-card">
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label>Reference A4 (Hz)</label>
+                        <input type="number" id="refPitch" class="metro-input" value="440" step="0.1">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Select Octave</label>
+                        <select id="octave" class="metro-select">
+                            <option value="0">0 (Sub)</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4 (Middle)</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8 (High)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label>Select Note</label>
+                    <select id="noteName" class="metro-select">
+                        <option value="0">C</option>
+                        <option value="1">C# / Db</option>
+                        <option value="2">D</option>
+                        <option value="3">D# / Eb</option>
+                        <option value="4">E</option>
+                        <option value="5">F</option>
+                        <option value="6">F# / Gb</option>
+                        <option value="7">G</option>
+                        <option value="8">G# / Ab</option>
+                        <option value="9" selected>A</option>
+                        <option value="10">A# / Bb</option>
+                        <option value="11">B</option>
+                    </select>
+                </div>
+
+                <div class="result-box">
+                    <div id="fullNoteName" style="font-size: 1.1rem; color: var(--text-secondary);">A4 is exactly:</div>
+                    <p class="result-freq" id="freqDisplay">440.00 Hz</p>
+                    <div id="wavelengthDisplay" style="color: var(--text-tertiary); font-family: 'Monaco', monospace;">
+                        Wavelength: 78.0 cm</div>
+                </div>
+
+                <div class="table-container">
+                    <table class="freq-table">
+                        <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Frequency (Hz)</th>
+                                <th>Wavelength (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chartBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Related Article Link -->
+            <div style="max-width: 600px; margin: 3rem auto 0; text-align: center;">
+                <p style="color: var(--text-secondary);">Want to understand the math?</p>
+                <a href="music-production/note-to-hz-frequency-chart.html"
+                    style="color: var(--tool-accent); font-weight: 600; text-decoration: none;">
+                    Read our guide on The Physics of Music Frequencies →
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="gepu/">Music Notation</a></li>
+                        <li><a href="geci/">Music Theory</a></li>
+                        <li><a href="music-production/">Production</a></li>
+                        <li><a href="music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About This Tool</h4>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">
+                        This tool uses the standard 12-Tone Equal Temperament formula: f(n) = f(ref) * 2^(n/12).
+                        Calculations happen instantly in your browser.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Free Online Music Tools.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+        const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const refPitchInput = document.getElementById('refPitch');
+        const noteSelect = document.getElementById('noteName');
+        const octaveSelect = document.getElementById('octave');
+        const freqDisplay = document.getElementById('freqDisplay');
+        const fullNoteName = document.getElementById('fullNoteName');
+        const wavelengthDisplay = document.getElementById('wavelengthDisplay');
+        const chartBody = document.getElementById('chartBody');
+
+        function calculate() {
+            const refA4 = parseFloat(refPitchInput.value) || 440;
+            const noteIndex = parseInt(noteSelect.value);
+            const octave = parseInt(octaveSelect.value);
+
+            // Calculate distance from A4 in semitones
+            // A4 is note index 9 in octave 4
+            const n = (octave - 4) * 12 + (noteIndex - 9);
+            const freq = refA4 * Math.pow(Math.pow(2, 1 / 12), n);
+            const wavelength = 34300 / freq;
+
+            freqDisplay.innerText = `${freq.toFixed(2)} Hz`;
+            fullNoteName.innerText = `${notes[noteIndex]}${octave} is exactly:`;
+            wavelengthDisplay.innerText = `Wavelength: ~${wavelength.toFixed(1)} cm`;
+
+            updateChart(refA4);
+        }
+
+        function updateChart(refA4) {
+            chartBody.innerHTML = '';
+            // Generate for full range (Octave 0 to 8)
+            for (let oct = 0; oct <= 8; oct++) {
+                for (let i = 0; i < 12; i++) {
+                    const n = (oct - 4) * 12 + (i - 9);
+                    const f = refA4 * Math.pow(2, n / 12);
+                    const wavelength = 34300 / f; // Speed of sound 343m/s in cm
+
+                    const row = document.createElement('tr');
+
+                    // Highlight selected
+                    if (i === parseInt(noteSelect.value) && oct === parseInt(octaveSelect.value)) {
+                        row.className = 'highlight';
+                        // Auto scroll to highlighted row if possible (optional, might jump)
+                        // row.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                    }
+
+                    row.innerHTML = `<td>${notes[i]}${oct}</td><td>${f.toFixed(2)}</td><td>${wavelength < 1000 ? wavelength.toFixed(1) : (wavelength / 100).toFixed(2) + ' m'}</td>`;
+                    chartBody.appendChild(row);
+                }
+            }
+        }
+
+        [refPitchInput, noteSelect, octaveSelect].forEach(el => el.addEventListener('input', calculate));
+
+        // Initial calculation
+        calculate();
+    </script>
+</body>
+
+</html>

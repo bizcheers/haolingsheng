@@ -110,3 +110,10 @@ def update_index():
 
 if __name__ == "__main__":
     update_index()
+    
+    # Auto-generate Sitemap
+    try:
+        import generate_sitemap
+        generate_sitemap.generate()
+    except ImportError:
+        print("Warning: generate_sitemap.py not found. Skipping sitemap update.")

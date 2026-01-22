@@ -34,9 +34,37 @@
 
                 <section>
                     <h2>Beyond the Keyboard</h2>
-                    <p>To make virtual strings and brass sound real, you must think like an orchestrator. Learn about
-                        expression mapping, vibrato control, and how to Layer samples for a massive cinematic sound.</p>
+                    <p>Writing for a virtual orchestra requires a different mindset than playing a piano. To achieve
+                        realism, you must treat every MIDI track as a living, breathing performer. If a violin note is
+                        static, it sounds like a machine; if it "swells," it sounds like music.</p>
                 </section>
+
+                <section>
+                    <h2>The Secret Sauce: CC Automation</h2>
+                    <p>The key to realistic strings, brass, and woodwinds is "Continuous Controller" (CC) automation.
+                        The most important MIDI CC channels are:</p>
+                    <ul>
+                        <li><strong>CC1 (Modulation):</strong> Usually controls dynamic crossfading (switching between
+                            soft and loud samples).</li>
+                        <li><strong>CC7 (Volume):</strong> Controls the overall level.</li>
+                        <li><strong>CC11 (Expression):</strong> Used to add "swells" and dynamic movement *within* a
+                            note.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Layering for Cinematic Impact</h2>
+                    <p>Professional film scores rarely use just one sample library. To get a "Hollywood" sound, try
+                        layering three different string libraries: one for the "attack" (shorts), one for the "lushness"
+                        (longs), and one solo violin for the "detail."</p>
+                </section>
+
+                <div class="info-card tip">
+                    <h3>🎻 Humanization</h3>
+                    <p>Avoid "quantizing" everything to 100%. Orchestras don't play perfectly on the beat. Shift your
+                        MIDI notes slightly off the grid (humanize) to create that natural, slightly imperfect ensemble
+                        feel.</p>
+                </div>
             </article>
         </div>
     </main>

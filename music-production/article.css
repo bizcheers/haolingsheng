@@ -35,6 +35,10 @@
     padding: var(--space-2xl);
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-subtle);
+    max-width: 760px;
+    /* Golden ratio for reading line length */
+    margin: 0 auto;
+    /* Center the reading column */
 }
 
 .article-content h1 {
@@ -56,12 +60,16 @@
 }
 
 .article-content h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
+    /* Refined size */
     color: var(--text-primary);
-    margin: var(--space-3xl) 0 1.5rem;
+    margin: 4rem 0 2rem;
+    /* Increased top breathing room */
     padding-bottom: var(--space-sm);
     border-bottom: 2px solid var(--border-subtle);
     position: relative;
+    font-weight: 800;
+    /* Bolder for clearer hierarchy */
 }
 
 .article-content h2::before {
@@ -81,10 +89,14 @@
 }
 
 .article-content p {
-    color: var(--text-secondary);
+    color: #d1d1d1;
+    /* Brighter for better contrast on dark bg */
     line-height: 1.85;
     margin-bottom: 2rem;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
+    /* Slightly larger for clarity */
+    letter-spacing: 0.01em;
+    /* Breathe-y feel */
 }
 
 .article-content ul,
@@ -97,6 +109,8 @@
 .article-content li {
     margin-bottom: 1.25rem;
     line-height: 1.8;
+    color: #d1d1d1;
+    font-size: 1.1rem;
 }
 
 .article-content li::marker {

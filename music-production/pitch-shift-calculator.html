@@ -13,49 +13,51 @@
         content="pitch shift calculator, semitones to hz ratio, cents to frequency conversion, musical pitch math, audio frequency shift tool, sample pitch calculation">
     <link rel="canonical" href="https://www.haolingsheng.com/music-production/pitch-shift-calculator.html">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Interactive Pitch Shift Calculator">
-    <meta property="og:description"
-        content="Calculate exact frequency ratios for pitch shifting in your DAW. Accurate semitone and cent conversion.">
-    <meta property="og:url" content="https://www.haolingsheng.com/music-production/pitch-shift-calculator.html">
-    <meta property="og:site_name" content="Hao Ling Sheng">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="article.css">
 
     <style>
-        .calculator-container {
+        .tool-container {
+            max-width: 650px;
+            margin: 0 auto;
             background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
             border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-            margin: 2rem 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .tool-header h1 {
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-sm);
         }
 
         .calc-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: flex-start;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
         }
 
-        .input-item {
+        .input-group {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
-        .input-item label {
+        .input-group label {
+            font-size: 0.75rem;
             font-weight: 700;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
             text-transform: uppercase;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
         }
 
-        .input-item input {
+        .input-group input {
             background: var(--bg-primary);
             border: 1px solid var(--border-subtle);
             border-radius: var(--radius-md);
@@ -63,43 +65,59 @@
             color: var(--text-primary);
             font-size: 1.25rem;
             outline: none;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
         }
 
-        .input-item input:focus {
+        .input-group input:focus {
             border-color: var(--accent-green);
         }
 
         .results-panel {
             grid-column: 1 / -1;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: var(--radius-md);
+            background: var(--bg-primary);
+            border-radius: var(--radius-lg);
             padding: 1.5rem;
             margin-top: 1rem;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 1.5rem;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .result-item {
             text-align: center;
         }
 
         .result-val {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .result-val strong {
+            display: block;
             font-size: 2rem;
+            font-weight: 700;
             color: var(--accent-green);
+            font-family: 'Monaco', monospace;
         }
 
-        .result-val span {
-            font-size: 0.85rem;
+        .result-label {
+            display: block;
+            font-size: 0.75rem;
             color: var(--text-tertiary);
             text-transform: uppercase;
+            margin-top: 0.25rem;
         }
 
-        @media (max-width: 650px) {
+        .guide-section {
+            max-width: 650px;
+            margin: 4rem auto;
+            text-align: left;
+        }
+
+        .guide-section h2 {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
             .calc-grid {
                 grid-template-columns: 1fr;
             }
@@ -129,144 +147,78 @@
         </div>
     </header>
 
-    <main class="article-page">
+    <main style="padding: 4rem 0;">
         <div class="container">
-            <article class="article-content">
-                <div class="breadcrumb">
-                    <a href="../index.html">Home</a> /
-                    <a href="./">Music Production</a> /
-                    <span>Pitch Calculator</span>
+            <!-- Tool Wrapper -->
+            <div class="tool-container">
+                <div class="tool-header">
+                    <span
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.1em;">SOUND
+                        DESIGN TOOL</span>
+                    <h1>Pitch Shift Calculator</h1>
+                    <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                        Calculate exact frequency ratios for pitch manipulation. Perfect for tuning samples and sound
+                        design.
+                    </p>
                 </div>
 
-                <header class="article-header">
-                    <span class="category-tag">🎛️ Sound Design Tool</span>
-                    <h1>Pitch Shift & Frequency Calculator</h1>
-                    <p class="lead">Calculate the exact relationship between semitones, cents, and Hertz for perfect
-                        pitch manipulation.</p>
-                    <div class="article-meta">
-                        <span class="read-time">⏱️ 8 min read</span>
-                        <span>📅 January 2026</span>
+                <div class="calc-grid">
+                    <div class="input-group">
+                        <label for="freq-base">Base Frequency (Hz)</label>
+                        <input type="number" id="freq-base" value="440" step="0.1">
                     </div>
-                </header>
-
-                <div class="calculator-container">
-                    <div class="calc-grid">
-                        <div class="input-item">
-                            <label for="freq-base">Base Frequency (Hz)</label>
-                            <input type="number" id="freq-base" value="440" step="0.1">
-                        </div>
-                        <div class="input-item">
-                            <label for="shift-semitones">Shift (Semitones)</label>
-                            <input type="number" id="shift-semitones" value="1" step="1">
-                        </div>
-                        <div class="input-item">
-                            <label for="shift-cents">Fine Tune (Cents)</label>
-                            <input type="number" id="shift-cents" value="0" step="1">
-                        </div>
+                    <div class="input-group">
+                        <label for="shift-semitones">Shift (Semitones)</label>
+                        <input type="number" id="shift-semitones" value="1" step="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="shift-cents">Fine Tune (Cents)</label>
+                        <input type="number" id="shift-cents" value="0" step="1">
                     </div>
 
                     <div class="results-panel">
-                        <div class="result-val">
-                            <strong id="res-freq">466.16</strong>
-                            <span>New Frequency (Hz)</span>
+                        <div class="result-item">
+                            <span class="result-val" id="res-freq">466.16</span>
+                            <span class="result-label">New Hz</span>
                         </div>
-                        <div class="result-val">
-                            <strong id="res-ratio">1.0595</strong>
-                            <span>Frequency Ratio</span>
+                        <div class="result-item">
+                            <span class="result-val" id="res-ratio">1.0595</span>
+                            <span class="result-label">Ratio</span>
                         </div>
-                        <div class="result-val">
-                            <strong id="res-interval">+100</strong>
-                            <span>Total Cents</span>
+                        <div class="result-item">
+                            <span class="result-val" id="res-total-cents">+100</span>
+                            <span class="result-label">Total Cents</span>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <section>
-                    <h2>How Pitch Shifting Works</h2>
-                    <p>In digital audio, <strong>pitch shifting</strong> is the process of changing the perceived pitch
-                        of a sound without necessarily changing its duration (though in simple "resampling" or
-                        tape-style effects, they change together). This process relies on a core mathematical ratio
-                        based on the <strong>power of 2</strong>.</p>
-                    <p>Because the musical octave is defined by doubling the frequency, we divide that "double" into
-                        1,200 equal parts called <strong>cents</strong>. A single semitone is exactly 100 cents.
-                        Therefore, to shift a sound up by one semitone, we multiply its frequency by the 12th root of 2
-                        (approx. 1.05946).</p>
-                </section>
+            <!-- Guide Section -->
+            <div class="guide-section article-content">
+                <h2>The Math of Pitch Shifting</h2>
+                <p>In digital audio, pitch shifting often works by resampling or using complex algorithms like FFT.
+                    Regardless of the method, the underlying physics remains the same. Since the musical octave is
+                    logarithmic, moving up one semitone means multiplying the frequency by the <strong>12th root of
+                        2</strong> (approx. 1.05946).</p>
 
-                <section>
-                    <h2>The Pitch Shift Formula</h2>
-                    <p>To calculate the new frequency (<em>f_new</em>) from a base frequency (<em>f_base</em>) and a
-                        shift in semitones (<em>n</em>), we use the following formula:</p>
-                    <code>f_new = f_base × 2^(n / 12)</code>
-                    <p style="margin-top: 1rem;">If you are working with cents (<em>c</em>), the formula becomes:</p>
-                    <code>f_new = f_base × 2^(c / 1200)</code>
-                </section>
-
-                <section>
-                    <h2>Practical Production Applications</h2>
-                    <ul>
-                        <li><strong>Layering Samples:</strong> If you have a kick drum sample at 50 Hz and a sub-bass at
-                            55 Hz, they might clash. Using this calculator, you can determine that shifting the kick up
-                            by 1.65 semitones would bring it perfectly in tune with the bass.</li>
-                        <li><strong>Avoiding Phasing:</strong> When doubling vocals, a slight pitch shift of +/- 5 to 10
-                            cents can create a natural chorus effect and prevent destructive phasing.</li>
-                        <li><strong>Sound Design:</strong> Extreme pitch shifts (e.g., +12 or -12 semitones) are used to
-                            create "glitch" textures or to fit cinematic sound effects into the key of a song.</li>
-                    </ul>
-                </section>
-
-                <div class="related-articles">
-                    <h3>Explore More Tools</h3>
-                    <ul>
-                        <li><a href="midi-note-to-frequency.html">MIDI to Hz Calculator</a></li>
-                        <li><a href="guitar-fretboard-frequency.html">Guitar Frequency Tool</a></li>
-                        <li><a href="piano-frequency-chart.html">88-Key Piano Table</a></li>
-                    </ul>
-                </div>
-            </article>
-
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h4>What are Cents?</h4>
-                    <p>A "Cent" is 1/100th of a semitone. It is the unit used for fine-tuning. Most humans cannot
-                        distinguish a pitch difference smaller than 5-10 cents.</p>
+                <h3>Conversion Formula</h3>
+                <p>To find the target frequency based on a shift in cents (where 100 cents = 1 semitone), use:</p>
+                <div class="info-card">
+                    <code>Target Frequency = Base Frequency × 2^(Cents / 1200)</code>
                 </div>
 
-                <div class="sidebar-card warning">
-                    <h4>Artifacting Note</h4>
-                    <p>Extreme pitch shifting (more than 1 octave) often introduces "artifacts" or metallic sounds
-                        unless you are using a high-quality "Polyphonic" or "Elastique" algorithm.</p>
-                </div>
-            </aside>
+                <h3>Common Usage Examples</h3>
+                <ul>
+                    <li><strong>Avoiding Phasing:</strong> When doubling a vocal track, try shifting one layer up 5
+                        cents and the other down 5 cents. This adds thickness without creating noticeable pitch issues.
+                    </li>
+                    <li><strong>Tuning 808s:</strong> If your 808 sample is slightly sharp, use the "Fine Tune" or
+                        "Cents" parameter in your sampler to bring it back into perfect tune with your track's root
+                        note.</li>
+                </ul>
+            </div>
         </div>
     </main>
-
-    <script>
-        const fBase = document.getElementById('freq-base');
-        const sSemi = document.getElementById('shift-semitones');
-        const sCents = document.getElementById('shift-cents');
-
-        const resFreq = document.getElementById('res-freq');
-        const resRatio = document.getElementById('res-ratio');
-        const resInterval = document.getElementById('res-interval');
-
-        function update() {
-            const base = parseFloat(fBase.value) || 0;
-            const semi = parseFloat(sSemi.value) || 0;
-            const cents = parseFloat(sCents.value) || 0;
-
-            const totalCents = (semi * 100) + cents;
-            const ratio = Math.pow(2, totalCents / 1200);
-            const targetFreq = base * ratio;
-
-            resFreq.innerText = targetFreq.toFixed(2);
-            resRatio.innerText = ratio.toFixed(4);
-            resInterval.innerText = (totalCents >= 0 ? "+" : "") + totalCents;
-        }
-
-        [fBase, sSemi, sCents].forEach(el => el.addEventListener('input', update));
-        update(); // Initial
-    </script>
 
     <footer>
         <div class="container">
@@ -291,19 +243,42 @@
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">Join our community of modern music
+                        producers and educators.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Pro Sound Tools.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const fBase = document.getElementById('freq-base');
+        const sSemi = document.getElementById('shift-semitones');
+        const sCents = document.getElementById('shift-cents');
+
+        const resFreq = document.getElementById('res-freq');
+        const resRatio = document.getElementById('res-ratio');
+        const resTotalCents = document.getElementById('res-total-cents');
+
+        function update() {
+            const base = parseFloat(fBase.value) || 0;
+            const semi = parseFloat(sSemi.value) || 0;
+            const cents = parseFloat(sCents.value) || 0;
+
+            const totalCents = (semi * 100) + cents;
+            const ratio = Math.pow(2, totalCents / 1200);
+            const targetFreq = base * ratio;
+
+            resFreq.innerText = targetFreq.toFixed(2);
+            resRatio.innerText = ratio.toFixed(4);
+            resTotalCents.innerText = (totalCents >= 0 ? "+" : "") + totalCents;
+        }
+
+        [fBase, sSemi, sCents].forEach(el => el.addEventListener('input', update));
+        update(); 
+    </script>
 </body>
 
 </html>

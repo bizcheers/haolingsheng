@@ -13,50 +13,49 @@
         content="guitar note frequency, guitar frequency tool, fretboard hz chart, standard tuning frequencies, guitar production tips, eq guitar notes">
     <link rel="canonical" href="https://www.haolingsheng.com/music-production/guitar-fretboard-frequency.html">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Guitar Fretboard Frequency Tool: Notes to Hz">
-    <meta property="og:description"
-        content="Interactive tool to find frequencies for every note on your guitar. Optimized for 2026 production workflows.">
-    <meta property="og:url" content="https://www.haolingsheng.com/music-production/guitar-fretboard-frequency.html">
-    <meta property="og:site_name" content="Hao Ling Sheng">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="article.css">
 
     <style>
-        .calculator-box {
+        .tool-container {
+            max-width: 650px;
+            margin: 0 auto;
             background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
             border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-            margin: 2rem 0;
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .input-row {
+        .tool-header h1 {
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-sm);
+        }
+
+        .calc-inputs {
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin-bottom: 2rem;
+            margin: 2.5rem 0;
             flex-wrap: wrap;
         }
 
         .input-group {
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 0.75rem;
+            text-align: left;
         }
 
         .input-group label {
+            font-size: 0.85rem;
             font-weight: 700;
-            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-secondary);
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
         }
 
         .input-group select,
@@ -64,42 +63,74 @@
             background: var(--bg-primary);
             border: 1px solid var(--border-subtle);
             border-radius: var(--radius-md);
-            padding: 0.75rem 1rem;
+            padding: 0.85rem 1.25rem;
             color: var(--text-primary);
             font-size: 1.25rem;
-            width: 120px;
-            text-align: center;
+            width: 160px;
             outline: none;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        .hz-display {
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-subtle);
+        .input-group select:focus,
+        .input-group input:focus {
+            border-color: var(--accent-green);
         }
 
-        .hz-display strong {
-            font-size: 3rem;
-            color: var(--accent-green);
+        .result-panel {
+            background: var(--bg-primary);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            border: 1px solid var(--border-subtle);
+            margin-top: 1rem;
+        }
+
+        .result-note {
             display: block;
-            margin: 0.5rem 0;
-        }
-
-        .note-info {
             font-size: 1.25rem;
             color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .result-hz {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            font-family: 'Monaco', monospace;
+            line-height: 1;
+        }
+
+        .result-unit {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .guide-section {
+            max-width: 650px;
+            margin: 4rem auto;
+            text-align: left;
+        }
+
+        .guide-section h2 {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1rem;
         }
 
         @media (max-width: 600px) {
-            .input-row {
+            .calc-inputs {
                 gap: 1rem;
             }
 
             .input-group select,
             .input-group input {
-                width: 100px;
-                font-size: 1.1rem;
+                width: 140px;
             }
         }
     </style>
@@ -127,164 +158,70 @@
         </div>
     </header>
 
-    <main class="article-page">
+    <main style="padding: 4rem 0;">
         <div class="container">
-            <article class="article-content">
-                <div class="breadcrumb">
-                    <a href="../index.html">Home</a> /
-                    <a href="./">Music Production</a> /
-                    <span>Guitar Fretboard Tool</span>
-                </div>
-
-                <header class="article-header">
-                    <span class="category-tag">🎸 Free Music Tool</span>
+            <!-- Tool Wrapper -->
+            <div class="tool-container">
+                <div class="tool-header">
+                    <span
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.1em;">GUITAR
+                        TOOL</span>
                     <h1>Guitar Note Frequency Calculator</h1>
-                    <p class="lead">Instantly find the exact frequency (Hz) for any note on your guitar fretboard.</p>
-                    <div class="article-meta">
-                        <span class="read-time">⏱️ 6 min read</span>
-                        <span>📅 January 2026</span>
-                    </div>
-                </header>
+                    <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                        Calculate the exact Hz for any fret and string combination in standard tuning.
+                    </p>
+                </div>
 
-                <div class="calculator-box">
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label for="string-select">Select String</label>
-                            <select id="string-select">
-                                <option value="E4">1st - E (High)</option>
-                                <option value="B3">2nd - B</option>
-                                <option value="G3">3rd - G</option>
-                                <option value="D3">4th - D</option>
-                                <option value="A2">5th - A</option>
-                                <option value="E2" selected>6th - E (Low)</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="fret-input">Fret Number</label>
-                            <input type="number" id="fret-input" value="0" min="0" max="24">
-                        </div>
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="string-select">Select String</label>
+                        <select id="string-select">
+                            <option value="E4">1st - E (High)</option>
+                            <option value="B3">2nd - B</option>
+                            <option value="G3">3rd - G</option>
+                            <option value="D3">4th - D</option>
+                            <option value="A2">5th - A</option>
+                            <option value="E2" selected>6th - E (Low)</option>
+                        </select>
                     </div>
-                    <div class="hz-display">
-                        <span class="note-info" id="note-name">Note: E2</span>
-                        <strong id="hz-output">82.41</strong>
-                        <span class="note-info">Hertz (Hz)</span>
+                    <div class="input-group">
+                        <label for="fret-input">Fret Number</label>
+                        <input type="number" id="fret-input" value="0" min="0" max="24">
                     </div>
                 </div>
 
-                <section>
-                    <h2>The Physics of the Fretboard</h2>
-                    <p>Understanding <strong>guitar note frequency</strong> is a vital skill for both players and
-                        producers. In standard tuning (E A D G B E), each open string is tuned to a specific reference
-                        pitch. As you press down on a fret, you effectively shorten the vibrating length of the string,
-                        which increases the frequency of the vibration.</p>
-                    <p>Because the guitar uses <strong>equal temperament</strong>, moving up one fret multiplies the
-                        current frequency by approximately 1.05946 (the 12th root of 2). By the time you reach the 12th
-                        fret, the frequency has doubled, resulting in an octave jump.</p>
-                </section>
-
-                <section>
-                    <h2>Pro Tips for Mixing Guitars</h2>
-                    <p>Why do you need to know these numbers? In modern <a href="index.html">music production</a>,
-                        knowing your frequencies allows for surgical EQing:</p>
-                    <ul>
-                        <li><strong>The Low E Bloom:</strong> The low E string (6th string, open) vibrates at
-                            <strong>82.41 Hz</strong>. If your guitar track is booming or clashing with the kick drum,
-                            try a high-pass filter just below this frequency.</li>
-                        <li><strong>The "Body" Region:</strong> Most acoustic guitars have their "meat" in the 200 Hz to
-                            400 Hz range. Referring to our <a href="piano-frequency-chart.html">Piano Frequency
-                                Chart</a>, you'll see this corresponds to the middle section of the fretboard.</li>
-                        <li><strong>High-End Sparkle:</strong> Frequencies above 3 kHz (found on the highest frets of
-                            the E1 string) are responsible for pick noise and clarity.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Standard Tuning Reference</h2>
-                    <p>For quick reference, here are the fundamental frequencies of the open strings in standard A440
-                        tuning:</p>
-                    <ul>
-                        <li><strong>E2 (6th String):</strong> 82.41 Hz</li>
-                        <li><strong>A2 (5th String):</strong> 110.00 Hz</li>
-                        <li><strong>D3 (4th String):</strong> 146.83 Hz</li>
-                        <li><strong>G3 (3rd String):</strong> 196.00 Hz</li>
-                        <li><strong>B3 (2nd String):</strong> 246.94 Hz</li>
-                        <li><strong>E4 (1st String):</strong> 329.63 Hz</li>
-                    </ul>
-                </section>
-
-                <div class="related-articles">
-                    <h3>Related Tools</h3>
-                    <ul>
-                        <li><a href="midi-note-to-frequency.html">MIDI to Hz Calculator</a></li>
-                        <li><a href="piano-frequency-chart.html">Piano Key to Hz Chart</a></li>
-                        <li><a href="../geci/chord-progressions-guitar.html">Guitar Chord Progressions</a></li>
-                    </ul>
+                <div class="result-panel">
+                    <span class="result-note" id="note-name">Note: E2</span>
+                    <span class="result-hz" id="hz-output">82.41</span>
+                    <span class="result-unit">Hertz (Hz)</span>
                 </div>
-            </article>
+            </div>
 
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h4>Why A=440?</h4>
-                    <p>This tool uses the international standard pitch of 440 Hz for the note A4. If you tune to a
-                        different reference, all frequencies will shift proportionally.</p>
-                </div>
+            <!-- Guide Section -->
+            <div class="guide-section article-content">
+                <h2>The Physics of the Guitar Fretboard</h2>
+                <p>For modern guitarists and producers, matching your EQ to the physical notes of the instrument is a
+                    game-changer. Standard guitar tuning (E-A-D-G-B-E) covers a wide frequency range, from the deep
+                    <strong>82 Hz</strong> of the low E string to the piercing clarity of the 24th fret on the high E
+                    string.</p>
 
-                <div class="sidebar-card tip">
-                    <h4>The 12th Fret Rule</h4>
-                    <p>The 12th fret is exactly half the length of the string. This creates a frequency exactly double
-                        the open string pitch!</p>
-                </div>
-            </aside>
+                <h3>Essential Frequencies for Mixing</h3>
+                <ul>
+                    <li><strong>82 Hz (Low E):</strong> The fundamental root of the guitar. Be careful not to let this
+                        clash with your kick drum or bass synth.</li>
+                    <li><strong>196 Hz (Open G):</strong> Often where the "body" of the acoustic guitar resonates. A
+                        light dip here can reduce muddiness.</li>
+                    <li><strong>1.3 kHz (12th Fret High E):</strong> This area provides the definition for solos and
+                        lead lines.</li>
+                </ul>
+
+                <h3>The Octave Rule</h3>
+                <p>Remember that the 12th fret is exactly half the length of the open string, which means the frequency
+                    is exactly double the open note. This doubling is how an <strong>octave</strong> is physically
+                    defined in music.</p>
+            </div>
         </div>
     </main>
-
-    <script>
-        const stringSelect = document.getElementById('string-select');
-        const fretInput = document.getElementById('fret-input');
-        const hzOutput = document.getElementById('hz-output');
-        const noteNameDisplay = document.getElementById('note-name');
-
-        const stringBases = {
-            "E2": 82.4069,
-            "A2": 110.000,
-            "D3": 146.832,
-            "G3": 195.998,
-            "B3": 246.942,
-            "E4": 329.628
-        };
-
-        const noteNames = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
-        const stringStartMIDI = {
-            "E2": 40,
-            "A2": 45,
-            "D3": 50,
-            "G3": 55,
-            "B3": 59,
-            "E4": 64
-        };
-
-        function calculate() {
-            const baseType = stringSelect.value;
-            const fret = parseInt(fretInput.value) || 0;
-            const baseMIDI = stringStartMIDI[baseType];
-
-            const targetMIDI = baseMIDI + fret;
-
-            // Formula: f = 2^((d-69)/12) * 440
-            const frequency = Math.pow(2, (targetMIDI - 69) / 12) * 440;
-            hzOutput.innerText = frequency.toFixed(2);
-
-            // Calculate Display Note Name
-            const octave = Math.floor(targetMIDI / 12) - 1;
-            const noteIndex = Math.floor(targetMIDI % 12);
-            noteNameDisplay.innerText = "Note: " + noteNames[noteIndex] + octave;
-        }
-
-        stringSelect.addEventListener('change', calculate);
-        fretInput.addEventListener('input', calculate);
-        // Initial call
-        calculate();
-    </script>
 
     <footer>
         <div class="container">
@@ -308,20 +245,51 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
+                    <h4>About Hao Ling Sheng</h4>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">Dedicated to providing free,
+                        high-quality technical resources for the modern independent musician.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Free Guitar Tools.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const stringSelect = document.getElementById('string-select');
+        const fretInput = document.getElementById('fret-input');
+        const hzOutput = document.getElementById('hz-output');
+        const noteNameDisplay = document.getElementById('note-name');
+
+        const noteNames = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+        const stringStartMIDI = {
+            "E2": 40,
+            "A2": 45,
+            "D3": 50,
+            "G3": 55,
+            "B3": 59,
+            "E4": 64
+        };
+
+        function calculate() {
+            const baseType = stringSelect.value;
+            const fret = parseInt(fretInput.value) || 0;
+            const baseMIDI = stringStartMIDI[baseType];
+            const targetMIDI = baseMIDI + fret;
+
+            const frequency = Math.pow(2, (targetMIDI - 69) / 12) * 440;
+            hzOutput.innerText = frequency.toFixed(2);
+
+            const octave = Math.floor(targetMIDI / 12) - 1;
+            const noteIndex = Math.floor(targetMIDI % 12);
+            noteNameDisplay.innerText = "Note: " + noteNames[noteIndex] + octave;
+        }
+
+        stringSelect.addEventListener('change', calculate);
+        fretInput.addEventListener('input', calculate);
+        calculate();
+    </script>
 </body>
 
 </html>

@@ -6,91 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Piano Frequency Chart: 88 Keys to Hz (A4 = 440 Hz) | Hao Ling Sheng</title>
+    <title>Piano Frequency Chart: 88 Keys to Hz Reference | Hao Ling Sheng</title>
     <meta name="description"
-        content="Complete 88-key piano frequency chart. Convert every piano key to Hz, including MIDI note numbers. Learn about equal temperament and tuning physics.">
+        content="Complete piano frequency chart for all 88 keys. Perfect for mixing, EQing, and sound design. Includes MIDI note numbers and exact Hertz (Hz) values.">
     <meta name="keywords"
-        content="piano frequency chart, piano key to hz, midi to hz, a440 tuning, musical frequencies, piano acoustics, 88 key Hz table">
+        content="piano frequency chart, 88 key hz table, middle c frequency, piano note frequencies, audio engineering reference, eq piano notes">
     <link rel="canonical" href="https://www.haolingsheng.com/music-production/piano-frequency-chart.html">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="The Ultimate Piano Frequency Chart (88 Keys)">
-    <meta property="og:description"
-        content="Instant reference for every piano key's frequency in Hertz. Essential for mixing and sound design.">
-    <meta property="og:url" content="https://www.haolingsheng.com/music-production/piano-frequency-chart.html">
-    <meta property="og:site_name" content="Hao Ling Sheng">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="article.css">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Piano Frequency Chart: 88 Keys to Hz (A4 = 440 Hz)",
-      "description": "A comprehensive guide and reference table for piano key frequencies, MIDI notes, and tuning science.",
-      "author": {
-        "@type": "Organization",
-        "name": "Hao Ling Sheng"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Hao Ling Sheng",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.haolingsheng.com/logo.svg"
-        }
-      },
-      "datePublished": "2026-01-25",
-      "dateModified": "2026-01-25",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.haolingsheng.com/music-production/piano-frequency-chart.html"
-      }
-    }
-    </script>
 
     <style>
-        .hz-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            font-size: 0.95rem;
-        }
-
-        .hz-table th,
-        .hz-table td {
+        .tool-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
             border: 1px solid var(--border-subtle);
-            padding: 0.75rem;
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
             text-align: center;
         }
 
-        .hz-table th {
-            background: var(--bg-secondary);
+        .tool-header h1 {
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-sm);
+        }
+
+        .table-wrapper {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            background: var(--bg-primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-default);
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .hz-val {
+            font-family: 'Monaco', monospace;
+            color: var(--accent-green);
             font-weight: 700;
         }
 
-        .hz-table tr:nth-child(even) {
-            background: rgba(255, 255, 255, 0.02);
+        .highlight-row {
+            background: rgba(0, 255, 102, 0.03);
         }
 
-        .hz-table .note-black {
-            background: rgba(0, 0, 0, 0.2);
-            color: var(--text-tertiary);
+        .guide-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            text-align: left;
         }
 
-        @media (max-width: 600px) {
-            .hz-table {
-                font-size: 0.8rem;
-            }
+        .guide-section h2 {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1rem;
+        }
 
-            .hz-table th,
-            .hz-table td {
-                padding: 0.4rem;
-            }
+        /* Custom Scrollbar */
+        .table-wrapper::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .table-wrapper::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: var(--border-default);
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -117,647 +129,61 @@
         </div>
     </header>
 
-    <main class="article-page">
+    <main style="padding: 4rem 0;">
         <div class="container">
-            <article class="article-content">
-                <div class="breadcrumb">
-                    <a href="../index.html">Home</a> /
-                    <a href="./">Music Production</a> /
-                    <span>Piano Frequency Chart</span>
+            <!-- Tool Wrapper -->
+            <div class="tool-container">
+                <div class="tool-header">
+                    <span
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.1em;">REFERENCE
+                        TOOL</span>
+                    <h1>Piano Frequency Chart (88 Keys)</h1>
+                    <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                        A complete professional reference table for every key on a standard piano, from A0 to C8.
+                    </p>
                 </div>
 
-                <header class="article-header">
-                    <span class="category-tag">🎹 Reference Tool</span>
-                    <h1>Piano Key to Hz Frequency Chart</h1>
-                    <p class="lead">A complete technical reference for all 88 piano keys, MIDI notes, and their exact
-                        frequencies in Hertz (Hz).</p>
-                    <div class="article-meta">
-                        <span class="read-time">⏱️ 8 min read</span>
-                        <span>📅 January 2026</span>
-                    </div>
-                </header>
-
-                <section>
-                    <h2>Understanding Piano Frequencies</h2>
-                    <p>In modern music, we use a system called <strong>Twelve-Tone Equal Temperament (12-TET)</strong>.
-                        In this system, every octave is divided into twelve equal parts (semitones). Because human
-                        hearing is logarithmic, this "equal" division is actually a geometric progression. Every
-                        semitone is separated by a factor of the twelfth root of two (approximately 1.05946).</p>
-                    <p>The standard reference point for tuning is <strong>A4 = 440 Hz</strong> (often called "Stuttgart
-                        Pitch" or "Concert Pitch"). Using this anchor, we can calculate the frequency of every other key
-                        on the keyboard using the formula: <br><code>f = 440 × 2^((n - 49) / 12)</code><br> where
-                        <em>n</em> is the key number (1 to 88).</p>
-                </section>
-
-                <section>
-                    <h2>The 88-Key Frequency Table</h2>
-                    <p>Below is the definitive list of every key on a standard grand piano. This table is essential for
-                        <strong>EQ carving</strong>, resonant frequency removal, and sound design.</p>
-
-                    <table class="hz-table">
+                <div class="table-wrapper">
+                    <table>
                         <thead>
                             <tr>
                                 <th>Key #</th>
                                 <th>Note Name</th>
-                                <th>MIDI #</th>
+                                <th>MIDI</th>
                                 <th>Frequency (Hz)</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>88</td>
-                                <td>C8</td>
-                                <td>108</td>
-                                <td>4186.01</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">87</td>
-                                <td class="note-black">B7</td>
-                                <td class="note-black">107</td>
-                                <td class="note-black">3951.07</td>
-                            </tr>
-                            <tr>
-                                <td>86</td>
-                                <td>A#7/Bb7</td>
-                                <td>106</td>
-                                <td>3729.31</td>
-                            </tr>
-                            <tr>
-                                <td>85</td>
-                                <td>A7</td>
-                                <td>105</td>
-                                <td>3520.00</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">84</td>
-                                <td class="note-black">G#7/Ab7</td>
-                                <td class="note-black">104</td>
-                                <td class="note-black">3322.44</td>
-                            </tr>
-                            <tr>
-                                <td>83</td>
-                                <td>G7</td>
-                                <td>103</td>
-                                <td>3135.96</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">82</td>
-                                <td class="note-black">F#7/Gb7</td>
-                                <td class="note-black">102</td>
-                                <td class="note-black">2959.96</td>
-                            </tr>
-                            <tr>
-                                <td>81</td>
-                                <td>F7</td>
-                                <td>101</td>
-                                <td>2793.83</td>
-                            </tr>
-                            <tr>
-                                <td>80</td>
-                                <td>E7</td>
-                                <td>100</td>
-                                <td>2637.02</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">79</td>
-                                <td class="note-black">D#7/Eb7</td>
-                                <td class="note-black">99</td>
-                                <td class="note-black">2489.02</td>
-                            </tr>
-                            <tr>
-                                <td>78</td>
-                                <td>D7</td>
-                                <td>98</td>
-                                <td>2349.32</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">77</td>
-                                <td class="note-black">C#7/Db7</td>
-                                <td class="note-black">97</td>
-                                <td class="note-black">2217.46</td>
-                            </tr>
-                            <tr>
-                                <td>76</td>
-                                <td>C7</td>
-                                <td>96</td>
-                                <td>2093.00</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">75</td>
-                                <td class="note-black">B6</td>
-                                <td class="note-black">95</td>
-                                <td class="note-black">1975.53</td>
-                            </tr>
-                            <tr>
-                                <td>74</td>
-                                <td>A#6/Bb6</td>
-                                <td>94</td>
-                                <td>1864.66</td>
-                            </tr>
-                            <tr>
-                                <td>73</td>
-                                <td>A6</td>
-                                <td>93</td>
-                                <td>1760.00</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">72</td>
-                                <td class="note-black">G#6/Ab6</td>
-                                <td class="note-black">92</td>
-                                <td class="note-black">1661.22</td>
-                            </tr>
-                            <tr>
-                                <td>71</td>
-                                <td>G6</td>
-                                <td>91</td>
-                                <td>1567.98</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">70</td>
-                                <td class="note-black">F#6/Gb6</td>
-                                <td class="note-black">90</td>
-                                <td class="note-black">1479.98</td>
-                            </tr>
-                            <tr>
-                                <td>69</td>
-                                <td>F6</td>
-                                <td>89</td>
-                                <td>1396.91</td>
-                            </tr>
-                            <tr>
-                                <td>68</td>
-                                <td>E6</td>
-                                <td>88</td>
-                                <td>1318.51</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">67</td>
-                                <td class="note-black">D#6/Eb6</td>
-                                <td class="note-black">87</td>
-                                <td class="note-black">1244.51</td>
-                            </tr>
-                            <tr>
-                                <td>66</td>
-                                <td>D6</td>
-                                <td>86</td>
-                                <td>1174.66</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">65</td>
-                                <td class="note-black">C#6/Db6</td>
-                                <td class="note-black">85</td>
-                                <td class="note-black">1108.73</td>
-                            </tr>
-                            <tr>
-                                <td>64</td>
-                                <td>C6</td>
-                                <td>84</td>
-                                <td>1046.50</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">63</td>
-                                <td class="note-black">B5</td>
-                                <td class="note-black">83</td>
-                                <td class="note-black">987.767</td>
-                            </tr>
-                            <tr>
-                                <td>62</td>
-                                <td>A#5/Bb5</td>
-                                <td>82</td>
-                                <td>932.328</td>
-                            </tr>
-                            <tr>
-                                <td>61</td>
-                                <td>A5</td>
-                                <td>81</td>
-                                <td>880.000</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">60</td>
-                                <td class="note-black">G#5/Ab5</td>
-                                <td class="note-black">80</td>
-                                <td class="note-black">830.609</td>
-                            </tr>
-                            <tr>
-                                <td>59</td>
-                                <td>G5</td>
-                                <td>79</td>
-                                <td>783.991</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">58</td>
-                                <td class="note-black">F#5/Gb5</td>
-                                <td class="note-black">78</td>
-                                <td class="note-black">739.989</td>
-                            </tr>
-                            <tr>
-                                <td>57</td>
-                                <td>F5</td>
-                                <td>77</td>
-                                <td>698.456</td>
-                            </tr>
-                            <tr>
-                                <td>56</td>
-                                <td>E5</td>
-                                <td>76</td>
-                                <td>659.255</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">55</td>
-                                <td class="note-black">D#5/Eb5</td>
-                                <td class="note-black">75</td>
-                                <td class="note-black">622.254</td>
-                            </tr>
-                            <tr>
-                                <td>54</td>
-                                <td>D5</td>
-                                <td>74</td>
-                                <td>587.330</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">53</td>
-                                <td class="note-black">C#5/Db5</td>
-                                <td class="note-black">73</td>
-                                <td class="note-black">554.365</td>
-                            </tr>
-                            <tr>
-                                <td>52</td>
-                                <td>C5</td>
-                                <td>72</td>
-                                <td>523.251</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">51</td>
-                                <td class="note-black">B4</td>
-                                <td class="note-black">71</td>
-                                <td class="note-black">493.883</td>
-                            </tr>
-                            <tr>
-                                <td>50</td>
-                                <td>A#4/Bb4</td>
-                                <td>70</td>
-                                <td>466.164</td>
-                            </tr>
-                            <tr>
-                                <td>49</td>
-                                <td>A4 (Concert)</td>
-                                <td>69</td>
-                                <td>440.000</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">48</td>
-                                <td class="note-black">G#4/Ab4</td>
-                                <td class="note-black">68</td>
-                                <td class="note-black">415.305</td>
-                            </tr>
-                            <tr>
-                                <td>47</td>
-                                <td>G4</td>
-                                <td>67</td>
-                                <td>391.995</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">46</td>
-                                <td class="note-black">F#4/Gb4</td>
-                                <td class="note-black">66</td>
-                                <td class="note-black">369.994</td>
-                            </tr>
-                            <tr>
-                                <td>45</td>
-                                <td>F4</td>
-                                <td>65</td>
-                                <td>349.228</td>
-                            </tr>
-                            <tr>
-                                <td>44</td>
-                                <td>E4</td>
-                                <td>64</td>
-                                <td>329.628</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">43</td>
-                                <td class="note-black">D#4/Eb4</td>
-                                <td class="note-black">63</td>
-                                <td class="note-black">311.127</td>
-                            </tr>
-                            <tr>
-                                <td>42</td>
-                                <td>D4</td>
-                                <td>62</td>
-                                <td>293.665</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">41</td>
-                                <td class="note-black">C#4/Db4</td>
-                                <td class="note-black">61</td>
-                                <td class="note-black">277.183</td>
-                            </tr>
-                            <tr>
-                                <td>40</td>
-                                <td>Middle C4</td>
-                                <td>60</td>
-                                <td>261.626</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">39</td>
-                                <td class="note-black">B3</td>
-                                <td class="note-black">59</td>
-                                <td class="note-black">246.942</td>
-                            </tr>
-                            <tr>
-                                <td>38</td>
-                                <td>A#3/Bb3</td>
-                                <td>58</td>
-                                <td>233.082</td>
-                            </tr>
-                            <tr>
-                                <td>37</td>
-                                <td>A3</td>
-                                <td>57</td>
-                                <td>220.000</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">36</td>
-                                <td class="note-black">G#3/Ab3</td>
-                                <td class="note-black">56</td>
-                                <td class="note-black">207.652</td>
-                            </tr>
-                            <tr>
-                                <td>35</td>
-                                <td>G3</td>
-                                <td>55</td>
-                                <td>195.998</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">34</td>
-                                <td class="note-black">F#3/Gb3</td>
-                                <td class="note-black">54</td>
-                                <td class="note-black">184.997</td>
-                            </tr>
-                            <tr>
-                                <td>33</td>
-                                <td>F3</td>
-                                <td>53</td>
-                                <td>174.614</td>
-                            </tr>
-                            <tr>
-                                <td>32</td>
-                                <td>E3</td>
-                                <td>52</td>
-                                <td>164.814</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">31</td>
-                                <td class="note-black">D#3/Eb3</td>
-                                <td class="note-black">51</td>
-                                <td class="note-black">155.563</td>
-                            </tr>
-                            <tr>
-                                <td>30</td>
-                                <td>D3</td>
-                                <td>50</td>
-                                <td>146.832</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">29</td>
-                                <td class="note-black">C#3/Db3</td>
-                                <td class="note-black">49</td>
-                                <td class="note-black">138.591</td>
-                            </tr>
-                            <tr>
-                                <td>28</td>
-                                <td>C3</td>
-                                <td>48</td>
-                                <td>130.813</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">27</td>
-                                <td class="note-black">B2</td>
-                                <td class="note-black">47</td>
-                                <td class="note-black">123.471</td>
-                            </tr>
-                            <tr>
-                                <td>26</td>
-                                <td>A#2/Bb2</td>
-                                <td>46</td>
-                                <td>116.541</td>
-                            </tr>
-                            <tr>
-                                <td>25</td>
-                                <td>A2</td>
-                                <td>45</td>
-                                <td>110.000</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">24</td>
-                                <td class="note-black">G#2/Ab2</td>
-                                <td class="note-black">44</td>
-                                <td class="note-black">103.826</td>
-                            </tr>
-                            <tr>
-                                <td>23</td>
-                                <td>G2</td>
-                                <td>43</td>
-                                <td>97.9989</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">22</td>
-                                <td class="note-black">F#2/Gb2</td>
-                                <td class="note-black">42</td>
-                                <td class="note-black">92.4986</td>
-                            </tr>
-                            <tr>
-                                <td>21</td>
-                                <td>F2</td>
-                                <td>41</td>
-                                <td>87.3071</td>
-                            </tr>
-                            <tr>
-                                <td>20</td>
-                                <td>E2</td>
-                                <td>40</td>
-                                <td>82.4069</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">19</td>
-                                <td class="note-black">D#2/Eb2</td>
-                                <td class="note-black">39</td>
-                                <td class="note-black">77.7817</td>
-                            </tr>
-                            <tr>
-                                <td>18</td>
-                                <td>D2</td>
-                                <td>38</td>
-                                <td>73.4162</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">17</td>
-                                <td class="note-black">C#2/Db2</td>
-                                <td class="note-black">37</td>
-                                <td class="note-black">69.2957</td>
-                            </tr>
-                            <tr>
-                                <td>16</td>
-                                <td>C2</td>
-                                <td>36</td>
-                                <td>65.4064</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">15</td>
-                                <td class="note-black">B1</td>
-                                <td class="note-black">35</td>
-                                <td class="note-black">61.7354</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>A#1/Bb1</td>
-                                <td>34</td>
-                                <td>58.2705</td>
-                            </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>A1</td>
-                                <td>33</td>
-                                <td>55.0000</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">12</td>
-                                <td class="note-black">G#1/Ab1</td>
-                                <td class="note-black">32</td>
-                                <td class="note-black">51.9131</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>G1</td>
-                                <td>31</td>
-                                <td>48.9994</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">10</td>
-                                <td class="note-black">F#1/Gb1</td>
-                                <td class="note-black">30</td>
-                                <td class="note-black">46.2493</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>F1</td>
-                                <td>29</td>
-                                <td>43.6535</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>E1</td>
-                                <td>28</td>
-                                <td>41.2034</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">7</td>
-                                <td class="note-black">D#1/Eb1</td>
-                                <td class="note-black">27</td>
-                                <td class="note-black">38.8909</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>D1</td>
-                                <td>26</td>
-                                <td>36.7081</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">5</td>
-                                <td class="note-black">C#1/Db1</td>
-                                <td class="note-black">25</td>
-                                <td class="note-black">34.6478</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>C1</td>
-                                <td>24</td>
-                                <td>32.7032</td>
-                            </tr>
-                            <tr>
-                                <td class="note-black">3</td>
-                                <td class="note-black">B0</td>
-                                <td class="note-black">23</td>
-                                <td class="note-black">30.8677</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>A#0/Bb0</td>
-                                <td>22</td>
-                                <td>29.1352</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>A0</td>
-                                <td>21</td>
-                                <td>27.5000</td>
-                            </tr>
+                        <tbody id="freq-body">
+                            <!-- JS Generated -->
                         </tbody>
                     </table>
-                </section>
-
-                <section>
-                    <h2>How to Use This Chart in Music Production</h2>
-                    <p>Understanding which frequencies correspond to which notes is a superpower for mix engineers. Here
-                        are three practical ways to use this piano frequency chart in your workflow:</p>
-
-                    <h3>1. EQ Carving for Clarity</h3>
-                    <p>If you have a muddy mix, find the fundamental frequency of your bass or melody part. For example,
-                        if your bassline is centered around <strong>G2</strong>, you know the fundamental energy is at
-                        roughly <strong>98 Hz</strong>. By clearing space around this frequency on other tracks (like
-                        the kick drum or piano low-end), you allow the bass to breathe without excessive volume.</p>
-
-                    <h3>2. Removing Harsh Resonances</h3>
-                    <p>Often, a recording will have a "whistling" or ringing sound at a specific note. By matching the
-                        perceived pitch of the ring to our chart, you can pinpoint the exact frequency to apply a narrow
-                        Q "notch" filter. If a vocal rings on a high <strong>C6</strong>, look at <strong>1046
-                            Hz</strong> first.</p>
-
-                    <h3>3. Sub-Bass Management</h3>
-                    <p>Sub-bass is physically difficult to hear but uses a massive amount of headroom. Many "heavy"
-                        electronic tracks peak between <strong>F0 (21 Hz)</strong> and <strong>F1 (43 Hz)</strong>. If
-                        you are producing for clubs, you need to ensure your sub-bass notes stay within the range where
-                        human subwoofers can actually reproduce the sound, typically staying above <strong>30
-                            Hz</strong>.</p>
-                </section>
-
-                <section>
-                    <h2>Physics: Overtones and Harmonics</h2>
-                    <p>While the table above lists the "Fundamental Frequency," a real piano key produces more than one
-                        single sine wave. When you strike a key, you are hearing a complex waveform made of the
-                        fundamental plus a series of <strong>harmonics</strong> (overtones). These overtones occur at
-                        integer multiples of the fundamental (2x, 3x, 4x, and so on).</p>
-                    <p>This is why a piano sounds different from a synthesizer playing the same note. The "timbre" of
-                        the instrument is defined by the relative strength of these higher frequencies. When EQing, you
-                        aren't just adjusting the note itself, you are adjusting the character of the overtones.</p>
-                </section>
-
-                <div class="related-articles">
-                    <h3>Explore More Tools</h3>
-                    <ul>
-                        <li><a href="note-to-hz-frequency-chart.html">Frequencies vs. Octaves Guide</a></li>
-                        <li><a href="eq-basics.html">EQ Basics for Beginners</a></li>
-                        <li><a href="../note-to-hz.html">Interactive Note to Hz Calculator</a></li>
-                    </ul>
                 </div>
-            </article>
+            </div>
 
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h4>Quick Formula</h4>
-                    <p>Calculating Hz manually? Use this:</p>
-                    <code>f = 440 × 2^((n - 49) / 12)</code>
-                    <p style="font-size: 0.8rem; margin-top: 10px;">Where <em>n</em> is the key number on an 88-key
-                        piano.</p>
-                </div>
+            <!-- Guide Section -->
+            <div class="guide-section article-content">
+                <h2>Using the Piano Frequency Chart in Production</h2>
+                <p>The piano is often called the "King of Instruments" because its range covers almost the entire
+                    audible spectrum of human hearing. From the rumbling <strong>27.5 Hz</strong> of the lowest A, to
+                    the crystalline <strong>4,186 Hz</strong> of the highest C, the piano provides a perfect blueprint
+                    for frequency management in your mix.</p>
 
-                <div class="sidebar-card tip">
-                    <h4>Pro Tip: A432 vs A440</h4>
-                    <p>Some listeners prefer <strong>432 Hz</strong> tuning, claiming it sounds more "natural."
-                        Mathematically, 440 Hz is the standard for international consistency, but modern DAWs allow you
-                        to shift the master tuning easily.</p>
-                </div>
-            </aside>
+                <h3>EQ Strategies for Piano</h3>
+                <ul>
+                    <li><strong>Clearing the Mud:</strong> Most of the piano's "weight" lives between 100 Hz and 250 Hz.
+                        If your mix feels cluttered, try a gentle wide-Q dip in this region to let the vocal breathe.
+                    </li>
+                    <li><strong>Adding Presence:</strong> Frequencies between 2 kHz and 5 kHz handle the "attack" of the
+                        hammer hitting the string. Boosting here adds clarity and sparkle to a lead piano part.</li>
+                    <li><strong>Managing Subs:</strong> Unless the piano is the solo instrument, you should almost
+                        always high-pass everything below 50 Hz to leave room for the kick drum and bass.</li>
+                </ul>
+
+                <h3>Mathematical Tuning</h3>
+                <p>This chart is based on the 12-Tone Equal Temperament (12-TET) system and the <strong>A4 = 440
+                        Hz</strong> concert pitch standard. In this system, every octave increase represents an exact
+                    doubling of frequency.</p>
+            </div>
         </div>
     </main>
 
@@ -784,19 +210,43 @@
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">Join thousands of musicians mastering
+                        the technical side of creative expression.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Professional Music Reference.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const tableBody = document.getElementById('freq-body');
+        const notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+        function generateTable() {
+            let html = '';
+            for (let i = 1; i <= 88; i++) {
+                const midi = i + 20;
+                const freq = Math.pow(2, (midi - 69) / 12) * 440;
+
+                const octave = Math.floor(midi / 12) - 1;
+                const noteName = notes[midi % 12] + octave;
+
+                const isHighlight = (noteName === "C4" || noteName === "A4") ? 'class="highlight-row"' : '';
+
+                html += `<tr ${isHighlight}>
+                    <td>${i}</td>
+                    <td>${noteName}</td>
+                    <td>${midi}</td>
+                    <td class="hz-val">${freq.toFixed(2)}</td>
+                </tr>`;
+            }
+            tableBody.innerHTML = html;
+        }
+
+        generateTable();
+    </script>
 </body>
 
 </html>

@@ -58,7 +58,7 @@
 .article-content h2 {
     font-size: 1.875rem;
     color: var(--text-primary);
-    margin: var(--space-2xl) 0 var(--space-lg);
+    margin: var(--space-3xl) 0 1.5rem;
     padding-bottom: var(--space-sm);
     border-bottom: 2px solid var(--border-subtle);
     position: relative;
@@ -77,13 +77,13 @@
 .article-content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin: var(--space-xl) 0 var(--space-md);
+    margin: var(--space-2xl) 0 1.25rem;
 }
 
 .article-content p {
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: var(--space-lg);
+    line-height: 1.85;
+    margin-bottom: 2rem;
     font-size: 1.0625rem;
 }
 
@@ -95,8 +95,8 @@
 }
 
 .article-content li {
-    margin-bottom: var(--space-md);
-    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
 }
 
 .article-content li::marker {

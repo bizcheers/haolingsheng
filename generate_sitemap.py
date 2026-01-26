@@ -29,9 +29,8 @@ def generate():
         p = Path(f)
         if p.exists():
             mod_time = datetime.fromtimestamp(p.stat().st_mtime).strftime('%Y-%m-%d')
-            # For root index.html, we usually want the bare domain, but sitemap requires full URL
-            # We will use index.html in the path for consistency, or standard convention
-            loc = f 
+            # Resolve index.html to directory root for cleaner SEO URLs
+            loc = f.replace('index.html', '')
             priority = "1.0" if f == 'index.html' else "0.5"
             urls.append({'loc': loc, 'lastmod': mod_time, 'priority': priority})
 
@@ -45,6 +44,10 @@ def generate():
                 continue
             
             rel_path = p.as_posix()
+            # Clean up index.html to directory root
+            if rel_path.endswith('index.html'):
+                rel_path = rel_path.replace('index.html', '')
+                
             mod_time = datetime.fromtimestamp(p.stat().st_mtime).strftime('%Y-%m-%d')
             priority = get_priority(p)
             

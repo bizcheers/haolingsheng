@@ -18,6 +18,7 @@ SHEET_MUSIC_TEMPLATE = """<!DOCTYPE html>
     <meta name="description" content="{meta_description}">
     <meta name="keywords" content="{keywords}">
     <title>{title} | Free Sheet Music - Hao Ling Sheng</title>
+    <link rel="canonical" href="https://www.haolingsheng.com/sheet-music/{instrument_slug}/{filename}">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../sheet-detail.css">
 </head>
@@ -210,8 +211,11 @@ def generate_sheet_music_pages(csv_file: str, output_dir: str):
             filepath = os.path.join(output_dir, filename)
             
             # Prepare template variables
+            instrument_slug = slugify(row['instrument'])
             template_vars = {
                 'title': row['piece_name'],
+                'filename': filename,
+                'instrument_slug': instrument_slug,
                 'meta_description': row.get('meta_description', f"Free sheet music for {row['piece_name']}. Download printable PDF score."),
                 'keywords': row.get('keywords', f"{row['piece_name']}, {row['instrument']}, sheet music"),
                 'full_title': row['full_title'],

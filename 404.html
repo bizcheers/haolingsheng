@@ -18,6 +18,7 @@
             font-weight: 900;
             background: linear-gradient(135deg, var(--text-tertiary), var(--bg-tertiary));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             line-height: 1;
             margin-bottom: var(--space-md);
@@ -148,8 +149,9 @@
 
                 <script>
                     // Simple logic to detect if user came from a legacy URL structure
-                    const path = window.location.pathname;
-                    if (path.includes('lingsheng') || path.includes('mp3') || path.includes('ring')) {
+                    const path = window.location.pathname.toLowerCase();
+                    const legacyPatterns = ['lingsheng', 'mp3', 'ring', '.php', '.asp', '.aspx', 'sitemap-'];
+                    if (legacyPatterns.some(pattern => path.includes(pattern))) {
                         const msg = document.getElementById('ringtone-message');
                         if (msg) {
                             msg.style.display = 'block';

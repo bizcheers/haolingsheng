@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>MIDI Note to Frequency Calculator (Hz) | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Convert MIDI note numbers to frequencies in Hertz (Hz) instantly. Learn the mathematical formula for MIDI to frequency conversion and explore MIDI standards.">
+    <meta name="keywords"
+        content="midi note to frequency, midi to hz calculator, convert midi to hertz, musical frequency formula, midi 60 frequency, pitch to hz">
+    <link rel="canonical" href="https://www.haolingsheng.com/music-production/midi-note-to-frequency.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Interactive MIDI Note to Frequency Tool">
+    <meta property="og:description"
+        content="Instantly convert MIDI notes to Hz and learn the logic behind digital music pitch.">
+    <meta property="og:url" content="https://www.haolingsheng.com/music-production/midi-note-to-frequency.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="article.css">
+
+    <style>
+        .calculator-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-group label {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .input-group input {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            width: 151px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--accent-green);
+        }
+
+        .result-display {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        .result-display strong {
+            color: var(--accent-green);
+            font-size: 2rem;
+        }
+
+        .tool-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .tool-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container">
+            <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="./">Music Production</a> /
+                    <span>MIDI to Frequency</span>
+                </div>
+
+                <header class="article-header">
+                    <span class="category-tag">🧮 Interactive Tool</span>
+                    <h1>MIDI Note to Frequency Calculator</h1>
+                    <p class="lead">A precise programmatic tool to convert MIDI note numbers to frequencies in Hertz
+                        (Hz) based on the A440 standard.</p>
+                    <div class="article-meta">
+                        <span class="read-time">⏱️ 10 min read</span>
+                        <span>📅 January 2026</span>
+                    </div>
+                </header>
+
+                <div class="calculator-box">
+                    <div class="input-group">
+                        <label for="midi-input">Enter MIDI Note Number (0 - 127)</label>
+                        <input type="number" id="midi-input" value="60" min="0" max="127">
+                    </div>
+                    <div class="result-display">
+                        Frequency: <br>
+                        <strong id="hz-output">261.63</strong> <strong>Hz</strong>
+                        <p id="note-name-display" style="margin-top: 10px;">Note: Middle C (C4)</p>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>The Science of Digital Pitch</h2>
+                    <p>In digital music production, pitch is often represented by <strong>MIDI Note Numbers</strong>.
+                        The MIDI (Musical Instrument Digital Interface) standard defines a range of 128 notes, where
+                        MIDI 0 is a very low C (-1) and MIDI 127 is a very high G (9).</p>
+                    <p>Unlike acoustic instruments which focus on physics and vibration, MIDI uses a linear integer
+                        system that is much easier for computers to process. However, for mixing, synthesis, and
+                        acoustic modeling, we must convert these integers back into physical frequencies (Hertz).</p>
+                </section>
+
+                <section>
+                    <h2>The Mathematical Formula</h2>
+                    <p>The conversion between a MIDI note number and its frequency follows a specific logarithmic
+                        formula based on the <strong>A4 = 440 Hz</strong> concert pitch standard.</p>
+                    <div class="info-card">
+                        <h3>Standard Formula (MIDI to Hz)</h3>
+                        <code>f = 2^((d - 69) / 12) × 440</code>
+                        <p style="margin-top: 10px;">Where <em>d</em> is the MIDI note number. The value 69 represents
+                            the MIDI number for A4, and 12 represents the number of semitones in an octave.</p>
+                    </div>
+                    <p>By using this formula, your DAW or synthesizer can determine the exact speed at which an
+                        oscillator should vibrate to produce the correct pitch. Every time you increase the MIDI number
+                        by 1, the frequency is multiplied by 1.05946 (the 12th root of 2).</p>
+                </section>
+
+                <section>
+                    <h2>Key Reference Points</h2>
+                    <p>While the calculator above handles any value, it's helpful for producers to memorize a few
+                        "anchor" points in the MIDI spectrum:</p>
+                    <ul>
+                        <li><strong>MIDI 21 (A0):</strong> 27.50 Hz - The lowest note on a standard piano.</li>
+                        <li><strong>MIDI 36 (C2):</strong> 65.41 Hz - A common root note for sub-bass in electronic
+                            music.</li>
+                        <li><strong>MIDI 60 (C4):</strong> 261.63 Hz - Middle C, the center of the musical keyboard.
+                        </li>
+                        <li><strong>MIDI 69 (A4):</strong> 440.00 Hz - The global tuning standard.</li>
+                        <li><strong>MIDI 108 (C8):</strong> 4186.01 Hz - The highest note on a standard piano.</li>
+                    </ul>
+                </section>
+
+                <div class="tool-info">
+                    <div class="info-box">
+                        <h3>Practical Use: Synthesis</h3>
+                        <p>When you are building a synthesizer in a language like Max/MSP or Pure Data, you use this
+                            conversion to translate user keyboard input into a signal for the 'phasor' or 'osc' object.
+                            Accurate conversion is the difference between a tuned instrument and digital noise.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Practical Use: EQ</h3>
+                        <p>If you see a peak in your frequency analyzer at 440 Hz and you want to know what note is
+                            causing it, you can work the formula backward (Hz to
+                            MIDI):<br><code>d = 12 × log2(f / 440) + 69</code></p>
+                    </div>
+                </div>
+
+                <div class="related-articles">
+                    <h3>Further Production Tools</h3>
+                    <ul>
+                        <li><a href="piano-frequency-chart.html">Piano Key to Hz Chart</a></li>
+                        <li><a href="note-to-hz-frequency-chart.html">Frequency vs Octave Reference</a></li>
+                        <li><a href="eq-basics.html">EQing Fundamental Frequencies</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>Why MIDI 69?</h4>
+                    <p>The MIDI standard assigns A4 to number 69 because it allowed enough room for lower octaves below
+                        the piano range while keeping "Middle C" at the intuitive number 60.</p>
+                </div>
+
+                <div class="sidebar-card warning">
+                    <h4>Pitch Bend Warning</h4>
+                    <p>Remember that MIDI Note Numbers are discrete (integers). If you use a <strong>Pitch Bend</strong>
+                        wheel, your synth is actually calculating frequencies <em>between</em> the integers on this
+                        chart!</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        const midiInput = document.getElementById('midi-input');
+        const hzOutput = document.getElementById('hz-output');
+        const noteNameDisplay = document.getElementById('note-name-display');
+
+        const noteNames = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+        function calculateFrequency() {
+            let midi = parseFloat(midiInput.value);
+            if (isNaN(midi)) return;
+
+            // Formula: f = 2^((d-69)/12) * 440
+            const frequency = Math.pow(2, (midi - 69) / 12) * 440;
+            hzOutput.innerText = frequency.toFixed(2);
+
+            // Calculate Note Name
+            const octave = Math.floor(midi / 12) - 1;
+            const noteIndex = Math.floor(midi % 12);
+            let name = noteNames[noteIndex] + octave;
+
+            if (midi === 60) name += " (Middle C)";
+            if (midi === 69) name += " (Concert Pitch)";
+
+            noteNameDisplay.innerText = "Note: " + name;
+        }
+
+        midiInput.addEventListener('input', calculateFrequency);
+        // Initial calculation
+        calculateFrequency();
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

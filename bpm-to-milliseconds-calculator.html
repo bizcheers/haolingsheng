@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>BPM to Milliseconds Calculator | Delay Time Tool (Hz & MS) | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Free online BPM to Milliseconds (ms) calculator. Convert tempo to delay times, reverb pre-delay, and note durations. Features bidirectional BPM & MS calculation.">
+    <meta name="keywords"
+        content="bpm to ms, bpm to milliseconds, delay time calculator bpm, milliseconds to bpm converter, music tempo calculator, reverb pre-delay tool">
+    <link rel="canonical" href="https://www.haolingsheng.com/bpm-to-milliseconds-calculator.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="BPM to Milliseconds (ms) Delay Calculator">
+    <meta property="og:description"
+        content="Calculate perfect delay and reverb times for your music production. Fast, bidirectional BPM conversion.">
+    <meta property="og:url" content="https://www.haolingsheng.com/bpm-to-milliseconds-calculator.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="music-production/article.css">
+
+    <style>
+        .calculator-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .calc-main {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .input-box label {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+        }
+
+        .input-box input {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            color: var(--text-primary);
+            font-size: 1.75rem;
+            width: 180px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .input-box input:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 10px rgba(0, 255, 102, 0.1);
+        }
+
+        .divisions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        .divisions-table th,
+        .divisions-table td {
+            border: 1px solid var(--border-subtle);
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .divisions-table th {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        .val-highlight {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            .input-box input {
+                width: 140px;
+                font-size: 1.4rem;
+            }
+
+            .calc-main {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="music-business/">Music Business</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container">
+            <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> /
+                    <span>BPM to MS Calculator</span>
+                </div>
+
+                <header class="article-header">
+                    <span class="category-tag">⏱️ Pro Tool</span>
+                    <h1>BPM to Milliseconds Calculator</h1>
+                    <p class="lead">Synchronize your delay, reverb, and LFOs perfectly to your track's tempo with this
+                        bidirectional tool.</p>
+                    <div class="article-meta">
+                        <span class="read-time">⏱️ 8 min read</span>
+                        <span>📅 January 2026</span>
+                    </div>
+                </header>
+
+                <div class="calculator-container">
+                    <div class="calc-main">
+                        <div class="input-box">
+                            <label for="bpm-val">Tempo (BPM)</label>
+                            <input type="number" id="bpm-val" value="120" step="0.1" min="1">
+                        </div>
+                        <div class="input-box"
+                            style="justify-content: center; font-size: 2rem; color: var(--text-tertiary);">
+                            ⇌
+                        </div>
+                        <div class="input-box">
+                            <label for="ms-val">Quarter Note (MS)</label>
+                            <input type="number" id="ms-val" value="500" step="0.1" min="1">
+                        </div>
+                    </div>
+
+                    <table class="divisions-table" id="div-table">
+                        <thead>
+                            <tr>
+                                <th>Note Value</th>
+                                <th>Milliseconds (ms)</th>
+                                <th>Frequency (Hz)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Generated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <section>
+                    <h2>How to Use the BPM to MS Tool</h2>
+                    <p>In digital music production, timing is everything. Whether you are setting a <strong>delay
+                            time</strong>, adjusting a reverb's <strong>pre-delay</strong>, or fine-tuning an
+                        <strong>LFO rate</strong>, matching the time to the BPM (Beats Per Minute) of your song creates
+                        a "tighter" and more professional mix.</p>
+                    <p>This <strong>BPM to MS calculator</strong> is bidirectional. If you know your tempo, enter it in
+                        the BPM box to see the delay times. Conversely, if you are working with a sample and know the
+                        length of a single beat in milliseconds, enter it in the MS box to find your project's BPM.</p>
+                </section>
+
+                <section>
+                    <h2>The Math Behind Tempo and Time</h2>
+                    <p>The relationship between BPM and milliseconds is a simple inverse calculation based on the fact
+                        that there are 60,000 milliseconds in one minute.</p>
+                    <div class="info-card">
+                        <h3>Core Calculation Formula</h3>
+                        <code>Milliseconds (for 1/4 note) = 60,000 / BPM</code>
+                        <p style="margin-top: 1rem;">Example: At 120 BPM, one quarter note is 60,000 / 120 = 500ms.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Common Production Scenarios</h2>
+                    <ul>
+                        <li><strong>Dotted Notes:</strong> Often used for "Galoping" delays. Multiply your base MS by
+                            1.5.</li>
+                        <li><strong>Triplet Notes:</strong> Used for swing or shuffles. Divide your base MS by 3 and
+                            then multiply by 2 (or multiply by 0.667).</li>
+                        <li><strong>Reverb Pre-Delay:</strong> Setting your pre-delay to a 1/64 or 1/128 note value
+                            helps keep the reverb tail in time with the song, preventing "muddy" transients.</li>
+                    </ul>
+                </section>
+
+                <div class="related-articles">
+                    <h3>More Production Reference</h3>
+                    <ul>
+                        <li><a href="music-production/pitch-shift-calculator.html">Pitch Shift Calculator</a></li>
+                        <li><a href="music-production/midi-note-to-frequency.html">MIDI to Hz Tool</a></li>
+                        <li><a href="music-production/piano-frequency-chart.html">88-Key Piano Table</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>Why Sync Your Reverb?</h4>
+                    <p>If your reverb tail lasts too long, it will bleed into the next chord. By setting your decay time
+                        to a musical division (like 1/2 note), the reverb "breathes" with the rhythm.</p>
+                </div>
+
+                <div class="sidebar-card warning">
+                    <h4>DAW Tip</h4>
+                    <p>Most modern DAWs (Ableton, FL Studio, Logic) have a "Sync" button on plugins. However, knowing
+                        the physical MS value is essential when using hardware gear or vintage-style analog delay units.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        const bpmInput = document.getElementById('bpm-val');
+        const msInput = document.getElementById('ms-val');
+        const tableBody = document.querySelector('#div-table tbody');
+
+        const divisions = [
+            { name: "1/1 Note (Whole)", factor: 4 },
+            { name: "1/2 Note (Half)", factor: 2 },
+            { name: "1/4 Note (Quarter)", factor: 1 },
+            { name: "1/4 Dot", factor: 1.5 },
+            { name: "1/4 Triplet", factor: 0.6667 },
+            { name: "1/8 Note", factor: 0.5 },
+            { name: "1/8 Dot", factor: 0.75 },
+            { name: "1/8 Triplet", factor: 0.3333 },
+            { name: "1/16 Note", factor: 0.25 },
+            { name: "1/16 Dot", factor: 0.375 },
+            { name: "1/16 Triplet", factor: 0.1667 },
+            { name: "1/32 Note", factor: 0.125 }
+        ];
+
+        function updateFromBPM() {
+            const bpm = parseFloat(bpmInput.value) || 120;
+            const ms = 60000 / bpm;
+            msInput.value = ms.toFixed(1);
+            renderTable(ms);
+        }
+
+        function updateFromMS() {
+            const ms = parseFloat(msInput.value) || 500;
+            const bpm = 60000 / ms;
+            bpmInput.value = bpm.toFixed(1);
+            renderTable(ms);
+        }
+
+        function renderTable(baseMS) {
+            tableBody.innerHTML = '';
+            divisions.forEach(div => {
+                const val = baseMS * div.factor;
+                const hz = 1000 / val;
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${div.name}</td>
+                    <td><span class="val-highlight">${val.toFixed(2)}</span> ms</td>
+                    <td>${hz.toFixed(2)} Hz</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        bpmInput.addEventListener('input', updateFromBPM);
+        msInput.addEventListener('input', updateFromMS);
+
+        // Initial load
+        updateFromBPM();
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="gepu/">Music Notation</a></li>
+                        <li><a href="geci/">Music Theory</a></li>
+                        <li><a href="music-production/">Production</a></li>
+                        <li><a href="music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

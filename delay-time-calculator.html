@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Delay Time Calculator | BPM to Milliseconds (ms) & Hz | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Free online Delay Time Calculator. Convert BPM to delay times for reverb, echo, and LFO. Calculate milliseconds and Hz for dotted and triplet notes instantly.">
+    <meta name="keywords"
+        content="delay time calculator, bpm to ms, delay milliseconds calculator, reverb pre-delay tool, music production delay math, echo time calculator">
+    <link rel="canonical" href="https://www.haolingsheng.com/delay-time-calculator.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="music-production/article.css">
+
+    <style>
+        .tool-container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-subtle);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .tool-header h1 {
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-sm);
+        }
+
+        .calc-main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2.5rem 0;
+            background: var(--bg-primary);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .input-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
+        }
+
+        .input-group input {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            color: var(--text-primary);
+            font-size: 1.75rem;
+            width: 180px;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: var(--accent-green);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-subtle);
+            transition: transform 0.2s;
+        }
+
+        .result-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-green);
+        }
+
+        .note-type {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .ms-val {
+            display: block;
+            font-family: 'Monaco', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        .hz-val {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 600px) {
+            .results-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="music-business/">Music Business</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 4rem 0;">
+        <div class="container">
+            <!-- Tool Wrapper -->
+            <div class="tool-container">
+                <div class="tool-header">
+                    <span
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.1em;">MIXING
+                        TOOL</span>
+                    <h1>Delay Time Calculator</h1>
+                    <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                        Calculate precise delay times in milliseconds (ms) and Hertz (Hz) for standard, triplet, and
+                        dotted notes.
+                    </p>
+                </div>
+
+                <div class="calc-main">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="bpm-input">Project BPM</label>
+                            <input type="number" id="bpm-input" value="120" step="0.1" min="1">
+                        </div>
+                    </div>
+
+                    <div class="results-grid" id="standard-notes">
+                        <!-- Standard notes -->
+                    </div>
+                    <div class="results-grid" id="dotted-triplet-notes"
+                        style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+                        <!-- Dotted/Triplets -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide Section -->
+            <div class="guide-section article-content">
+                <h2>Mastering the Art of Delay</h2>
+                <p>Synchronization is the difference between a professional-sounding mix and one that feels amateur.
+                    Using a **delay time calculator** allows you to lock your effects to the tempo of your song,
+                    ensuring that every echo and feedback loop contributes to the track's rhythmic momentum.</p>
+
+                <h3>Millisecond (ms) vs. Hertz (Hz)</h3>
+                <p>While most modern delay plugins allow you to sync to BPM directly, many analog-modeled plugins and
+                    vintage hardware units require manual entry in <strong>milliseconds</strong>. Furthermore, if you
+                    are using an LFO for modulation, you might need the <strong>Hertz</strong> value (Cycles Per Second)
+                    to achieve perfect vibrato or tremolo speed.</p>
+
+                <h3>Note Types Explained</h3>
+                <ul>
+                    <li><strong>Standard Notes:</strong> The basic divisions of a 4/4 bar (1/4, 1/8, 1/16).</li>
+                    <li><strong>Dotted Notes:</strong> Extends the note by 50%. These create the classic "Galloping"
+                        echo effect popular in U2-style guitar parts.</li>
+                    <li><strong>Triplet Notes:</strong> Three notes played in the space of two standard notes. Triplets
+                        are essential for shuffle-based genres like Blues, Jazz, and certain types of House music.</li>
+                </ul>
+
+                <h3>Creative Mixing Strategies</h3>
+                <p>A common secret among pro engineers is to set the delay time slightly "off" the perfect BPM sync. Try
+                    subtracting 2-5ms from the calculated value. This creates a psychological "push" that makes the
+                    track feel more energetic. Conversely, adding a few milliseconds can make a track feel more "laid
+                    back" and soulful.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="gepu/">Music Notation</a></li>
+                        <li><a href="geci/">Music Theory</a></li>
+                        <li><a href="music-production/">Production</a></li>
+                        <li><a href="music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technical Excellence</h4>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">Providing precision tools for the
+                        modern independent musician.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Pro Audio Calculators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const bpmInput = document.getElementById('bpm-input');
+        const standardGrid = document.getElementById('standard-notes');
+        const dtGrid = document.getElementById('dotted-triplet-notes');
+
+        const standardDivs = [
+            { name: "1/4 Note", factor: 1 },
+            { name: "1/8 Note", factor: 0.5 },
+            { name: "1/16 Note", factor: 0.25 }
+        ];
+
+        const specialDivs = [
+            { name: "1/8 Dot", factor: 0.75 },
+            { name: "1/4 Triplet", factor: 0.6667 },
+            { name: "1/16 Dot", factor: 0.375 }
+        ];
+
+        function update() {
+            const bpm = parseFloat(bpmInput.value) || 120;
+            const quarterMS = 60000 / bpm;
+
+            standardGrid.innerHTML = '';
+            dtGrid.innerHTML = '';
+
+            standardDivs.forEach(d => {
+                standardGrid.appendChild(createCard(d, quarterMS));
+            });
+
+            specialDivs.forEach(d => {
+                dtGrid.appendChild(createCard(d, quarterMS));
+            });
+        }
+
+        function createCard(div, quarterMS) {
+            const ms = quarterMS * div.factor;
+            const hz = 1000 / ms;
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.innerHTML = `
+                <span class="note-type">${div.name}</span>
+                <span class="ms-val">${ms.toFixed(2)} <small>ms</small></span>
+                <span class="hz-val">${hz.toFixed(3)} Hz</span>
+            `;
+            return card;
+        }
+
+        bpmInput.addEventListener('input', update);
+        update();
+    </script>
+</body>
+
+</html>

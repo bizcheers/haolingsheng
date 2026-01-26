@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Instrument Tuning Frequency Tool | Hz Reference Chart | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Free online Instrument Tuning Frequency Tool. Find the exact Hz for Guitar, Bass, Violin, Cello and more. Supports adjustable reference frequency (440Hz / 432Hz).">
+    <meta name="keywords"
+        content="instrument tuning frequency, guitar tuning hz, violin tuning hertz, 432hz vs 440hz tuning, musical instrument frequency chart, orchestral tuning tool">
+    <link rel="canonical" href="https://www.haolingsheng.com/tuning-frequency-tool.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="music-production/article.css">
+
+    <style>
+        .tool-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-subtle);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .tool-header h1 {
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-sm);
+        }
+
+        .calc-inputs {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
+        }
+
+        .input-group select,
+        .input-group input {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 0.85rem 1.25rem;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            width: 220px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .input-group select:focus,
+        .input-group input:focus {
+            border-color: var(--accent-green);
+        }
+
+        .tuning-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 2rem;
+        }
+
+        .tuning-card {
+            background: var(--bg-primary);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .string-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+        }
+
+        .hz-value {
+            font-family: 'Monaco', monospace;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        .note-name {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="music-business/">Music Business</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 4rem 0;">
+        <div class="container">
+            <!-- Tool Wrapper -->
+            <div class="tool-container">
+                <div class="tool-header">
+                    <span
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.1em;">TUNING
+                        REFERENCE</span>
+                    <h1>Instrument Tuning Frequency Tool</h1>
+                    <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                        Find the exact Hertz (Hz) for standard instrument tunings. Adjust the reference A frequency for
+                        historical or alternative temperaments.
+                    </p>
+                </div>
+
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="instrument-select">Instrument</label>
+                        <select id="instrument-select">
+                            <option value="guitar">Guitar (Standard)</option>
+                            <option value="bass">Bass (4-String)</option>
+                            <option value="violin">Violin</option>
+                            <option value="viola">Viola</option>
+                            <option value="cello">Cello</option>
+                            <option value="ukulele">Ukulele (GCEA)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="ref-a">Reference A (Hz)</label>
+                        <input type="number" id="ref-a" value="440" step="0.1" min="400" max="500">
+                    </div>
+                </div>
+
+                <div class="tuning-results" id="results-grid">
+                    <!-- JS Generated -->
+                </div>
+            </div>
+
+            <!-- Guide Section -->
+            <div class="guide-section article-content">
+                <h2>The Importance of Precise Tuning</h2>
+                <p>In a professional recording environment, tuning is the foundation of a great mix. Whether you are an
+                    orchestral musician or a bedroom producer, understanding the **instrument tuning frequency** in
+                    Hertz (Hz) allows for better EQ decisions and more precise digital synthesis.</p>
+
+                <h3>What is Reference A?</h3>
+                <p>Standard modern tuning is based on <strong>A4 = 440 Hz</strong>, established as an international
+                    standard in 1955. However, many orchestras in Europe tune to 442 Hz or 443 Hz for a "brighter"
+                    sound. Additionally, the **432 Hz** movement suggests that tuning to a lower frequency creates a
+                    more natural and relaxing resonance.</p>
+
+                <h3>EQ and Instrument Frequencies</h3>
+                <ul>
+                    <li><strong>Guitar (82.4 Hz - 329.6 Hz):</strong> The open strings occupy a critical frequency
+                        range. Knowing these values helps you avoid overlapping with the bass.</li>
+                    <li><strong>Violin (196 Hz - 659 Hz):</strong> As the highest voice in the string family, the
+                        violin's overtones can reach well into the air band (10kHz+).</li>
+                    <li><strong>Bass (41.2 Hz - 98 Hz):</strong> The fundamental frequency of the low E string on a bass
+                        sits right at the limit of most bookshelf speakers' capabilities.</li>
+                </ul>
+
+                <h3>History of Pitch Inflation</h3>
+                <p>Throughout the 18th and 19th centuries, concert pitch slowly drifted upward as makers of brass and
+                    woodwind instruments sought more brilliance. This "Pitch Inflation" led to the eventual 440 Hz
+                    standard we use today. Using our tool, you can explore how these historical changes affect the
+                    frequency of every string.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="gepu/">Music Notation</a></li>
+                        <li><a href="geci/">Music Theory</a></li>
+                        <li><a href="music-production/">Production</a></li>
+                        <li><a href="music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Professional Tools</h4>
+                    <p style="color: var(--text-tertiary); font-size: 0.875rem;">Join a global community of musicians
+                        and engineers using Hao Ling Sheng's technical resources.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Pro Tuning & Frequency Reference.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const instrumentSelect = document.getElementById('instrument-select');
+        const refAInput = document.getElementById('ref-a');
+        const resultsGrid = document.getElementById('results-grid');
+
+        const instruments = {
+            guitar: [
+                { string: "6th (Low E)", midi: 40 },
+                { string: "5th (A)", midi: 45 },
+                { string: "4th (D)", midi: 50 },
+                { string: "3rd (G)", midi: 55 },
+                { string: "2nd (B)", midi: 59 },
+                { string: "1st (High E)", midi: 64 }
+            ],
+            bass: [
+                { string: "4th (Low E)", midi: 28 },
+                { string: "3rd (A)", midi: 33 },
+                { string: "2nd (D)", midi: 38 },
+                { string: "1st (G)", midi: 43 }
+            ],
+            violin: [
+                { string: "4th (G)", midi: 55 },
+                { string: "3rd (D)", midi: 62 },
+                { string: "2nd (A)", midi: 69 },
+                { string: "1st (E)", midi: 76 }
+            ],
+            viola: [
+                { string: "4th (C)", midi: 48 },
+                { string: "3rd (G)", midi: 55 },
+                { string: "2nd (D)", midi: 62 },
+                { string: "1st (A)", midi: 69 }
+            ],
+            cello: [
+                { string: "4th (C)", midi: 36 },
+                { string: "3rd (G)", midi: 43 },
+                { string: "2nd (D)", midi: 50 },
+                { string: "1st (A)", midi: 57 }
+            ],
+            ukulele: [
+                { string: "4th (G4)", midi: 67 },
+                { string: "3rd (C4)", midi: 60 },
+                { string: "2nd (E4)", midi: 64 },
+                { string: "1st (A4)", midi: 69 }
+            ]
+        };
+
+        const noteNames = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+        function getNoteName(midi) {
+            const octave = Math.floor(midi / 12) - 1;
+            const noteIndex = midi % 12;
+            return noteNames[noteIndex] + octave;
+        }
+
+        function update() {
+            const instrument = instrumentSelect.value;
+            const refA = parseFloat(refAInput.value) || 440;
+            const strings = instruments[instrument];
+
+            resultsGrid.innerHTML = '';
+
+            strings.forEach(s => {
+                const freq = Math.pow(2, (s.midi - 69) / 12) * refA;
+                const card = document.createElement('div');
+                card.className = 'tuning-card';
+                card.innerHTML = `
+                    <span class="string-label">${s.string}</span>
+                    <span class="hz-value">${freq.toFixed(2)} Hz</span>
+                    <span class="note-name">${getNoteName(s.midi)}</span>
+                `;
+                resultsGrid.appendChild(card);
+            });
+        }
+
+        instrumentSelect.addEventListener('change', update);
+        refAInput.addEventListener('input', update);
+        update();
+    </script>
+</body>
+
+</html>

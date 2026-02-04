@@ -381,11 +381,9 @@
     }
 
     .sidebar {
-        order: -1;
-    }
-
-    .sidebar-card {
         position: static;
+        order: 1;
+        /* Move to bottom */
     }
 }
 

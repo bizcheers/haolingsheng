@@ -58,8 +58,8 @@
 .article-content h2 {
     font-size: 1.875rem;
     color: var(--text-primary);
-    margin: var(--space-2xl) 0 var(--space-lg);
-    padding-bottom: var(--space-sm);
+    margin: var(--space-xs) 0 var(--space-xs);
+    padding-bottom: var(--space-xs);
     border-bottom: 2px solid var(--border-subtle);
     position: relative;
 }
@@ -77,26 +77,26 @@
 .article-content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin: var(--space-xl) 0 var(--space-md);
+    margin: var(--space-sm) 0 var(--space-xs);
 }
 
 .article-content p {
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: var(--space-lg);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
     font-size: 1.0625rem;
 }
 
 .article-content ul,
 .article-content ol {
-    margin: var(--space-lg) 0;
+    margin: var(--space-sm) 0;
     padding-left: var(--space-xl);
     color: var(--text-secondary);
 }
 
 .article-content li {
-    margin-bottom: var(--space-md);
-    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
 }
 
 .article-content li::marker {
@@ -120,11 +120,11 @@
 }
 
 .article-content section {
-    margin-bottom: var(--space-3xl);
+    margin-bottom: var(--space-sm);
 }
 
 .article-content section:last-of-type {
-    margin-bottom: var(--space-2xl);
+    margin-bottom: 0;
 }
 
 /* Related Articles */
@@ -171,6 +171,9 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
+    position: sticky;
+    top: calc(var(--space-lg) + 80px);
+    align-self: flex-start;
 }
 
 .sidebar-card {
@@ -178,9 +181,9 @@
     padding: var(--space-xl);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-subtle);
-    position: sticky;
-    top: calc(var(--space-lg) + 80px);
 }
+
+/* Remove the first-child sticky rule as it's no longer needed */
 
 .sidebar-card h4 {
     color: var(--text-primary);
@@ -274,6 +277,103 @@
     color: var(--text-secondary);
 }
 
+/* Educational Callouts */
+.info-card {
+    background: var(--bg-tertiary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    margin: var(--space-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+}
+
+.info-card.tip::before {
+    background: var(--accent-green);
+}
+
+.info-card.info::before {
+    background: #4f46e5;
+}
+
+.info-card.warning::before {
+    background: #f59e0b;
+}
+
+.info-card h3,
+.info-card h4 {
+    margin-top: 0;
+    font-size: 1.125rem;
+    margin-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+/* Figures & Images */
+.article-figure {
+    margin: var(--space-2xl) 0;
+    text-align: center;
+    background: var(--bg-tertiary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-subtle);
+}
+
+.article-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.figure-caption {
+    margin-top: var(--space-md);
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Mnemonics Styling */
+.mnemonic-box {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin: var(--space-lg) 0;
+}
+
+.mnemonic-item {
+    background: var(--bg-elevated);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.mnemonic-word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    display: block;
+}
+
+.mnemonic-full {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .article-page .container {
@@ -281,11 +381,9 @@
     }
 
     .sidebar {
-        order: -1;
-    }
-
-    .sidebar-card {
         position: static;
+        order: 1;
+        /* Move to bottom */
     }
 }
 

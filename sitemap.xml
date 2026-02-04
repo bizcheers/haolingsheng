@@ -345,8 +345,68 @@
   <url>
     <loc>https://www.haolingsheng.com/gepu/articulation-marks-staccato-legato.html</loc>
     <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/musical-rests-guide.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/whole-half-rests-duration.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/quarter-rest-explained.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/eighth-sixteenth-rests-value.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/dotted-notes-value-explained.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/musical-triplets-tuplets-guide.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/intermediate-dynamics-crescendo-diminuendo.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/fermata-symbol-holding-time.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/tempo-markings-largo-to-presto.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/ottava-signs-8va-8vb.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/stereo-imaging-guide.html</loc>

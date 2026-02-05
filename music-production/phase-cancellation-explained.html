@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Music Phasing & Phase Cancellation Explained | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Why does your mix sound hollow or disappear in mono? It's Phase Cancellation. Learn what music phasing is and how to fix it for punchy tracks.">
+    <meta name="keywords"
+        content="music phasing, phase cancellation, out of phase audio, mixing in mono, correlation meter, recording guitar phase">
+    <link rel="canonical" href="https://www.haolingsheng.com/music-production/phase-cancellation-explained.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container">
+            <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="index.html">Music Production</a> /
+                    <span>Physics of Audio</span>
+                </div>
+
+                <h1>Music Phasing & Phase Cancellation Explained</h1>
+                <div class="meta-info">
+                    <span>⏱️ 6 min read</span>
+                    <span>•</span>
+                    <span>⚛️ Audio Physics</span>
+                </div>
+
+                <div class="content-body">
+                    <p class="intro">
+                        Phase is the silent killer of mixes.
+                    </p>
+                    <p>
+                        Have you ever made a huge, wide synth sound, but when you listened to it on your phone or in a
+                        club, it completely disappeared? That is <strong>Phase Cancellation</strong>. It's not a glitch;
+                        it's physics. And if you don't understand it, you can lose 50% of your song's power without
+                        realizing it.
+                    </p>
+
+                    <h2>The Physics: Peaks and Valleys</h2>
+                    <p>
+                        Sound is a wave. It goes Up (Peak) and Down (Valley).
+                    </p>
+                    <ul>
+                        <li><strong>Constructive Interference (In Phase):</strong> Imagine two waves going Up at the
+                            exact same time. They add together. 1 + 1 = 2. The sound gets LOUDER.</li>
+                        <li><strong>Destructive Interference (Out of Phase):</strong> Imagine one wave going Up while
+                            the other goes Down. They fight each other. 1 + (-1) = 0. The sound DISAPPEARS.</li>
+                    </ul>
+                    <blockquote>
+                        <strong>Phase Cancellation</strong> happens when two copies of similar audio waveforms are
+                        slightly misaligned in time, causing frequencies to drop out.
+                    </blockquote>
+
+                    <h2>Common Scenarios for Disaster</h2>
+
+                    <h3>1. Multi-Mic Recording (Drum Kit)</h3>
+                    <p>
+                        You record a snare drum with a mic on top and a mic on the bottom.
+                    </p>
+                    <p>
+                        When you hit the drum, the stick pushes the top skin <em>down</em> (away from the top mic). But
+                        the bottom skin pushes <em>down</em> (towards the bottom mic).
+                    </p>
+                    <p>
+                        The signals are 180 degrees opposite. If you mix them together, the low end of the snare
+                        vanishes. It sounds thin and weak.
+                        <br>
+                        <strong>The Fix:</strong> Hit the "Polarity Invert" (Ø) button on your preamp or DAW channel for
+                        the bottom mic.
+                    </p>
+
+                    <h3>2. The "Stereo Widener" Trap</h3>
+                    <p>
+                        Beginners love "Stereo Widening" plugins. These plugins often work by delaying one side of the
+                        signal by a few milliseconds.
+                    </p>
+                    <p>
+                        It sounds super wide on headphones! But... when those Left and Right signals mix together in the
+                        air (on speakers) or electronically (on a mono phone speaker), the delayed valleys cancel out
+                        the peaks. Your synth becomes a ghost.
+                    </p>
+
+                    <h2>How to Spot Phasing Issues</h2>
+                    <p>
+                        You can't always trust your ears on headphones. You need tools.
+                    </p>
+
+                    <h3>1. The Mono Button</h3>
+                    <p>
+                        This is your best friend. Periodically put a plugin on your master channel that sums everything
+                        to Mono.
+                    </p>
+                    <ul>
+                        <li>If the song sounds a bit narrower but still punchy → <strong>Good.</strong></li>
+                        <li>If the vocals disappear or the bass loses 80% of its volume → <strong>BAD Phase
+                                Issues.</strong></li>
+                    </ul>
+
+                    <h3>2. The Correlation Meter</h3>
+                    <p>
+                        Most DAWs (like Logic or ozone) have a correlation meter. It ranges from +1 to -1.
+                    </p>
+                    <ul>
+                        <li><strong>+1 (Green):</strong> Perfectly in phase (Mono).</li>
+                        <li><strong>0 to +1:</strong> Healthy Stereo.</li>
+                        <li><strong>-1 (Red):</strong> Completely out of phase. Danger zone!</li>
+                    </ul>
+
+                    <h2>How to Fix It</h2>
+                    <p>
+                        So you found a problem. Now what?
+                    </p>
+                    <ol>
+                        <li><strong>The Flip:</strong> Try the Polarity Invert button first. It's a quick fix that
+                            solves 50% of recording issues.</li>
+                        <li><strong>The Nudge:</strong> Zoom in on your timeline. Manually drag one audio file a few
+                            milliseconds left or right until the waveforms align visually.</li>
+                        <li><strong>The Narrowing:</strong> If a synth is causing issues, reduce its stereo width. It's
+                            better to have a slightly narrower synth that hits hard than a super-wide synth that
+                            disappears.</li>
+                        <li><strong>Mid/Side Filter:</strong> Use an EQ in Mid/Side mode. Cut the low frequencies (below
+                            100Hz) from the "Side" channel. This forces your bass to be Mono, which solves most low-end
+                            phase problems.</li>
+                    </ol>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        Phase is scary because it's invisible math. But the solution is simple: <strong>Check in
+                            Mono.</strong>
+                    </p>
+                    <p>
+                        If your mix sounds great in Mono, it will sound great everywhere—from an IMAX theater to a cheap
+                        bathroom speaker.
+                    </p>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>Related Articles</h4>
+                    <ul>
+                        <li><a href="stereo-imaging-guide.html">Stereo Imaging Guide</a></li>
+                        <li><a href="kick-drum-eq-guide.html">Kick Drum EQ</a></li>
+                        <li><a href="what-is-daw.html">What is a DAW?</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone
+                                Converter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -409,8 +409,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/free-vst-plugins-guide.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/stereo-imaging-guide.html</loc>
     <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ableton-sharps-to-flats.html</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -489,6 +501,12 @@
   <url>
     <loc>https://www.haolingsheng.com/music-production/parallel-processing-techniques.html</loc>
     <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ableton-shortcuts-cheat-sheet.html</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -595,13 +613,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/serum-for-ableton-guide.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/ripx-daw-ai-stems.html</loc>
     <lastmod>2026-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/fl-studio-selection-guide.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/what-does-a-deesser-do.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/best-fl-studio-plugins.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

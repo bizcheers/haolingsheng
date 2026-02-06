@@ -8,8 +8,38 @@ TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{name} - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="{description}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{url}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{name} - Music Producer Profile | Hao Ling Sheng">
+    <meta property="og:description" content="{description}">
+    <meta property="og:url" content="{url}">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{name} - Music Producer Profile | Hao Ling Sheng">
+    <meta name="twitter:description" content="{description}">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../styles.css?v=5">
     <link rel="stylesheet" href="producers.css?v=1">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{name}",
+      "description": "{description}",
+      "url": "{url}",
+      "jobTitle": "Music Producer",
+      "knowsAbout": ["Music Production", "Songwriting", "Record Producing", "Arranging"]
+    }}
+    </script>
 </head>
 <body class="producer-body">
     <header>
@@ -122,6 +152,17 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legendary Music Producers & Artists | Hao Ling Sheng</title>
     <meta name="description" content="Explore profiles of the world's greatest music producers, from Max Martin to Rick Rubin. Learn about their signature sounds and hit records.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.haolingsheng.com/singer/index.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Legendary Music Producers & Artists | Hao Ling Sheng">
+    <meta property="og:description" content="Explore profiles of the world's greatest music producers, from Max Martin to Rick Rubin.">
+    <meta property="og:url" content="https://www.haolingsheng.com/singer/index.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
     <link rel="stylesheet" href="../styles.css?v=5">
     <link rel="stylesheet" href="producers.css?v=1">
 </head>
@@ -283,10 +324,12 @@ def generate_pages():
     
     for producer in producers:
         # Generate individual page
+        full_url = f"https://www.haolingsheng.com/singer/{producer['filename']}"
         html_content = TEMPLATE.format(
             name=producer['name'],
             subtitle=producer['subtitle'],
             description=producer['description'],
+            url=full_url,
             intro=producer['intro'],
             sound=producer['sound'],
             hits=producer['hits'],

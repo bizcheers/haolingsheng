@@ -1,0 +1,243 @@
+/* Premium Dark Theme for Producer Pages */
+.producer-body {
+    background-color: var(--bg-primary);
+}
+
+/* Hero Section */
+.producer-hero {
+    position: relative;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, var(--bg-elevated) 0%, var(--bg-primary) 70%);
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: var(--space-2xl);
+    overflow: hidden;
+}
+
+.producer-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-purple), transparent);
+    opacity: 0.5;
+}
+
+.producer-hero h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    background: linear-gradient(to bottom right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--space-md);
+    letter-spacing: -0.02em;
+}
+
+.producer-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--accent-purple);
+    margin-bottom: var(--space-lg);
+    font-style: italic;
+}
+
+.producer-intro {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Cards */
+.feature-section {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-section:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-default);
+}
+
+.feature-section h2,
+.feature-section h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: var(--space-md);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent-purple);
+}
+
+/* Signature Sound Box */
+.signature-sound-box {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(6, 182, 212, 0.05));
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.signature-sound-box .icon-box {
+    background: rgba(139, 92, 246, 0.2);
+    color: #fff;
+}
+
+/* Discography List */
+.discography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-md);
+    list-style: none;
+    padding: 0;
+}
+
+.discography-grid li {
+    background: var(--bg-tertiary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    transition: all 0.2s;
+}
+
+.discography-grid li:hover {
+    background: var(--bg-elevated);
+    border-color: var(--accent-green);
+    transform: translateX(5px);
+}
+
+.track-name {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.artist-name {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Index Page Grid */
+.producer-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    padding: var(--space-xl) 0;
+}
+
+.producer-index-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.producer-index-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.producer-index-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--border-default);
+}
+
+.producer-index-card:hover::before {
+    opacity: 1;
+}
+
+.card-content {
+    padding: var(--space-xl);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-role {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+}
+
+.producer-index-card h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.card-subtitle {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: var(--space-lg);
+    font-family: 'Playfair Display', serif;
+}
+
+.card-intro {
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-xl);
+    flex-grow: 1;
+    /* Push footer down */
+}
+
+.card-footer {
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--bg-tertiary);
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read-more-btn {
+    color: var(--text-primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.9rem;
+}
+
+.read-more-btn:hover {
+    color: var(--accent-purple);
+    gap: var(--space-sm);
+}

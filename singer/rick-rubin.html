@@ -5,112 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Rubin - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="Rick Rubin's production style focuses on stripping away the unnecessary to reveal the raw emotion of the artist.">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../gepu/article.css">
-    <style>
-        .producer-header {
-            background: linear-gradient(135deg, #2c3e50, #4ca1af);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-        .producer-header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        .producer-header p {
-            margin-top: 10px;
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #ecf0f1;
-        }
-        .discography-list {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #4ca1af;
-        }
-        .discography-list li {
-            margin-bottom: 10px;
-            list-style: none;
-            padding-left: 20px;
-            position: relative;
-        }
-        .discography-list li:before {
-            content: "🎵";
-            position: absolute;
-            left: 0;
-        }
-        .signature-sound {
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="container">
-        <div class="producer-header">
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">The Zen Master of Reduction</div>
             <h1>Rick Rubin</h1>
-            <p>The Zen Master of Reduction</p>
+            <p class="producer-intro">Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordings and established American Recordings. Rubin helped popularize hip hop music before transcending all genres.</p>
         </div>
+    </div>
 
-        <article class="content">
-            <h2>The Legend Behind the Hits</h2>
-            <p>Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordings and also established American Recordings. Rubin helped popularize hip hop music.</p>
+    <div class="container content-grid">
+        <section class="feature-section signature-sound-box">
+            <h3><div class="icon-box">🎛️</div> Signature Sound</h3>
+            <p>Rubin is known for a stripped-down sound, often referred to as 'dry'. He avoids heavy reverb and unnecessary instrumentation, preferring to capture the authentic performance of the artist in a room. He listens not for technical perfection, but for feeling.</p>
+        </section>
 
-            <div class="signature-sound">
-                <h3>🎛️ Signature Sound</h3>
-                <p>Rubin is known for a stripped-down sound, often referred to as 'dry'. He avoids heavy reverb and unnecessary instrumentation, preferring to capture the authentic performance of the artist in a room.</p>
-            </div>
-
-            <h2>Notable Productions</h2>
-            <p>Some of the most iconic tracks produced by Rick Rubin include:</p>
-            <ul class="discography-list">
+        <section class="feature-section">
+            <h3><div class="icon-box">💿</div> Notable Productions</h3>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">Defining hits that shaped the industry:</p>
+            <ul class="discography-grid">
                 
-            <li><strong>Walk This Way</strong> - Run-D.M.C. ft. Aerosmith</li>
-            <li><strong>Hurt</strong> - Johnny Cash</li>
-            <li><strong>99 Problems</strong> - Jay-Z</li>
-            <li><strong>Under the Bridge</strong> - Red Hot Chili Peppers</li>
-            <li><strong>Chop Suey!</strong> - System of a Down</li>
+            <li><span class="track-name">Walk This Way</span> <span class="artist-name">Run-D.M.C. ft. Aerosmith</span></li>
+            <li><span class="track-name">Hurt</span> <span class="artist-name">Johnny Cash</span></li>
+            <li><span class="track-name">99 Problems</span> <span class="artist-name">Jay-Z</span></li>
+            <li><span class="track-name">Under the Bridge</span> <span class="artist-name">Red Hot Chili Peppers</span></li>
+            <li><span class="track-name">Chop Suey!</span> <span class="artist-name">System of a Down</span></li>
         
             </ul>
+        </section>
 
-            <h2>Impact on Music Industry</h2>
-            <p>Rubin has successfully produced for artists across metal, hip hop, rock, and country. His work with Johnny Cash on the 'American Recordings' series is legendary for revitalizing Cash's career.</p>
-        </article>
+        <section class="feature-section">
+            <h3><div class="icon-box">🚀</div> Impact on Industry</h3>
+            <p>Rubin has successfully produced for artists across metal, hip hop, rock, and country. His work with Johnny Cash on the 'American Recordings' series is legendary for revitalizing Cash's career and proving that great art transcends age.</p>
+        </section>
 
-        <div class="related-producers">
-            <h3>Explore More Producers</h3>
-            <div class="grid-links">
-                <a href="max-martin.html">Max Martin</a>
-                <a href="rick-rubin.html">Rick Rubin</a>
-                <a href="quincy-jones.html">Quincy Jones</a>
-                <a href="timbaland.html">Timbaland</a>
-                <a href="pharrell-williams.html">Pharrell Williams</a>
-                <a href="dr-dre.html">Dr. Dre</a>
-            </div>
+        <div class="section-header" style="margin-top: 60px;">
+            <h2>Explore More Legends</h2>
+        </div>
+        
+        <div class="producer-index-grid">
+            <a href="max-martin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Pop Mastermind</div>
+                    <h2>Max Martin</h2>
+                </div>
+            </a>
+            <a href="rick-rubin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Reducer</div>
+                    <h2>Rick Rubin</h2>
+                </div>
+            </a>
+            <a href="quincy-jones.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Titan</div>
+                    <h2>Quincy Jones</h2>
+                </div>
+            </a>
+            <a href="timbaland.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Rhythm King</div>
+                    <h2>Timbaland</h2>
+                </div>
+            </a>
+            <a href="pharrell-williams.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Neptunes Sound</div>
+                    <h2>Pharrell</h2>
+                </div>
+            </a>
+            <a href="dr-dre.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">G-Funk Architect</div>
+                    <h2>Dr. Dre</h2>
+                </div>
+            </a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

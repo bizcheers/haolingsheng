@@ -5,112 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Dre - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="Dr. Dre pioneered G-Funk and launched the careers of Eminem, Snoop Dogg, and 50 Cent.">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../gepu/article.css">
-    <style>
-        .producer-header {
-            background: linear-gradient(135deg, #2c3e50, #4ca1af);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-        .producer-header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        .producer-header p {
-            margin-top: 10px;
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #ecf0f1;
-        }
-        .discography-list {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #4ca1af;
-        }
-        .discography-list li {
-            margin-bottom: 10px;
-            list-style: none;
-            padding-left: 20px;
-            position: relative;
-        }
-        .discography-list li:before {
-            content: "🎵";
-            position: absolute;
-            left: 0;
-        }
-        .signature-sound {
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="container">
-        <div class="producer-header">
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">The West Coast Architect</div>
             <h1>Dr. Dre</h1>
-            <p>The West Coast Architect</p>
+            <p class="producer-intro">Andre Romelle Young, known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is the founder and CEO of Aftermath Entertainment and Beats Electronics.</p>
         </div>
+    </div>
 
-        <article class="content">
-            <h2>The Legend Behind the Hits</h2>
-            <p>Andre Romelle Young, known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is the founder and CEO of Aftermath Entertainment and Beats Electronics.</p>
+    <div class="container content-grid">
+        <section class="feature-section signature-sound-box">
+            <h3><div class="icon-box">🎛️</div> Signature Sound</h3>
+            <p>G-Funk: slower tempos, deep basslines, whiny synthesizers (like the Moog), and soulful female backing vocals. Dre is a perfectionist known for the cleanest mixing and drums in hip-hop history.</p>
+        </section>
 
-            <div class="signature-sound">
-                <h3>🎛️ Signature Sound</h3>
-                <p>G-Funk: slower tempos, deep basslines, whiny synthesizers (like the Moog), and soulful female backing vocals. Dre is a perfectionist known for the cleanest mixing in hip-hop.</p>
-            </div>
-
-            <h2>Notable Productions</h2>
-            <p>Some of the most iconic tracks produced by Dr. Dre include:</p>
-            <ul class="discography-list">
+        <section class="feature-section">
+            <h3><div class="icon-box">💿</div> Notable Productions</h3>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">Defining hits that shaped the industry:</p>
+            <ul class="discography-grid">
                 
-            <li><strong>Nuthin' but a 'G' Thang</strong> - Dr. Dre ft. Snoop Dogg</li>
-            <li><strong>Still D.R.E.</strong> - Dr. Dre ft. Snoop Dogg</li>
-            <li><strong>In Da Club</strong> - 50 Cent</li>
-            <li><strong>My Name Is</strong> - Eminem</li>
-            <li><strong>California Love</strong> - 2Pac</li>
+            <li><span class="track-name">Nuthin' but a 'G' Thang</span> <span class="artist-name">Dr. Dre ft. Snoop Dogg</span></li>
+            <li><span class="track-name">Still D.R.E.</span> <span class="artist-name">Dr. Dre ft. Snoop Dogg</span></li>
+            <li><span class="track-name">In Da Club</span> <span class="artist-name">50 Cent</span></li>
+            <li><span class="track-name">My Name Is</span> <span class="artist-name">Eminem</span></li>
+            <li><span class="track-name">California Love</span> <span class="artist-name">2Pac</span></li>
         
             </ul>
+        </section>
 
-            <h2>Impact on Music Industry</h2>
+        <section class="feature-section">
+            <h3><div class="icon-box">🚀</div> Impact on Industry</h3>
             <p>Dre not only created the G-Funk sound but also discovered diverse talents like Eminem and 50 Cent, proving he has the best ear for talent in the game.</p>
-        </article>
+        </section>
 
-        <div class="related-producers">
-            <h3>Explore More Producers</h3>
-            <div class="grid-links">
-                <a href="max-martin.html">Max Martin</a>
-                <a href="rick-rubin.html">Rick Rubin</a>
-                <a href="quincy-jones.html">Quincy Jones</a>
-                <a href="timbaland.html">Timbaland</a>
-                <a href="pharrell-williams.html">Pharrell Williams</a>
-                <a href="dr-dre.html">Dr. Dre</a>
-            </div>
+        <div class="section-header" style="margin-top: 60px;">
+            <h2>Explore More Legends</h2>
+        </div>
+        
+        <div class="producer-index-grid">
+            <a href="max-martin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Pop Mastermind</div>
+                    <h2>Max Martin</h2>
+                </div>
+            </a>
+            <a href="rick-rubin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Reducer</div>
+                    <h2>Rick Rubin</h2>
+                </div>
+            </a>
+            <a href="quincy-jones.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Titan</div>
+                    <h2>Quincy Jones</h2>
+                </div>
+            </a>
+            <a href="timbaland.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Rhythm King</div>
+                    <h2>Timbaland</h2>
+                </div>
+            </a>
+            <a href="pharrell-williams.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Neptunes Sound</div>
+                    <h2>Pharrell</h2>
+                </div>
+            </a>
+            <a href="dr-dre.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">G-Funk Architect</div>
+                    <h2>Dr. Dre</h2>
+                </div>
+            </a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

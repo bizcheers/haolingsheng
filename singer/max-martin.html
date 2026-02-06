@@ -5,112 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Martin - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="Profile of Max Martin, the Swedish songwriter and producer responsible for more #1 hits than anyone since Lennon & McCartney.">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../gepu/article.css">
-    <style>
-        .producer-header {
-            background: linear-gradient(135deg, #2c3e50, #4ca1af);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-        .producer-header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        .producer-header p {
-            margin-top: 10px;
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #ecf0f1;
-        }
-        .discography-list {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #4ca1af;
-        }
-        .discography-list li {
-            margin-bottom: 10px;
-            list-style: none;
-            padding-left: 20px;
-            position: relative;
-        }
-        .discography-list li:before {
-            content: "🎵";
-            position: absolute;
-            left: 0;
-        }
-        .signature-sound {
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="container">
-        <div class="producer-header">
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">The King of Pop Melodies</div>
             <h1>Max Martin</h1>
-            <p>The King of Pop Melodies</p>
+            <p class="producer-intro">Karl Martin Sandberg, known professionally as Max Martin, is a Swedish record producer and songwriter. He is widely acknowledged as one of the most successful pop music producers in history, crafting hits for artists ranging from Britney Spears to Taylor Swift and The Weeknd.</p>
         </div>
+    </div>
 
-        <article class="content">
-            <h2>The Legend Behind the Hits</h2>
-            <p>Karl Martin Sandberg, known professionally as Max Martin, is a Swedish record producer and songwriter. He is widely acknowledged as one of the most successful pop music producers in history, crafting hits for artists ranging from Britney Spears to Taylor Swift and The Weeknd.</p>
+    <div class="container content-grid">
+        <section class="feature-section signature-sound-box">
+            <h3><div class="icon-box">🎛️</div> Signature Sound</h3>
+            <p>Max Martin is famous for 'Melodic Math' &ndash; a theory that the melody is king. His tracks notoriously feature extremely catchy hooks, polished vocal production, and a structure designed to get to the chorus as effectively as possible.</p>
+        </section>
 
-            <div class="signature-sound">
-                <h3>🎛️ Signature Sound</h3>
-                <p>Max Martin is famous for 'Melodic Math' &ndash; a theory that the melody is king. His tracks notoriously feature extremely catchy hooks, polished vocal production, and a structure designed to get to the chorus as effectively as possible.</p>
-            </div>
-
-            <h2>Notable Productions</h2>
-            <p>Some of the most iconic tracks produced by Max Martin include:</p>
-            <ul class="discography-list">
+        <section class="feature-section">
+            <h3><div class="icon-box">💿</div> Notable Productions</h3>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">Defining hits that shaped the industry:</p>
+            <ul class="discography-grid">
                 
-            <li><strong>...Baby One More Time</strong> - Britney Spears</li>
-            <li><strong>I Want It That Way</strong> - Backstreet Boys</li>
-            <li><strong>Shake It Off</strong> - Taylor Swift</li>
-            <li><strong>Blinding Lights</strong> - The Weeknd</li>
-            <li><strong>Can't Feel My Face</strong> - The Weeknd</li>
+            <li><span class="track-name">...Baby One More Time</span> <span class="artist-name">Britney Spears</span></li>
+            <li><span class="track-name">I Want It That Way</span> <span class="artist-name">Backstreet Boys</span></li>
+            <li><span class="track-name">Shake It Off</span> <span class="artist-name">Taylor Swift</span></li>
+            <li><span class="track-name">Blinding Lights</span> <span class="artist-name">The Weeknd</span></li>
+            <li><span class="track-name">Roar</span> <span class="artist-name">Katy Perry</span></li>
         
             </ul>
+        </section>
 
-            <h2>Impact on Music Industry</h2>
+        <section class="feature-section">
+            <h3><div class="icon-box">🚀</div> Impact on Industry</h3>
             <p>With over 25 Billboard Hot 100 number-one singles as a writer or co-writer, Max Martin has defined the sound of modern pop radio for three decades. His collaborative approach and mentorship have spawned a new generation of Swedish pop dominance.</p>
-        </article>
+        </section>
 
-        <div class="related-producers">
-            <h3>Explore More Producers</h3>
-            <div class="grid-links">
-                <a href="max-martin.html">Max Martin</a>
-                <a href="rick-rubin.html">Rick Rubin</a>
-                <a href="quincy-jones.html">Quincy Jones</a>
-                <a href="timbaland.html">Timbaland</a>
-                <a href="pharrell-williams.html">Pharrell Williams</a>
-                <a href="dr-dre.html">Dr. Dre</a>
-            </div>
+        <div class="section-header" style="margin-top: 60px;">
+            <h2>Explore More Legends</h2>
+        </div>
+        
+        <div class="producer-index-grid">
+            <a href="max-martin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Pop Mastermind</div>
+                    <h2>Max Martin</h2>
+                </div>
+            </a>
+            <a href="rick-rubin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Reducer</div>
+                    <h2>Rick Rubin</h2>
+                </div>
+            </a>
+            <a href="quincy-jones.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Titan</div>
+                    <h2>Quincy Jones</h2>
+                </div>
+            </a>
+            <a href="timbaland.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Rhythm King</div>
+                    <h2>Timbaland</h2>
+                </div>
+            </a>
+            <a href="pharrell-williams.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Neptunes Sound</div>
+                    <h2>Pharrell</h2>
+                </div>
+            </a>
+            <a href="dr-dre.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">G-Funk Architect</div>
+                    <h2>Dr. Dre</h2>
+                </div>
+            </a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

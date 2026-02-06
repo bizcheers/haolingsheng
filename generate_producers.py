@@ -8,106 +8,107 @@ TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{name} - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="{description}">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../gepu/article.css">
-    <style>
-        .producer-header {{
-            background: linear-gradient(135deg, #2c3e50, #4ca1af);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }}
-        .producer-header h1 {{
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }}
-        .producer-header p {{
-            margin-top: 10px;
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #ecf0f1;
-        }}
-        .discography-list {{
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #4ca1af;
-        }}
-        .discography-list li {{
-            margin-bottom: 10px;
-            list-style: none;
-            padding-left: 20px;
-            position: relative;
-        }}
-        .discography-list li:before {{
-            content: "🎵";
-            position: absolute;
-            left: 0;
-        }}
-        .signature-sound {{
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }}
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="container">
-        <div class="producer-header">
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">{subtitle}</div>
             <h1>{name}</h1>
-            <p>{subtitle}</p>
+            <p class="producer-intro">{intro}</p>
         </div>
+    </div>
 
-        <article class="content">
-            <h2>The Legend Behind the Hits</h2>
-            <p>{intro}</p>
+    <div class="container content-grid">
+        <section class="feature-section signature-sound-box">
+            <h3><div class="icon-box">🎛️</div> Signature Sound</h3>
+            <p>{sound}</p>
+        </section>
 
-            <div class="signature-sound">
-                <h3>🎛️ Signature Sound</h3>
-                <p>{sound}</p>
-            </div>
-
-            <h2>Notable Productions</h2>
-            <p>Some of the most iconic tracks produced by {name} include:</p>
-            <ul class="discography-list">
+        <section class="feature-section">
+            <h3><div class="icon-box">💿</div> Notable Productions</h3>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">Defining hits that shaped the industry:</p>
+            <ul class="discography-grid">
                 {hits}
             </ul>
+        </section>
 
-            <h2>Impact on Music Industry</h2>
+        <section class="feature-section">
+            <h3><div class="icon-box">🚀</div> Impact on Industry</h3>
             <p>{impact}</p>
-        </article>
+        </section>
 
-        <div class="related-producers">
-            <h3>Explore More Producers</h3>
-            <div class="grid-links">
-                <a href="max-martin.html">Max Martin</a>
-                <a href="rick-rubin.html">Rick Rubin</a>
-                <a href="quincy-jones.html">Quincy Jones</a>
-                <a href="timbaland.html">Timbaland</a>
-                <a href="pharrell-williams.html">Pharrell Williams</a>
-                <a href="dr-dre.html">Dr. Dre</a>
-            </div>
+        <div class="section-header" style="margin-top: 60px;">
+            <h2>Explore More Legends</h2>
+        </div>
+        
+        <div class="producer-index-grid">
+            <a href="max-martin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Pop Mastermind</div>
+                    <h2>Max Martin</h2>
+                </div>
+            </a>
+            <a href="rick-rubin.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Reducer</div>
+                    <h2>Rick Rubin</h2>
+                </div>
+            </a>
+            <a href="quincy-jones.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">The Titan</div>
+                    <h2>Quincy Jones</h2>
+                </div>
+            </a>
+            <a href="timbaland.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Rhythm King</div>
+                    <h2>Timbaland</h2>
+                </div>
+            </a>
+            <a href="pharrell-williams.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">Neptunes Sound</div>
+                    <h2>Pharrell</h2>
+                </div>
+            </a>
+            <a href="dr-dre.html" class="producer-index-card">
+                <div class="card-content">
+                    <div class="card-role">G-Funk Architect</div>
+                    <h2>Dr. Dre</h2>
+                </div>
+            </a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
@@ -121,91 +122,50 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legendary Music Producers & Artists | Hao Ling Sheng</title>
     <meta name="description" content="Explore profiles of the world's greatest music producers, from Max Martin to Rick Rubin. Learn about their signature sounds and hit records.">
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        .producer-grid {{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }}
-        .producer-card {{
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-            border: 1px solid #eee;
-        }}
-        .producer-card:hover {{
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }}
-        .producer-card h2 {{
-            margin-top: 0;
-            color: #2c3e50;
-        }}
-        .producer-card .role {{
-            color: #666;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 15px;
-        }}
-        .producer-card p {{
-            color: #555;
-            line-height: 1.6;
-        }}
-        .read-more {{
-            display: inline-block;
-            margin-top: 15px;
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }}
-        .read-more:hover {{
-            text-decoration: underline;
-        }}
-        .hero-section {{
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 0 0 20px 20px;
-            margin-bottom: 40px;
-        }}
-        .hero-section h1 {{ margin: 0; font-size: 3em; }}
-        .hero-section p {{ font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 20px auto 0; }}
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="hero-section">
-        <h1>The Architects of Sound</h1>
-        <p>Discover the masterminds behind your favorite songs. From pop geniuses to hip-hop moguls, meet the producers who shaped modern music.</p>
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">The Architects of Sound</div>
+            <h1>Legendary Producers</h1>
+            <p class="producer-intro">Discover the masterminds behind your favorite songs. From pop geniuses to hip-hop moguls, meet the producers who shaped modern music history.</p>
+        </div>
     </div>
 
     <div class="container">
-        <div class="producer-grid">
+        <div class="producer-index-grid">
             {cards}
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
@@ -215,96 +175,102 @@ producers = [
     {
         "filename": "max-martin.html",
         "name": "Max Martin",
+        "role": "Pop Melody Genius",
         "subtitle": "The King of Pop Melodies",
         "description": "Profile of Max Martin, the Swedish songwriter and producer responsible for more #1 hits than anyone since Lennon & McCartney.",
         "intro": "Karl Martin Sandberg, known professionally as Max Martin, is a Swedish record producer and songwriter. He is widely acknowledged as one of the most successful pop music producers in history, crafting hits for artists ranging from Britney Spears to Taylor Swift and The Weeknd.",
         "sound": "Max Martin is famous for 'Melodic Math' &ndash; a theory that the melody is king. His tracks notoriously feature extremely catchy hooks, polished vocal production, and a structure designed to get to the chorus as effectively as possible.",
         "hits": """
-            <li><strong>...Baby One More Time</strong> - Britney Spears</li>
-            <li><strong>I Want It That Way</strong> - Backstreet Boys</li>
-            <li><strong>Shake It Off</strong> - Taylor Swift</li>
-            <li><strong>Blinding Lights</strong> - The Weeknd</li>
-            <li><strong>Can't Feel My Face</strong> - The Weeknd</li>
+            <li><span class="track-name">...Baby One More Time</span> <span class="artist-name">Britney Spears</span></li>
+            <li><span class="track-name">I Want It That Way</span> <span class="artist-name">Backstreet Boys</span></li>
+            <li><span class="track-name">Shake It Off</span> <span class="artist-name">Taylor Swift</span></li>
+            <li><span class="track-name">Blinding Lights</span> <span class="artist-name">The Weeknd</span></li>
+            <li><span class="track-name">Roar</span> <span class="artist-name">Katy Perry</span></li>
         """,
         "impact": "With over 25 Billboard Hot 100 number-one singles as a writer or co-writer, Max Martin has defined the sound of modern pop radio for three decades. His collaborative approach and mentorship have spawned a new generation of Swedish pop dominance."
     },
     {
         "filename": "rick-rubin.html",
         "name": "Rick Rubin",
+        "role": "Minimalist Visionary",
         "subtitle": "The Zen Master of Reduction",
         "description": "Rick Rubin's production style focuses on stripping away the unnecessary to reveal the raw emotion of the artist.",
-        "intro": "Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordings and also established American Recordings. Rubin helped popularize hip hop music.",
-        "sound": "Rubin is known for a stripped-down sound, often referred to as 'dry'. He avoids heavy reverb and unnecessary instrumentation, preferring to capture the authentic performance of the artist in a room.",
+        "intro": "Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordings and established American Recordings. Rubin helped popularize hip hop music before transcending all genres.",
+        "sound": "Rubin is known for a stripped-down sound, often referred to as 'dry'. He avoids heavy reverb and unnecessary instrumentation, preferring to capture the authentic performance of the artist in a room. He listens not for technical perfection, but for feeling.",
         "hits": """
-            <li><strong>Walk This Way</strong> - Run-D.M.C. ft. Aerosmith</li>
-            <li><strong>Hurt</strong> - Johnny Cash</li>
-            <li><strong>99 Problems</strong> - Jay-Z</li>
-            <li><strong>Under the Bridge</strong> - Red Hot Chili Peppers</li>
-            <li><strong>Chop Suey!</strong> - System of a Down</li>
+            <li><span class="track-name">Walk This Way</span> <span class="artist-name">Run-D.M.C. ft. Aerosmith</span></li>
+            <li><span class="track-name">Hurt</span> <span class="artist-name">Johnny Cash</span></li>
+            <li><span class="track-name">99 Problems</span> <span class="artist-name">Jay-Z</span></li>
+            <li><span class="track-name">Under the Bridge</span> <span class="artist-name">Red Hot Chili Peppers</span></li>
+            <li><span class="track-name">Chop Suey!</span> <span class="artist-name">System of a Down</span></li>
         """,
-        "impact": "Rubin has successfully produced for artists across metal, hip hop, rock, and country. His work with Johnny Cash on the 'American Recordings' series is legendary for revitalizing Cash's career."
+        "impact": "Rubin has successfully produced for artists across metal, hip hop, rock, and country. His work with Johnny Cash on the 'American Recordings' series is legendary for revitalizing Cash's career and proving that great art transcends age."
     },
     {
         "filename": "quincy-jones.html",
         "name": "Quincy Jones",
+        "role": "The Maestro",
         "subtitle": "The Titan of Music",
         "description": "Quincy Jones is a legendary producer, composer, and arranger, best known for his work with Michael Jackson on Thriller.",
-        "intro": "Quincy Delight Jones Jr. is an American record producer, musician, songwriter, composer, arranger, and film and television producer. His career spans over 70 years in the entertainment industry.",
-        "sound": "Quincy's sound is characterized by lush orchestration, impeccable jazz-influenced arrangements, and a groove that is undeniable. He is a master of blending genres, from big band to funk and pop.",
+        "intro": "Quincy Delight Jones Jr. is an American record producer, musician, songwriter, composer, arranger, and film and television producer. His career spans over 70 years in the entertainment industry, earning him 28 Grammys.",
+        "sound": "Quincy's sound is characterized by lush orchestration, impeccable jazz-influenced arrangements, and a groove that is undeniable. He is a master of blending genres, from big band to funk and pop, always serving the song.",
         "hits": """
-            <li><strong>Billie Jean</strong> - Michael Jackson</li>
-            <li><strong>Thriller</strong> - Michael Jackson</li>
-            <li><strong>We Are the World</strong> - USA for Africa</li>
-            <li><strong>Fly Me to the Moon</strong> - Frank Sinatra (Arrangement)</li>
-            <li><strong>Give Me the Night</strong> - George Benson</li>
+            <li><span class="track-name">Billie Jean</span> <span class="artist-name">Michael Jackson</span></li>
+            <li><span class="track-name">Thriller</span> <span class="artist-name">Michael Jackson</span></li>
+            <li><span class="track-name">We Are the World</span> <span class="artist-name">USA for Africa</span></li>
+            <li><span class="track-name">Fly Me to the Moon</span> <span class="artist-name">Frank Sinatra (Arr.)</span></li>
+            <li><span class="track-name">Give Me the Night</span> <span class="artist-name">George Benson</span></li>
         """,
-        "impact": "Producing 'Thriller', the best-selling album of all time, cements his legacy. He broke down racial barriers in the music industry and has won 28 Grammy Awards."
+        "impact": "Producing 'Thriller', the best-selling album of all time, cements his legacy. He broke down racial barriers in the music industry and brought jazz sophistication to pop music."
     },
     {
         "filename": "timbaland.html",
         "name": "Timbaland",
-        "subtitle": "The Rhythm Innovator",
+        "role": "Rhythm Innovator",
+        "subtitle": "The Beat Magician",
         "description": "Timbaland revolutionized R&B and Hip Hop with his unique stuttering drums and sampling style.",
-        "intro": "Timothy Zachary Mosley, known professionally as Timbaland, is an American record producer, rapper, singer, and songwriter. He has received widespread acclaim for his production work.",
-        "sound": "Timbaland's signature sound involves complex, syncopated drum patterns, beatboxing, and creative use of foreign samples and vocal grunts. He created a futuristic sound that defined the 2000s.",
+        "intro": "Timothy Zachary Mosley, known professionally as Timbaland, is an American record producer, rapper, singer, and songwriter. He has received widespread acclaim for his innovative production work with Missy Elliott, Aaliyah, and Justin Timberlake.",
+        "sound": "Timbaland's signature sound involves complex, syncopated drum patterns, beatboxing used as percussion, and creative use of foreign samples and vocal grunts. He created a futuristic sound that defined the 2000s.",
         "hits": """
-            <li><strong>Cry Me a River</strong> - Justin Timberlake</li>
-            <li><strong>Get Ur Freak On</strong> - Missy Elliott</li>
-            <li><strong>Promiscuous</strong> - Nelly Furtado</li>
-            <li><strong>SexyBack</strong> - Justin Timberlake</li>
-            <li><strong>Dirt Off Your Shoulder</strong> - Jay-Z</li>
+            <li><span class="track-name">Cry Me a River</span> <span class="artist-name">Justin Timberlake</span></li>
+            <li><span class="track-name">Get Ur Freak On</span> <span class="artist-name">Missy Elliott</span></li>
+            <li><span class="track-name">Promiscuous</span> <span class="artist-name">Nelly Furtado</span></li>
+            <li><span class="track-name">SexyBack</span> <span class="artist-name">Justin Timberlake</span></li>
+            <li><span class="track-name">Dirt Off Your Shoulder</span> <span class="artist-name">Jay-Z</span></li>
         """,
         "impact": "His partnership with Missy Elliott and Justin Timberlake produced some of the most innovative pop and R&B tracks of the century. He proved that hip-hop beats could drive global pop smashes."
     },
     {
         "filename": "pharrell-williams.html",
         "name": "Pharrell Williams",
+        "role": "The Hitmaker",
         "subtitle": "The Neptune Sound",
         "description": "Pharrell Williams, part of The Neptunes, brings a funk-infused, minimal, and infectious energy to his productions.",
-        "intro": "Pharrell Lanscilo Williams is an American record producer, rapper, singer, and songwriter. Alongside Chad Hugo, he formed the hip hop and R&B production duo The Neptunes.",
-        "sound": "The Neptunes' sound is instantly recognizable: dry, punchy drums, Korg Triton presets, specific guitar strums, and a four-count start. It's minimalist funk for the digital age.",
+        "intro": "Pharrell Lanscilo Williams is an American record producer, rapper, singer, and songwriter. Alongside Chad Hugo, he formed the hip hop and R&B production duo The Neptunes, creating the soundtrack of the early 2000s.",
+        "sound": "The Neptunes' sound is instantly recognizable: dry, punchy drums, Korg Triton presets, specific guitar strums, and a four-count start. It's minimalist funk adjusted for the digital age.",
         "hits": """
-            <li><strong>Happy</strong> - Pharrell Williams</li>
-            <li><strong>Drop It Like It's Hot</strong> - Snoop Dogg</li>
-            <li><strong>Hollaback Girl</strong> - Gwen Stefani</li>
-            <li><strong>Hot in Herre</strong> - Nelly</li>
-            <li><strong>Blurred Lines</strong> - Robin Thicke</li>
+            <li><span class="track-name">Happy</span> <span class="artist-name">Pharrell Williams</span></li>
+            <li><span class="track-name">Drop It Like It's Hot</span> <span class="artist-name">Snoop Dogg</span></li>
+            <li><span class="track-name">Hollaback Girl</span> <span class="artist-name">Gwen Stefani</span></li>
+            <li><span class="track-name">Hot in Herre</span> <span class="artist-name">Nelly</span></li>
+            <li><span class="track-name">Get Lucky</span> <span class="artist-name">Daft Punk (Co-prod)</span></li>
         """,
         "impact": "Pharrell redefined 'cool' in music and fashion. The Neptunes dominated radio in the early 2000s, producing hits for everyone from Britney Spears to Clipse."
     },
     {
         "filename": "dr-dre.html",
         "name": "Dr. Dre",
+        "role": "Hip-Hop Icon",
         "subtitle": "The West Coast Architect",
         "description": "Dr. Dre pioneered G-Funk and launched the careers of Eminem, Snoop Dogg, and 50 Cent.",
         "intro": "Andre Romelle Young, known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is the founder and CEO of Aftermath Entertainment and Beats Electronics.",
-        "sound": "G-Funk: slower tempos, deep basslines, whiny synthesizers (like the Moog), and soulful female backing vocals. Dre is a perfectionist known for the cleanest mixing in hip-hop.",
+        "sound": "G-Funk: slower tempos, deep basslines, whiny synthesizers (like the Moog), and soulful female backing vocals. Dre is a perfectionist known for the cleanest mixing and drums in hip-hop history.",
         "hits": """
-            <li><strong>Nuthin' but a 'G' Thang</strong> - Dr. Dre ft. Snoop Dogg</li>
-            <li><strong>Still D.R.E.</strong> - Dr. Dre ft. Snoop Dogg</li>
-            <li><strong>In Da Club</strong> - 50 Cent</li>
-            <li><strong>My Name Is</strong> - Eminem</li>
-            <li><strong>California Love</strong> - 2Pac</li>
+            <li><span class="track-name">Nuthin' but a 'G' Thang</span> <span class="artist-name">Dr. Dre ft. Snoop Dogg</span></li>
+            <li><span class="track-name">Still D.R.E.</span> <span class="artist-name">Dr. Dre ft. Snoop Dogg</span></li>
+            <li><span class="track-name">In Da Club</span> <span class="artist-name">50 Cent</span></li>
+            <li><span class="track-name">My Name Is</span> <span class="artist-name">Eminem</span></li>
+            <li><span class="track-name">California Love</span> <span class="artist-name">2Pac</span></li>
         """,
         "impact": "Dre not only created the G-Funk sound but also discovered diverse talents like Eminem and 50 Cent, proving he has the best ear for talent in the game."
     }
@@ -333,12 +299,17 @@ def generate_pages():
         
         # Add to index card list
         cards_html += f"""
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>{producer['name']}</h2>
-            <p>{producer['intro'][:120]}...</p>
-            <a href="{producer['filename']}" class="read-more">Read Profile →</a>
-        </div>
+        <a href="{producer['filename']}" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">{producer['role']}</div>
+                <h2>{producer['name']}</h2>
+                <div class="card-subtitle">{producer['subtitle']}</div>
+                <p class="card-intro">{producer['intro'][:120]}...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         """
 
     # Generate Index Page

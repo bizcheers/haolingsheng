@@ -5,133 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legendary Music Producers & Artists | Hao Ling Sheng</title>
     <meta name="description" content="Explore profiles of the world's greatest music producers, from Max Martin to Rick Rubin. Learn about their signature sounds and hit records.">
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        .producer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .producer-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-            border: 1px solid #eee;
-        }
-        .producer-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        .producer-card h2 {
-            margin-top: 0;
-            color: #2c3e50;
-        }
-        .producer-card .role {
-            color: #666;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 15px;
-        }
-        .producer-card p {
-            color: #555;
-            line-height: 1.6;
-        }
-        .read-more {
-            display: inline-block;
-            margin-top: 15px;
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .read-more:hover {
-            text-decoration: underline;
-        }
-        .hero-section {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 0 0 20px 20px;
-            margin-bottom: 40px;
-        }
-        .hero-section h1 { margin: 0; font-size: 3em; }
-        .hero-section p { font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 20px auto 0; }
-    </style>
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="producers.css?v=1">
 </head>
-<body>
+<body class="producer-body">
     <header>
-        <div class="logo">
-            <a href="../index.html">Hao Ling Sheng</a>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../sheet-music/index.html">Sheet Music</a></li>
+                    <li><a href="../music-production/index.html">Production</a></li>
+                    <li><a href="../music-business/index.html">Business</a></li>
+                    <li><a href="index.html" class="active">Producers</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="../sheet-music/index.html">Sheet Music</a>
-            <a href="../music-production/index.html">Production</a>
-            <a href="../music-business/index.html">Business</a>
-            <a href="index.html" class="active">Producers</a>
-        </nav>
     </header>
 
-    <div class="hero-section">
-        <h1>The Architects of Sound</h1>
-        <p>Discover the masterminds behind your favorite songs. From pop geniuses to hip-hop moguls, meet the producers who shaped modern music.</p>
+    <div class="producer-hero">
+        <div class="container">
+            <div class="producer-subtitle">The Architects of Sound</div>
+            <h1>Legendary Producers</h1>
+            <p class="producer-intro">Discover the masterminds behind your favorite songs. From pop geniuses to hip-hop moguls, meet the producers who shaped modern music history.</p>
+        </div>
     </div>
 
     <div class="container">
-        <div class="producer-grid">
+        <div class="producer-index-grid">
             
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Max Martin</h2>
-            <p>Karl Martin Sandberg, known professionally as Max Martin, is a Swedish record producer and songwriter. He is widely ackn...</p>
-            <a href="max-martin.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="max-martin.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">Pop Melody Genius</div>
+                <h2>Max Martin</h2>
+                <div class="card-subtitle">The King of Pop Melodies</div>
+                <p class="card-intro">Karl Martin Sandberg, known professionally as Max Martin, is a Swedish record producer and songwriter. He is widely ackn...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Rick Rubin</h2>
-            <p>Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordin...</p>
-            <a href="rick-rubin.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="rick-rubin.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">Minimalist Visionary</div>
+                <h2>Rick Rubin</h2>
+                <div class="card-subtitle">The Zen Master of Reduction</div>
+                <p class="card-intro">Frederick Jay 'Rick' Rubin is an American record executive and record producer. He is the co-founder of Def Jam Recordin...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Quincy Jones</h2>
-            <p>Quincy Delight Jones Jr. is an American record producer, musician, songwriter, composer, arranger, and film and televisi...</p>
-            <a href="quincy-jones.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="quincy-jones.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">The Maestro</div>
+                <h2>Quincy Jones</h2>
+                <div class="card-subtitle">The Titan of Music</div>
+                <p class="card-intro">Quincy Delight Jones Jr. is an American record producer, musician, songwriter, composer, arranger, and film and televisi...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Timbaland</h2>
-            <p>Timothy Zachary Mosley, known professionally as Timbaland, is an American record producer, rapper, singer, and songwrite...</p>
-            <a href="timbaland.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="timbaland.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">Rhythm Innovator</div>
+                <h2>Timbaland</h2>
+                <div class="card-subtitle">The Beat Magician</div>
+                <p class="card-intro">Timothy Zachary Mosley, known professionally as Timbaland, is an American record producer, rapper, singer, and songwrite...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Pharrell Williams</h2>
-            <p>Pharrell Lanscilo Williams is an American record producer, rapper, singer, and songwriter. Alongside Chad Hugo, he forme...</p>
-            <a href="pharrell-williams.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="pharrell-williams.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">The Hitmaker</div>
+                <h2>Pharrell Williams</h2>
+                <div class="card-subtitle">The Neptune Sound</div>
+                <p class="card-intro">Pharrell Lanscilo Williams is an American record producer, rapper, singer, and songwriter. Alongside Chad Hugo, he forme...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
-        <div class="producer-card">
-            <span class="role">Producer Profile</span>
-            <h2>Dr. Dre</h2>
-            <p>Andre Romelle Young, known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is th...</p>
-            <a href="dr-dre.html" class="read-more">Read Profile →</a>
-        </div>
+        <a href="dr-dre.html" class="producer-index-card">
+            <div class="card-content">
+                <div class="card-role">Hip-Hop Icon</div>
+                <h2>Dr. Dre</h2>
+                <div class="card-subtitle">The West Coast Architect</div>
+                <p class="card-intro">Andre Romelle Young, known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is th...</p>
+            </div>
+            <div class="card-footer">
+                <span class="read-more-btn">Read Profile →</span>
+            </div>
+        </a>
         
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hao Ling Sheng. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

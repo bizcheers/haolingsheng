@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 410 Gone for old ringtone directories
+RewriteRule ^2015/ring/ - [G,L]
+RewriteRule ^download/ring/ - [G,L]
+
+# 410 Gone for all .m4r files if they appear elsewhere
+RewriteRule \.m4r$ - [G,L]
+</IfModule>

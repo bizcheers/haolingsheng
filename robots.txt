@@ -10,3 +10,6 @@ Disallow: /lingsheng/
 Disallow: /zhuanti/
 Disallow: /category/
 Disallow: /search.asp
+Disallow: /search.htm
+Disallow: /lander
+Disallow: /tag/

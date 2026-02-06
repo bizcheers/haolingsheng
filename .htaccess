@@ -12,7 +12,12 @@ RewriteRule ^category/ - [G,L]
 
 # Block spam scripts and old defaults
 RewriteRule ^search\.asp$ - [G,L]
+RewriteRule ^search\.htm$ - [G,L]
+RewriteRule ^lander$ - [G,L]
 RewriteRule ^Default\.htm$ - [G,L]
+
+# Block legacy content directories
+RewriteRule ^tag/ - [G,L]
 
 # 410 Gone for all .m4r files if they appear elsewhere
 RewriteRule \.m4r$ - [G,L]

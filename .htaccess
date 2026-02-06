@@ -1,9 +1,18 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# 410 Gone for old ringtone directories
+# 410 Gone for old ringtone directories and legacy paths
 RewriteRule ^2015/ring/ - [G,L]
+RewriteRule ^2014/ring/ - [G,L]
 RewriteRule ^download/ring/ - [G,L]
+RewriteRule ^ring/ - [G,L]
+RewriteRule ^lingsheng/ - [G,L]
+RewriteRule ^zhuanti/ - [G,L]
+RewriteRule ^category/ - [G,L]
+
+# Block spam scripts and old defaults
+RewriteRule ^search\.asp$ - [G,L]
+RewriteRule ^Default\.htm$ - [G,L]
 
 # 410 Gone for all .m4r files if they appear elsewhere
 RewriteRule \.m4r$ - [G,L]

@@ -3,4 +3,10 @@ Allow: /
 Sitemap: https://www.haolingsheng.com/sitemap.xml
 
 Disallow: /2015/ring/
+Disallow: /2014/ring/
 Disallow: /download/ring/
+Disallow: /ring/
+Disallow: /lingsheng/
+Disallow: /zhuanti/
+Disallow: /category/
+Disallow: /search.asp

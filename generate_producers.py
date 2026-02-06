@@ -8,6 +8,7 @@ TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{name} - Music Producer Profile | Hao Ling Sheng</title>
     <meta name="description" content="{description}">
+    <link rel="icon" type="image/png" href="../favicon.png">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{url}">
@@ -158,6 +159,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legendary Music Producers & Artists | Hao Ling Sheng</title>
     <meta name="description" content="Explore profiles of the world's greatest music producers, from Max Martin to Rick Rubin. Learn about their signature sounds and hit records.">
+    <link rel="icon" type="image/png" href="../favicon.png">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.haolingsheng.com/singer/index.html">

@@ -42,12 +42,19 @@
     font-style: italic;
 }
 
+/* Intro Text Formatting */
 .producer-intro {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    /* Slightly larger intro */
     color: var(--text-secondary);
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.8;
+    line-height: 1.85;
+    /* Increased reading comfort */
+}
+
+.producer-intro p {
+    margin-bottom: var(--space-lg);
 }
 
 /* Section Cards */
@@ -73,7 +80,8 @@
     align-items: center;
     gap: var(--space-md);
     color: var(--text-primary);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    /* Increased spacing below section header */
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: var(--space-md);
 }
@@ -88,6 +96,63 @@
     justify-content: center;
     font-size: 1.5rem;
     color: var(--accent-purple);
+}
+
+/* Rich Text Formatting (For Expanded Content) */
+.rich-text {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+}
+
+.rich-text p {
+    margin-bottom: var(--space-xl);
+    /* Generous spacing between paragraphs */
+}
+
+.rich-text h4 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    /* Clear separation from previous section */
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    border-left: 3px solid var(--accent-purple);
+    padding-left: 1rem;
+    display: inline-block;
+    /* Aligns border nicely */
+    line-height: 1.2;
+}
+
+.rich-text ul {
+    margin-bottom: var(--space-xl);
+    padding-left: 1.5rem;
+    list-style-type: none;
+    /* Custom bullets */
+}
+
+.rich-text li {
+    margin-bottom: 1rem;
+    /* Spacing between list items */
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.rich-text li::before {
+    content: "•";
+    color: var(--accent-cyan);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.85;
+}
+
+.rich-text strong {
+    color: var(--text-primary);
+    /* Highlight keywords in white */
+    font-weight: 600;
 }
 
 /* Signature Sound Box */
@@ -119,6 +184,14 @@
     flex-direction: column;
     gap: var(--space-xs);
     transition: all 0.2s;
+    /* Reset rich-text styles if nested (though it shouldn't be) */
+    margin-bottom: 0;
+    padding-left: var(--space-lg);
+}
+
+.discography-grid li::before {
+    content: none;
+    /* Remove custom bullets for grid items */
 }
 
 .discography-grid li:hover {
@@ -216,7 +289,6 @@
     line-height: 1.6;
     margin-bottom: var(--space-xl);
     flex-grow: 1;
-    /* Push footer down */
 }
 
 .card-footer {

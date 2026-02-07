@@ -11,7 +11,15 @@
     <title>Free Sheet Music & Music Theory | Hao Ling Sheng</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="canonical" href="https://www.haolingsheng.com/">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=9">
+    <style>
+        /* Force 5 columns override */
+        @media (min-width: 768px) {
+            .category-grid {
+                grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +27,7 @@
         <div class="container">
             <div class="logo">
                 <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
-                <a href="index.html" class="logo-text">
+                <a href="./" class="logo-text">
                     <h1>Hao Ling Sheng</h1>
                     <p class="tagline">Professional Music Education</p>
                 </a>

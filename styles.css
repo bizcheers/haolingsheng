@@ -457,16 +457,17 @@ footer {
 /* Homepage Specific Styles */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-xl);
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: var(--space-md);
     margin-top: var(--space-2xl);
+    width: 100%;
 }
 
 .category-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-xl);
-    padding: var(--space-2xl);
+    padding: var(--space-lg);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;

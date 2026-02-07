@@ -467,7 +467,7 @@ footer {
     background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-xl);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -497,8 +497,8 @@ footer {
 }
 
 .category-card .icon {
-    font-size: 3rem;
-    margin-bottom: var(--space-md);
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
     display: inline-block;
     transition: transform 0.3s;
 }
@@ -508,20 +508,22 @@ footer {
 }
 
 .category-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     margin-bottom: var(--space-sm);
     color: var(--text-primary);
 }
 
 .category-card p {
     color: var(--text-secondary);
-    margin-bottom: var(--space-lg);
-    line-height: 1.6;
+    font-size: 0.875rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.4;
 }
 
 .category-card a {
     color: var(--accent-green);
     font-weight: 600;
+    font-size: 0.875rem;
     text-decoration: none;
     display: inline-flex;
     align-items: center;

@@ -152,9 +152,15 @@
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/musical-modes-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/dorian-mode-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/circle-of-fifths-guide.html</loc>

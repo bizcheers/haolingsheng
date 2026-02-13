@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>What is MIDI? The Foundation of Modern Music Production | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Learn what MIDI is and how it revolutionized music. This guide covers MIDI basics, software instruments, MIDI controllers, and modern MIDI 2.0 features.">
+    <meta name="keywords"
+        content="what is midi, musical instrument digital interface, midi basics for beginners, midi controllers, vsi instruments, midi 2.0 explained">
+    <link rel="canonical" href="https://www.haolingsheng.com/music-production/what-is-midi-guide.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="What is MIDI? The Foundation of Modern Music Production">
+    <meta property="og:description"
+        content="MIDI isn't audio. Learn how this digital language allows computers, synths, and controllers to talk to each other.">
+    <meta property="og:url" content="https://www.haolingsheng.com/music-production/what-is-midi-guide.html">
+    <meta property="og:site_name" content="Hao Ling Sheng">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="article.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What is MIDI? A Complete Guide to Musical Instrument Digital Interface",
+      "description": "An essential guide for music producers explaining the difference between MIDI and audio, and how to master MIDI data for professional results.",
+      "author": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hao Ling Sheng",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.haolingsheng.com/logo.svg"
+        }
+      },
+      "datePublished": "2026-02-12",
+      "dateModified": "2026-02-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.haolingsheng.com/music-production/what-is-midi-guide.html"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container">
+            <article class="article-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> /
+                    <a href="./">Music Production</a> /
+                    <span>What is MIDI?</span>
+                </div>
+
+                <h1>What is MIDI? Understanding the Language of Music Production</h1>
+
+                <div class="article-meta">
+                    <span>🎹 Digital Theory</span>
+                    <span>⏱️ 10 min read</span>
+                    <span>📅 February 2026</span>
+                </div>
+
+                <section>
+                    <p>If you have ever used a DAW (Digital Audio Workstation) like Ableton, FL Studio, or Logic Pro,
+                        you have interacted with those little rectangular blocks in the "Piano Roll." That is
+                        <strong>MIDI</strong>. But despite its massive influence on modern music, many producers still
+                        find it mysterious.</p>
+                    <p><strong>MIDI</strong> stands for <strong>Musical Instrument Digital Interface</strong>. It was
+                        invented in the early 1980s as a universal protocol that allows digital instruments, computers,
+                        and hardware to communicate with each other. It is the reason you can play a piano melody on a
+                        plastic keyboard and have your computer trigger a massive orchestra or a futuristic synth sound.
+                    </p>
+                </section>
+
+                <section id="audio-vs-midi">
+                    <h2>1. MIDI vs. Audio: The Sheet Music Analogy</h2>
+                    <p>The most important concept to understand is that <strong>MIDI is not audio</strong>. It does not
+                        contain any sound waves. Instead, it is a set of instructions.</p>
+                    <p>Think of it like this: <em>Audio</em> is a recording of a performance (like a vinyl record or an
+                        MP3). <em>MIDI</em> is the <strong>sheet music</strong>. It tells the performer which note to
+                        play, how long to hold it, and how hard to hit the key—but it needs a "performer" (a synthesizer
+                        or a sampler) to actually make the sound.</p>
+                    <p><strong>Benefits of MIDI:</strong> Because it is just data, you can change the sound *after* you
+                        record the performance. If you recorded a piano part but decide it sounds better on an organ,
+                        you don't need to re-record it; you just switch the plugin.</p>
+                </section>
+
+                <section id="messages">
+                    <h2>2. Common MIDI Messages</h2>
+                    <p>When you press a key on a MIDI controller, you are sending several types of data packets
+                        simultaneously:</p>
+                    <ul>
+                        <li><strong>Note On/Off:</strong> Tells the instrument when a note starts and stops.</li>
+                        <li><strong>Pitch:</strong> Which of the 128 available MIDI notes is being triggered (e.g.,
+                            Middle C is 60).</li>
+                        <li><strong>Velocity:</strong> How hard you hit the key (0 to 127). This usually controls volume
+                            or "brightness."</li>
+                        <li><strong>Aftertouch:</strong> Pressure applied to the key *after* it has been struck.</li>
+                        <li><strong>CC (Continuous Controllers):</strong> Used for knobs and faders, like the "Mod
+                            Wheel" (CC 1) or "Main Volume" (CC 7).</li>
+                    </ul>
+                </section>
+
+                <section id="hardware">
+                    <h2>3. Cables and Connectors</h2>
+                    <p>In the 80s and 90s, everyone used the classic <strong>5-Pin DIN</strong> cable. Today, most MIDI
+                        is sent via <strong>USB</strong> directly into your computer. However, pro studios still use the
+                        5-Pin cables to connect vintage synthesizers or hardware drum machines.</p>
+                    <p><strong>Wireless MIDI:</strong> With advancements in Bluetooth Low Energy (BLE), you can now use
+                        wireless MIDI controllers with almost zero latency—perfect for playing on an iPad or a clean
+                        studio desk.</p>
+                </section>
+
+                <section id="midi-2">
+                    <h2>4. MIDI 2.0: The Future</h2>
+                    <p>For nearly 40 years, MIDI remained largely unchanged. But recently, <strong>MIDI 2.0</strong> was
+                        released. This updated version allows for "Bi-Directional Conversation" between gear. Instead of
+                        just sending a note, the plugin can "talk back" to your controller to sync settings, labels, and
+                        much higher resolution data (65,000 steps of velocity instead of just 127).</p>
+                </section>
+
+                <section>
+                    <h2>5. Practical Producer Tips</h2>
+                    <ul>
+                        <li><strong>Quantization:</strong> If you played your MIDI notes slightly out of time, you can
+                            "Quantize" them to snap perfectly to the grid. Use 50% - 70% quantization to keep a natural
+                            groove.</li>
+                        <li><strong>Humanization:</strong> Robotic MIDI sounds boring. Go into your DAW and slightly
+                            randomize the velocity and timing of your notes to mimic a real human player.</li>
+                        <li><strong>MIDI Mapping:</strong> You can map the knobs on your keyboard to control anything in
+                            your DAW—from the cutoff of a filter to the volume of your faders.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Summary</h2>
+                    <p>MIDI is the invisible glue that holds a modern home studio together. Whether you are composing
+                        cinematic scores or making trap beats, mastering MIDI data gives you total creative control over
+                        your sound. It is the bridge between your physical performance and your digital soundscape.</p>
+                </section>
+
+                <div class="related-articles">
+                    <h3>Production Fundamentals</h3>
+                    <ul>
+                        <li><a href="what-is-daw.html">What is a DAW?</a></li>
+                        <li><a href="home-studio-setup-guide.html">Home Studio Essentials</a></li>
+                        <li><a href="midi-orchestration-realism.html">Pro MIDI Orchestration Tips</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>MIDI Facts</h4>
+                    <p>MIDI celebrated its 40th anniversary in 2023. It remains one of the few technological standards
+                        that hasn't become obsolete in four decades!</p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>Interactive Tool</h4>
+                    <p>Working with MIDI notes and need to know their exact frequency? Use our <a
+                            href="midi-note-to-frequency.html">MIDI Note to Hz Converter</a>.</p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>MPE Explained</h4>
+                    <p><strong>MPE</strong> (MIDI Polyphonic Expression) allows you to bend the pitch or change the
+                        filters of individual notes within a chord, providing much more expression than traditional
+                        MIDI.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../gepu/">Music Notation</a></li>
+                        <li><a href="../geci/">Music Theory</a></li>
+                        <li><a href="../music-production/">Production</a></li>
+                        <li><a href="../music-business/">Music Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone
+                                Converter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

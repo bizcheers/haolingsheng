@@ -415,6 +415,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/page-3.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/free-vst-plugins-guide.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -505,12 +511,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/parallel-processing-techniques.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.haolingsheng.com/music-production/ableton-shortcuts-cheat-sheet.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -559,12 +559,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/gain-vs-volume.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.haolingsheng.com/music-production/types-of-reverb-guide.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -597,12 +591,6 @@
   <url>
     <loc>https://www.haolingsheng.com/music-production/midi-note-to-frequency.html</loc>
     <lastmod>2026-01-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/eq-basics.html</loc>
-    <lastmod>2026-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -762,9 +750,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+    <priority>0.6</priority>
+  </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/best-fl-studio-plugins.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/dynamic-eq-mixing-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/binaural-mixing-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -5,17 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Professional Suno AI Prompt Generator. Craft deep, high-quality music prompts with our structural tag wizard and genre mixer.">
+        content="Professional Suno AI Song Architect. The ultimate Custom Mode assistant for Suno. Optimized lyrics, professional style tags, and chord progression suggestions.">
     <meta name="keywords"
-        content="suno ai prompts, ai music generator, suno ai tutorial, custom music prompts, suno tags">
-    <title>Suno AI Prompt Architect | Hao Ling Sheng</title>
+        content="suno ai generator, song architect, ai music consultant, chord progression generator, suno style tags">
+    <title>Suno AI Song Architect | Hao Ling Sheng</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css?v=11">
+    <link rel="stylesheet" href="styles.css?v=12">
     <style>
-        /* Tool Specific Styles - Premium Glassmorphism */
-        .tool-container {
-            max-width: 1000px;
+        /* Modern Layout: Input Left, Analysis Right */
+        .master-container {
+            max-width: 1300px;
             margin: var(--space-2xl) auto;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: var(--space-xl);
+        }
+
+        @media (max-width: 1000px) {
+            .master-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Suno-style Input Panel */
+        .input-panel {
             background: var(--bg-secondary);
             border: 1px solid var(--border-subtle);
             border-radius: var(--radius-xl);
@@ -23,132 +36,135 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .tool-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-2xl);
-        }
-
-        @media (max-width: 850px) {
-            .tool-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .control-group {
+        .input-group {
             margin-bottom: var(--space-xl);
         }
 
-        .control-group h3 {
-            font-size: 1.125rem;
-            margin-bottom: var(--space-md);
-            color: var(--accent-green);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        .tag-cloud {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-sm);
-        }
-
-        .tag-chip {
-            padding: var(--space-xs) var(--space-md);
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-full);
-            font-size: 0.875rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            user-select: none;
-        }
-
-        .tag-chip:hover {
-            border-color: var(--accent-cyan);
-            background: var(--bg-elevated);
-        }
-
-        .tag-chip.active {
-            background: var(--accent-green);
-            color: var(--bg-primary);
-            border-color: var(--accent-green);
+        .input-group label {
+            display: block;
             font-weight: 600;
-        }
-
-        .genre-mixer-row {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
+            color: var(--accent-cyan);
             margin-bottom: var(--space-sm);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        .genre-mixer-row input[type="range"] {
-            flex: 1;
-            accent-color: var(--accent-green);
-        }
-
-        .output-section {
-            background: var(--bg-tertiary);
-            border-radius: var(--radius-lg);
-            padding: var(--space-xl);
-            position: sticky;
-            top: var(--space-xl);
-            height: fit-content;
-        }
-
-        .output-box {
+        .suno-textarea {
             width: 100%;
-            min-height: 150px;
-            background: var(--bg-primary);
+            background: var(--bg-tertiary);
             border: 1px solid var(--border-default);
             border-radius: var(--radius-md);
             padding: var(--space-md);
             color: var(--text-primary);
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9375rem;
-            margin-bottom: var(--space-md);
-            white-space: pre-wrap;
-            word-break: break-all;
+            font-family: inherit;
+            font-size: 1rem;
+            line-height: 1.5;
+            resize: vertical;
+            transition: border-color 0.2s;
         }
 
-        .copy-btn {
+        .suno-textarea:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+
+        .suno-input {
             width: 100%;
-            background: var(--accent-green);
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-md);
+            padding: var(--space-sm) var(--space-md);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .suno-input:focus {
+            border-color: var(--accent-cyan);
+            outline: none;
+        }
+
+        /* Analysis Panel */
+        .analysis-panel {
+            position: sticky;
+            top: var(--space-xl);
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .analysis-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .analysis-card h3 {
+            font-size: 1rem;
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--text-primary);
+        }
+
+        .suggestion-item {
+            font-size: 0.9rem;
+            padding: var(--space-sm);
+            background: var(--bg-tertiary);
+            border-left: 3px solid var(--accent-green);
+            margin-bottom: var(--space-sm);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        .suggestion-item.warning {
+            border-left-color: #f59e0b;
+        }
+
+        .chord-pill {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--bg-elevated);
+            color: var(--accent-cyan);
+            border-radius: var(--radius-sm);
+            font-family: monospace;
+            font-size: 0.85rem;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        .chord-pill:hover {
+            background: var(--accent-cyan);
             color: var(--bg-primary);
+        }
+
+        /* Action Buttons */
+        .btn-master {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+            color: var(--bg-primary);
+            font-weight: 800;
             padding: var(--space-md);
             border: none;
             border-radius: var(--radius-md);
-            font-weight: 700;
             cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-sm);
+            transition: transform 0.2s;
+            margin-top: var(--space-lg);
         }
 
-        .copy-btn:hover {
-            background: var(--accent-green-hover);
+        .btn-master:hover {
             transform: scale(1.02);
+            filter: brightness(1.1);
         }
 
-        /* Micro-animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .tool-container {
-            animation: fadeIn 0.6s ease-out;
+        .syllable-counter {
+            float: right;
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
         }
     </style>
 </head>
@@ -168,189 +184,165 @@
                     <li><a href="gepu/">Music Notation</a></li>
                     <li><a href="geci/">Music Theory</a></li>
                     <li><a href="music-production/">Production</a></li>
-                    <li><a href="music-business/">Music Business</a></li>
-                    <li><a href="singer/index.html">Producers</a></li>
+                    <li><a href="lyrics-singability-checker.html">Lyrics Checker</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="tool-header" style="text-align: center; padding: var(--space-2xl) 0;">
-            <h2 class="text-gradient">Suno AI Prompt Architect</h2>
-            <p>Craft high-fidelity prompts for professional AI music production.</p>
+        <section style="text-align: center; padding: var(--space-xl) 0 0;">
+            <h2 class="text-gradient">Suno AI Song Architect</h2>
+            <p>Unified Expert Design Mode for Professional AI Production.</p>
         </section>
 
-        <div class="tool-container">
-            <div class="tool-grid">
-                <!-- Inputs -->
-                <div class="input-section">
-
-                    <div class="control-group">
-                        <h3><span>🎭</span> Vocal Style</h3>
-                        <div class="tag-cloud" id="vocal-tags">
-                            <div class="tag-chip" data-tag="Male Vocals">Male</div>
-                            <div class="tag-chip" data-tag="Female Vocals">Female</div>
-                            <div class="tag-chip" data-tag="Breath-y">Breathy</div>
-                            <div class="tag-chip" data-tag="Raspy">Raspy</div>
-                            <div class="tag-chip" data-tag="Ethereal">Ethereal</div>
-                            <div class="tag-chip" data-tag="Soulful">Soulful</div>
-                            <div class="tag-chip" data-tag="Energetic">Energetic</div>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <h3><span>🎻</span> Key Instruments</h3>
-                        <div class="tag-cloud" id="instrument-tags">
-                            <div class="tag-chip" data-tag="Acoustic Guitar">Acoustic Guitar</div>
-                            <div class="tag-chip" data-tag="Lo-fi Piano">Lo-fi Piano</div>
-                            <div class="tag-chip" data-tag="Synth Pad">Synth Pad</div>
-                            <div class="tag-chip" data-tag="Heavy Bass">Heavy Bass</div>
-                            <div class="tag-chip" data-tag="Violin">Violin</div>
-                            <div class="tag-chip" data-tag="Saxophone">Saxophone</div>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <h3><span>⏲️</span> Structure Tags</h3>
-                        <div class="tag-cloud" id="structure-tags">
-                            <div class="tag-chip" data-tag="[Intro]">[Intro]</div>
-                            <div class="tag-chip" data-tag="[Verse]">[Verse]</div>
-                            <div class="tag-chip" data-tag="[Chorus]">[Chorus]</div>
-                            <div class="tag-chip" data-tag="[Bridge]">[Bridge]</div>
-                            <div class="tag-chip" data-tag="[Outro]">[Outro]</div>
-                            <div class="tag-chip" data-tag="[Drop]">[Drop]</div>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <h3><span>🌌</span> Atmosphere</h3>
-                        <div class="tag-cloud" id="mood-tags">
-                            <div class="tag-chip" data-tag="Cinematic">Cinematic</div>
-                            <div class="tag-chip" data-tag="Melancholic">Melancholic</div>
-                            <div class="tag-chip" data-tag="Cheerful">Cheerful</div>
-                            <div class="tag-chip" data-tag="Dark">Dark</div>
-                            <div class="tag-chip" data-tag="Nostalgic">Nostalgic</div>
-                        </div>
-                    </div>
-
+        <div class="master-container">
+            <!-- Left: Inputs -->
+            <div class="input-panel">
+                <div class="input-group">
+                    <label>Lyrics <span class="syllable-counter" id="syllable-count">0 Lines Analysed</span></label>
+                    <textarea class="suno-textarea" id="lyrics-input" rows="12"
+                        placeholder="[Intro]&#10;Echoes in the hallway, fading in the dark...&#10;&#10;[Chorus]&#10;Dancing for the light..."></textarea>
                 </div>
 
-                <!-- Preview / Output -->
-                <div class="output-section">
-                    <h3>Prompt Preview</h3>
-                    <p style="font-size: 0.8rem; margin-bottom: var(--space-sm);">Optimized for Suno Custom Mode</p>
-                    <div class="output-box" id="prompt-output">Select some tags to generate a prompt...</div>
-                    <button class="copy-btn" id="copy-btn">
-                        <span>📋</span> Copy Prompt
-                    </button>
-                    <div id="copy-msg"
-                        style="text-align: center; font-size: 0.8rem; margin-top: 10px; color: var(--accent-green); opacity: 0;">
-                        Copied to clipboard!</div>
+                <div class="input-group">
+                    <label>Style of Music</label>
+                    <input type="text" class="suno-input" id="style-input"
+                        placeholder="e.g., 90s Soul, Female Vocals, Smooth, 100bpm">
+                </div>
+
+                <div class="input-group">
+                    <label>Title</label>
+                    <input type="text" class="suno-input" id="title-input" placeholder="Give your masterpiece a name">
+                </div>
+
+                <button class="btn-master" id="optimize-btn">⚡ MASTERIZE FOR SUNO</button>
+            </div>
+
+            <!-- Right: Analysis & Chords -->
+            <div class="analysis-panel">
+                <div class="analysis-card">
+                    <h3><span>🎹</span> Harmonic Recommendations</h3>
+                    <div id="chord-suggestions">
+                        <p style="font-size: 0.85rem; color: var(--text-tertiary);">Enter a style to see professional
+                            chord suggestions.</p>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3><span>🔍</span> Structural Audit</h3>
+                    <div id="structural-audit">
+                        <div class="suggestion-item">Add lyrics to begin structural analysis.</div>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3><span>📊</span> Flow Analysis</h3>
+                    <div id="flow-analysis">
+                        <div style="font-size: 0.85rem; color: var(--text-tertiary);">Waiting for lyrics input...</div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <section style="margin-top: var(--space-3xl);">
-            <h3>How to Use the Prompt Architect</h3>
-            <div class="grid grid-4" style="margin-top: var(--space-lg);">
-                <div class="card">
-                    <h4>1. Select Your Core Style</h4>
-                    <p>Start by picking the vocal gender and tone. Suno works best when you are specific about the
-                        "texture" of the voice.</p>
-                </div>
-                <div class="card">
-                    <h4>2. Define the Instrumentation</h4>
-                    <p>Choose the leading instruments. Don't add too many; 2-3 specific instruments generate a cleaner
-                        mix than a generic list.</p>
-                </div>
-                <div class="card">
-                    <h4>3. Layer the Atmosphere</h4>
-                    <p>Adding a mood like "Cinematic" or "Nostalgic" helps Suno choose the right reverb and spatial
-                        processing.</p>
-                </div>
-                <div class="card">
-                    <h4>4. Control the Song Form</h4>
-                    <p>Use structural tags like [Chorus] or [Drop] to guide the AI's internal progression. These are
-                        essential for longer tracks.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. Designed for Professional Music Production.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Professional AI Music Consultancy.</p>
             </div>
         </div>
     </footer>
 
+    <script src="music-wisdom.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const output = document.getElementById('prompt-output');
-            const chips = document.querySelectorAll('.tag-chip');
-            const copyBtn = document.getElementById('copy-btn');
-            const copyMsg = document.getElementById('copy-msg');
+            const lyricsInput = document.getElementById('lyrics-input');
+            const styleInput = document.getElementById('style-input');
+            const titleInput = document.getElementById('title-input');
+            const chordBox = document.getElementById('chord-suggestions');
+            const auditBox = document.getElementById('structural-audit');
+            const flowBox = document.getElementById('flow-analysis');
+            const syllableCount = document.getElementById('syllable-count');
+            const optimizeBtn = document.getElementById('optimize-btn');
 
-            const state = {
-                vocals: new Set(),
-                instruments: new Set(),
-                structure: new Set(),
-                moods: new Set()
+            // Syllable Logic
+            const countSyllables = (word) => {
+                word = word.toLowerCase().replace(/[^\w]/g, '');
+                if (word.length <= 3) return 1;
+                word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
+                word = word.replace(/^y/, '');
+                const syllables = word.match(/[aeiouy]{1,2}/g);
+                return syllables ? syllables.length : 1;
             };
 
-            const updatePrompt = () => {
-                const parts = [];
+            const analyzeAll = () => {
+                const lyrics = lyricsInput.value;
+                const style = styleInput.value.toLowerCase();
+                const lines = lyrics.split('\n').filter(l => l.trim() !== '');
 
-                if (state.moods.size > 0) parts.push(Array.from(state.moods).join(', '));
-                if (state.vocals.size > 0) parts.push(Array.from(state.vocals).join(', '));
-                if (state.instruments.size > 0) parts.push(Array.from(state.instruments).join(', '));
+                // 1. Structural Audit
+                let auditHtml = '';
+                const tags = lyrics.match(/\[(.*?)\]/g) || [];
+                if (!tags.some(t => t.toLowerCase().includes('intro'))) auditHtml += '<div class="suggestion-item warning">⚠️ Missing [Intro] tag.</div>';
+                if (!tags.some(t => t.toLowerCase().includes('chorus'))) auditHtml += '<div class="suggestion-item warning">⚠️ No [Chorus] detected.</div>';
+                if (lines.length > 20 && !tags.some(t => t.toLowerCase().includes('bridge'))) auditHtml += '<div class="suggestion-item">💡 Consider a [Bridge] for variety.</div>';
+                if (lines.length > 5 && auditHtml === '') auditHtml = '<div class="suggestion-item success">✅ Structure looks professional.</div>';
+                auditBox.innerHTML = auditHtml || '<div class="suggestion-item">Add lyrics to begin analysis.</div>';
 
-                let prompt = parts.join(', ');
-
-                if (state.structure.size > 0) {
-                    prompt += '\n\nStructure guide: ' + Array.from(state.structure).join(' -> ');
-                }
-
-                if (prompt.trim() === '') {
-                    output.innerText = 'Select some tags to generate a prompt...';
-                } else {
-                    output.innerText = prompt;
-                }
-            };
-
-            chips.forEach(chip => {
-                chip.addEventListener('click', () => {
-                    const tag = chip.getAttribute('data-tag');
-                    const parentId = chip.parentElement.id;
-
-                    let category;
-                    if (parentId === 'vocal-tags') category = state.vocals;
-                    else if (parentId === 'instrument-tags') category = state.instruments;
-                    else if (parentId === 'structure-tags') category = state.structure;
-                    else if (parentId === 'mood-tags') category = state.moods;
-
-                    if (chip.classList.contains('active')) {
-                        chip.classList.remove('active');
-                        category.delete(tag);
-                    } else {
-                        chip.classList.add('active');
-                        category.add(tag);
+                // 2. Flow Analysis
+                let flowHtml = '';
+                let totalSyllables = 0;
+                lines.forEach((line, i) => {
+                    if (line.startsWith('[')) return;
+                    const words = line.trim().split(/\s+/);
+                    let count = 0;
+                    words.forEach(w => count += countSyllables(w));
+                    totalSyllables += count;
+                    if (i < 4) { // Only show first few for preview
+                        flowHtml += `<div style="font-size: 0.8rem; margin-bottom: 4px;">L${i + 1}: ${count} syllables</div>`;
                     }
-
-                    updatePrompt();
                 });
-            });
+                syllableCount.innerText = `${lines.length} lines processed`;
+                flowBox.innerHTML = flowHtml || 'Waiting for lyrics...';
 
-            copyBtn.addEventListener('click', () => {
-                const text = output.innerText;
-                if (text && !text.includes('Select some tags')) {
-                    navigator.clipboard.writeText(text).then(() => {
-                        copyMsg.style.opacity = '1';
-                        setTimeout(() => copyMsg.style.opacity = '0', 2000);
-                    });
+                // 3. Chord Suggestions based on Style
+                let chordHtml = '';
+                let detectedGenre = null;
+                for (let genre in musicWisdom.genres) {
+                    if (style.includes(genre.toLowerCase())) {
+                        detectedGenre = genre;
+                        break;
+                    }
                 }
+
+                if (detectedGenre) {
+                    const wisdom = musicWisdom.genres[detectedGenre];
+                    chordHtml = `<p style="font-weight: 600; color: var(--accent-green); margin-bottom: 8px;">${detectedGenre} Style Detected</p>`;
+                    wisdom.chords.forEach(c => {
+                        chordHtml += `<div class="suggestion-item">Try: ${c}</div>`;
+                    });
+                    chordHtml += `<p style="font-size: 0.8rem; margin-top: 8px;">💡 ${wisdom.tips}</p>`;
+                } else {
+                    chordHtml = '<p style="font-size: 0.85rem; color: var(--text-tertiary);">Specify a genre (e.g., Pop, Jazz) in the Style box for chord ideas.</p>';
+                }
+                chordBox.innerHTML = chordHtml;
+            };
+
+            lyricsInput.addEventListener('input', analyzeAll);
+            styleInput.addEventListener('input', analyzeAll);
+
+            optimizeBtn.addEventListener('click', () => {
+                let currentStyle = styleInput.value;
+                const modifiers = ["high fidelity", "professional production", "48khz", "mastered"];
+                modifiers.forEach(m => {
+                    if (!currentStyle.toLowerCase().includes(m)) {
+                        currentStyle += (currentStyle ? ", " : "") + m;
+                    }
+                });
+                styleInput.value = currentStyle;
+                analyzeAll();
+                alert("Style tags optimized for Suno High Fidelity mode!");
             });
         });
     </script>

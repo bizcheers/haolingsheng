@@ -1434,4 +1434,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/house-music-subgenres-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>

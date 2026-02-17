@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Lyrics Singability Checker. Optimize your lyrics for rhythm, rhyme, and flow before generating AI music in Suno or Udio.">
+    <meta name="keywords"
+        content="lyrics checker, song meter analyzer, syllable counter for lyrics, rhyme detector, suno ai lyrics">
+    <title>Lyrics Singability Checker | Hao Ling Sheng</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css?v=11">
+    <style>
+        .tool-container {
+            max-width: 1200px;
+            margin: var(--space-2xl) auto;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (max-width: 900px) {
+            .tool-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .editor-section {
+            padding: var(--space-2xl);
+            border-right: 1px solid var(--border-subtle);
+        }
+
+        .toolbar {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .tool-btn {
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-md);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tool-btn:hover {
+            color: var(--accent-green);
+            border-color: var(--accent-green);
+        }
+
+        .lyrics-area {
+            width: 100%;
+            min-height: 400px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            resize: vertical;
+        }
+
+        .sidebar {
+            padding: var(--space-2xl);
+            background: var(--bg-tertiary);
+        }
+
+        .stats-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .stats-card h4 {
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            margin-bottom: var(--space-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .syllable-list {
+            list-style: none;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .syllable-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .warning {
+            color: #f59e0b;
+        }
+
+        .success {
+            color: var(--accent-green);
+        }
+
+        .mood-badge {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--bg-primary);
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            margin-top: var(--space-sm);
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .analyzing {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="./" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="gepu/">Music Notation</a></li>
+                    <li><a href="geci/">Music Theory</a></li>
+                    <li><a href="music-production/">Production</a></li>
+                    <li><a href="suno-prompt-generator.html">Prompt Architect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section style="text-align: center; padding: var(--space-2xl) 0;">
+            <h2 class="text-gradient">Lyrics Singability Checker</h2>
+            <p>Ensure your lyrics have perfect rhythm and flow for AI generation.</p>
+        </section>
+
+        <div class="tool-container">
+            <!-- Editor -->
+            <div class="editor-section">
+                <div class="toolbar">
+                    <button class="tool-btn" data-insert="[Intro]">+ Intro</button>
+                    <button class="tool-btn" data-insert="[Verse]">+ Verse</button>
+                    <button class="tool-btn" data-insert="[Chorus]">+ Chorus</button>
+                    <button class="tool-btn" data-insert="[Bridge]">+ Bridge</button>
+                    <button class="tool-btn" data-insert="[Outro]">+ Outro</button>
+                    <button class="tool-btn" data-insert="[Break]">+ Break</button>
+                </div>
+                <textarea class="lyrics-area" id="lyrics-input"
+                    placeholder="Type or paste your lyrics here...&#10;&#10;Example:&#10;Dancing in the summer rain&#10;Finding joy inside the pain"></textarea>
+            </div>
+
+            <!-- Analysis -->
+            <div class="sidebar">
+                <div class="stats-card">
+                    <h4>Rhythm (Syllables/Line)</h4>
+                    <div id="syllable-display" class="syllable-list">
+                        <div style="color: var(--text-tertiary); font-style: italic;">Awaiting input...</div>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h4>Rhyme Checker</h4>
+                    <div id="rhyme-display">
+                        <div style="color: var(--text-tertiary); font-style: italic;">Last words analyzer...</div>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <h4>Suno Best Match</h4>
+                    <div id="mood-display">
+                        <span class="mood-badge">Neutral</span>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-tertiary); margin-top: 10px;">Detected mood for
+                        prompt suggestions.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Designed for Professional Songwriters.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const input = document.getElementById('lyrics-input');
+            const syllDisplay = document.getElementById('syllable-display');
+            const rhymeDisplay = document.getElementById('rhyme-display');
+            const moodDisplay = document.getElementById('mood-display');
+            const buttons = document.querySelectorAll('.tool-btn');
+
+            // Syllable Counter Logic (English/Spanish focused)
+            const countSyllables = (word) => {
+                word = word.toLowerCase();
+                if (word.length <= 3) return 1;
+                word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
+                word = word.replace(/^y/, '');
+                const syllables = word.match(/[aeiouy]{1,2}/g);
+                return syllables ? syllables.length : 1;
+            };
+
+            const analyzeLyrics = () => {
+                const text = input.value;
+                const lines = text.split('\n').filter(l => l.trim() !== '');
+
+                // 1. Syllable Analysis
+                let syllHtml = '';
+                let lastCount = -1;
+                lines.forEach((line, i) => {
+                    const words = line.trim().split(/\s+/);
+                    let count = 0;
+                    words.forEach(w => count += countSyllables(w.replace(/[^\w]/g, '')));
+
+                    let statusClass = '';
+                    if (lastCount !== -1 && Math.abs(count - lastCount) > 4) statusClass = 'warning';
+                    else if (lastCount !== -1 && count === lastCount) statusClass = 'success';
+
+                    syllHtml += `<div class="syllable-row"><span>Line ${i + 1}</span> <span class="${statusClass}">${count} syll</span></div>`;
+                    lastCount = count;
+                });
+                syllDisplay.innerHTML = syllHtml || '<div style="color: var(--text-tertiary); font-style: italic;">Awaiting input...</div>';
+
+                // 2. Rhyme Analysis
+                let rhymeHtml = '';
+                const lastWords = lines.map(line => {
+                    const words = line.trim().split(/\s+/);
+                    return words[words.length - 1].toLowerCase().replace(/[^\w]/g, '');
+                });
+
+                const rhymeMatches = [];
+                for (let i = 0; i < lastWords.length; i++) {
+                    for (let j = i + 1; j < lastWords.length; j++) {
+                        const w1 = lastWords[i];
+                        const w2 = lastWords[j];
+                        if (w1.length > 2 && w2.length > 2 && (w1.slice(-3) === w2.slice(-3) || w1.slice(-2) === w2.slice(-2))) {
+                            rhymeMatches.push(`${w1} ↔ ${w2} (L${i + 1}, L${j + 1})`);
+                        }
+                    }
+                }
+
+                if (rhymeMatches.length > 0) {
+                    rhymeHtml = rhymeMatches.map(m => `<div style="font-size: 0.85rem; margin-bottom: 5px;">🎵 ${m}</div>`).join('');
+                } else {
+                    rhymeHtml = '<div style="color: var(--text-tertiary); font-style: italic;">No strong rhymes found...</div>';
+                }
+                rhymeDisplay.innerHTML = rhymeHtml;
+
+                // 3. Simple Mood Detection
+                const emotionalWords = {
+                    happy: ['joy', 'happy', 'bright', 'love', 'dance', 'summer', 'sun', 'smile'],
+                    sad: ['pain', 'rain', 'dark', 'lonely', 'sad', 'gone', 'cold', 'night'],
+                    energetic: ['fast', 'loud', 'power', 'fire', 'beat', 'run', 'wild']
+                };
+
+                let mood = 'Neutral';
+                let counts = { happy: 0, sad: 0, energetic: 0 };
+                const words = text.toLowerCase().split(/\W+/);
+
+                words.forEach(w => {
+                    for (let m in emotionalWords) {
+                        if (emotionalWords[m].includes(w)) counts[m]++;
+                    }
+                });
+
+                if (counts.happy > counts.sad && counts.happy > counts.energetic) mood = 'Uplifting';
+                else if (counts.sad > counts.happy && counts.sad > counts.energetic) mood = 'Melancholic';
+                else if (counts.energetic > counts.happy && counts.energetic > counts.sad) mood = 'Vibrant/Aggressive';
+
+                moodDisplay.innerHTML = `<span class="mood-badge">${mood}</span>`;
+            };
+
+            input.addEventListener('input', analyzeLyrics);
+
+            // Toolbar functionality
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tag = btn.getAttribute('data-insert');
+                    const start = input.selectionStart;
+                    const end = input.selectionEnd;
+                    const text = input.value;
+                    input.value = text.slice(0, start) + tag + '\n' + text.slice(end);
+                    analyzeLyrics();
+                    input.focus();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

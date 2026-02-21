@@ -298,6 +298,102 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+/* Fancy Hero Card */
+.fancy-hero-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    padding: 1.5rem 2.5rem;
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-2xl, 24px);
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.fancy-hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(16, 185, 129, 0.1),
+            transparent);
+    transition: 0.5s;
+}
+
+.fancy-hero-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: var(--accent-green);
+    background: rgba(16, 185, 129, 0.08);
+    box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.2);
+}
+
+.fancy-hero-card:hover::before {
+    left: 100%;
+}
+
+.fancy-card-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.fancy-card-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.4));
+}
+
+.fancy-card-text h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: var(--text-primary);
+    background: linear-gradient(to right, #fff, var(--accent-green));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fancy-card-text p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+    color: var(--text-tertiary);
+}
+
+.fancy-card-arrow {
+    font-size: 1.5rem;
+    color: var(--accent-green);
+    transition: transform 0.3s;
+}
+
+.fancy-hero-card:hover .fancy-card-arrow {
+    transform: translateX(8px);
+}
+
+@media (max-width: 640px) {
+    .fancy-hero-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .fancy-card-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
 /* Cards */
 .card {
     background: var(--bg-secondary);

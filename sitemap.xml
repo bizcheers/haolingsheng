@@ -2,163 +2,229 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.haolingsheng.com/</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/about.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/contact.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/privacy.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/terms.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/suno-prompt-generator.html</loc>
-    <lastmod>2026-02-16</lastmod>
+    <loc>https://www.haolingsheng.com/geci/diminished-chords-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/lyrics-singability-checker.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/secondary-dominants-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/dorian-mode-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/chord-progressions-guitar.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/how-to-build-chords.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/melodic-contour-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/chord-progressions-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/cadences-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/geci/music-dynamics-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/neo-soul-theory-masterclass.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/geci/non-chord-tones-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/bossa-nova-songs-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/compound-time-signatures.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/how-to-write-catchy-chorus.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/modulation-masterclass.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/minor-chord-progressions.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/music-cognitive-development.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/major-scale-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/counterpoint-basics.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/rhythm-notation-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/modern-theory-atonality.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/jazz-piano-chords-for-beginners.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/bridge-in-music-explanation.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/relative-parallel-scales.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/minor-scales-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/what-is-interval.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/harmonic-series-timbre.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/key-signatures-simplified.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/song-structure-basics.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/jazz-chord-progressions.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/geci/voice-leading-basics.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/geci/triads-and-seventh-chords.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -169,601 +235,301 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/geci/dorian-mode-explained.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.haolingsheng.com/geci/circle-of-fifths-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/d-major-key-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/quarter-rest-explained.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/intermediate-dynamics-crescendo-diminuendo.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/whole-half-rests-duration.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/ties-and-slurs-difference.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/half-note-duration.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/fermata-symbol-holding-time.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/a-minor-key-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/dotted-notes-value-explained.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/what-is-middle-c.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/articulation-marks-staccato-legato.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/whole-note-value.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/music-note-names.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/tempo-markings-largo-to-presto.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/what-does-3-4-time-mean.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/note-values-and-rhythm.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/ledger-lines.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/eighth-note-rhythm.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/ottava-signs-8va-8vb.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/what-is-bar-line.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/sixteenth-note-value.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/repeat-signs-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/da-capo-dal-segno.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/dynamics-in-music.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/understanding-4-4-time-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/quarter-note-explained.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/how-to-read-bass-clef.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/g-major-key-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/what-is-staff.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/how-to-read-sheet-music.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/c-major-key-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/musical-triplets-tuplets-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/understanding-treble-clef.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/accidentals-sharps-flats-naturals.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/musical-rests-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/what-is-time-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/f-major-key-signature.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/how-to-read-key-signatures.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/eighth-sixteenth-rests-value.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/6-8-time-signature-explained.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/page-2.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/page-3.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/gross-beat-tape-stop-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/essential-free-fl-plugins.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/best-producer-laptop-2026.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/what-is-an-epk.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/diminished-chords-explained.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/free-vst-plugins-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/stereo-imaging-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/ableton-sharps-to-flats.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/phase-cancellation-explained.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/chatgpt-songwriting-prompts.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/suno-ai-prompts-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/retro-cartoon-sound-effects.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/midi-orchestration-realism.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/udio-ai-music-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/stable-audio-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/sidechain-compression-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/pitch-shift-calculator.html</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/note-to-hz-frequency-chart.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/what-is-lfo.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/clipping-vs-limiting-loudness.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/ableton-shortcuts-cheat-sheet.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/compression-basics-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/drum-programming-basics.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/how-many-lufs-mastering-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/home-studio-setup-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/mastering-chain-basics.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/multiband-compression-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/what-is-daw.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/types-of-reverb-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/modular-synthesis-intro.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/piano-frequency-chart.html</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/foley-recording-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/ai-audio-separation-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/midi-note-to-frequency.html</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/ai-music-technology-masters.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vocal-production-masterclass.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/serum-for-ableton-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/ripx-daw-ai-stems.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/fl-studio-selection-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/what-does-a-deesser-do.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/sidechain-compression-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/mixing-in-mono-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/mastering-essentials-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/ai-mixing-workflow.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/sound-design-basics-synthesis.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/parallel-processing-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/reverb-types-explained.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/stereo-imaging-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/logic-pro-11-ai-features.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/eq-basics-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/gain-vs-volume-explained.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/compression-basics-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/phrygian-dominant-scale-guide.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/best-audio-interface-2026.html</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/how-to-write-better-lyrics.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -775,7 +541,19 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/delay-effect-parameters-explained.html</loc>
+    <loc>https://www.haolingsheng.com/music-production/log-drum-amapiano-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/page-3.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/udio-ai-music-guide.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -787,7 +565,193 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/audio-cable-types-guide.html</loc>
+    <loc>https://www.haolingsheng.com/music-production/stable-audio-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/transitions-and-ear-candy-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vocal-mixing-secrets.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/guitar-modes-phrygian-mixolydian.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/sidechain-compression-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/pitch-shift-calculator.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/parallel-processing-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/sub-bass-vs-mid-bass-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/valhalla-room-reverb-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/best-producer-laptop-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/electronic-music-instruments-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/spotify-to-wav-quality-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/professional-saturation-plugin-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/page-2.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/songwriting-toolbox-2026.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/home-vocal-recording-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/note-to-hz-frequency-chart.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/song-structure-masterclass.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/techno-vs-house-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/what-is-lfo.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vst-vs-vst3-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/clipping-vs-limiting-loudness.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ableton-shortcuts-cheat-sheet.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/music-producer-career-path.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/audio-file-formats-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vocal-doubling-and-layering.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/logic-pro-11-ai-features.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/compression-basics-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/top-ai-production-tools-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/guitar-modes-g-minor-dorian.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/best-sample-marketplaces.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -799,7 +763,343 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/music-production/mixing-in-mono-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/best-audio-interface-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/page-4.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/drum-programming-basics.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/guitar-chord-almanac.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/how-many-lufs-mastering-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/gross-beat-tape-stop-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/home-studio-setup-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/mastering-chain-basics.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/how-to-make-lofi-hip-hop.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/multiband-compression-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/what-is-daw.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/types-of-reverb-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/modular-synthesis-intro.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/diminished-chord-guitar-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/piano-frequency-chart.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/foley-recording-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ai-audio-separation-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ableton-vs-fl-studio-comparison.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/acoustic-treatment-home-studio.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/audio-cable-types-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/pro-workflow-hotkeys.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/music-production/dynamic-eq-mixing-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/mastering-essentials-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/lps-vs-cds-vinyl-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/how-to-write-better-lyrics.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/midi-note-to-frequency.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/how-to-remix-a-song.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/how-to-find-an-artist-name.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ai-music-technology-masters.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/organic-percussion-realism.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vocal-production-masterclass.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/serum-for-ableton-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/noise-types-mixing-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/mixing-low-end-tips.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/what-is-looping-music.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ripx-daw-ai-stems.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/fl-studio-selection-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/what-does-a-deesser-do.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/serum-2-faq.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/reverb-types-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/essential-free-fl-plugins.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/best-fl-studio-plugins.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/high-pass-filter-philosophy.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/eq-basics-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/ai-mastering-tools-comparison.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/reference-tracks-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/house-music-subgenres-guide.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/automation-techniques-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/what-is-mix-bus.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vocal-comping-techniques.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/guitar-fretboard-frequency.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/phonk-production-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/inspirational-music-quotes.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/circle-of-fifths-printable.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/auditory-fatigue.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/vocal-synthesis-guide.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -811,742 +1111,477 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/high-pass-filter-philosophy.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/ai-mixing-workflow.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/ai-mastering-tools-comparison.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/transient-shaper-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/automation-techniques-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/bbc-sound-effects-library-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/what-is-mix-bus.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/phrygian-dominant-scale-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/guitar-fretboard-frequency.html</loc>
-    <lastmod>2026-01-26</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/delay-effect-parameters-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/auditory-fatigue.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vocal-synthesis-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://www.haolingsheng.com/music-production/saturation-distortion-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/suno-vs-udio-2026.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/audio-cable-guide.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/sound-design-basics-synthesis.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/kick-drum-eq-guide.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/send-vs-insert-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/gain-vs-volume-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-production/reverb-and-delay-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-production/autotune-vs-pitch-correction.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/free-music-distributors-2026.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/work-for-hire-contracts-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/tiktok-music-promotion-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/tunecore-complete-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/pro-explained-ascap-bmi-sesac.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/music-copyright-essentials.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/how-to-upload-to-spotify-without-distributor.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/music-metadata-isrc-upc-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/cd-baby-vs-distrokid-2026-comparison.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/lp-meaning-in-music.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/mechanical-licensing-mlc-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/spotify-for-artists-complete-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/sync-licensing-for-beginners.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/how-to-make-money-from-music.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/royalty-logo-design-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/instagram-for-musicians-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/what-is-an-epk.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/cd-baby-complete-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-complete-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-vs-tunecore-comparison.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/neighborhood-rights-explained.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/spotify-playlist-pitching-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/music-promotion-strategies-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-alternatives-2026.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/ai-music-copyright-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/songwriter-split-sheets-guide.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/claim-youtube-topic-channel-distrokid.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/spotify-pay-per-stream-2026.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/ep-vs-lp-explanation.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/soundexchange-complete-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/sampling-clearance-101.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-change-artist-name-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/music-press-release-template.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/youtube-music-verification.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/music-business/publishing-admin-vs-standard.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-pricing-plans.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/amazon-music-for-artists-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/songtrust-royalties-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/platform-performance-uncovered.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/youtube-official-artist-channel-setup.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/distrokid-customer-service-support.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/apple-music-for-artists-guide.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/music-business/how-to-get-verified-on-spotify.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/how-to-remix-a-song.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/tiktok-to-ringtone.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/electronic-music-instruments-guide.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/lingsheng/spotify-to-ringtone.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/what-is-looping-music.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/cinematic-sfx-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/how-to-find-an-artist-name.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/lofi-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/how-to-make-lofi-hip-hop.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/loudest-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/ableton-vs-fl-studio-comparison.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/how-to-set-custom-ringtone.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/inspirational-music-quotes.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/8bit-retro-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/music-producer-career-path.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <loc>https://www.haolingsheng.com/lingsheng/mosquito-ringtone.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/lingsheng/samsung-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/lingsheng/zen-calm-ringtones.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/lingsheng/silent-ringtone-iphone.html</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/lingsheng/mp3/</loc>
-    <lastmod>2026-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/ep-vs-lp-explanation.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/lp-meaning-in-music.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/best-sample-marketplaces.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/bbc-sound-effects-library-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/royalty-logo-design-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/neo-soul-theory-masterclass.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/bossa-nova-songs-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/bridge-in-music-explanation.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/jazz-piano-chords-for-beginners.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/music-dynamics-explained.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/audio-file-formats-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/music-metadata-isrc-upc-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/top-ai-production-tools-2026.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/songwriter-split-sheets-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/acoustic-treatment-home-studio.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vocal-comping-techniques.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/autotune-vs-pitch-correction.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/how-to-write-catchy-chorus.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/home-vocal-recording-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vocal-doubling-and-layering.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/saturation-distortion-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/reference-tracks-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/sub-bass-vs-mid-bass-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/music-promotion-strategies-2026.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/transitions-and-ear-candy-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/cadences-explained.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/modulation-masterclass.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/voice-leading-basics.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/song-structure-basics.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/geci/melodic-contour-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/work-for-hire-contracts-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/mechanical-licensing-mlc-guide.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/neighborhood-rights-explained.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/sampling-clearance-101.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-business/publishing-admin-vs-standard.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/note-to-hz.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/bpm-to-milliseconds-calculator.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/chord-progression-chart.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/tuning-frequency-tool.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/delay-time-calculator.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/lufs-loudness-meter.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vocal-mixing-secrets.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/mixing-low-end-tips.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/best-fl-studio-plugins.html</loc>
-    <lastmod>2026-02-13</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.haolingsheng.com/singer/dr-dre.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/singer/rick-rubin.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/singer/quincy-jones.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/singer/pharrell-williams.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/singer/timbaland.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/singer/max-martin.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/sheet-music/piano/beethoven-moonlight-sonata.html</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/page-4.html</loc>
-    <lastmod>2026-02-13</lastmod>
+    <loc>https://www.haolingsheng.com/singer/</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/house-music-subgenres-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/singer/rick-rubin.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/retro-cartoon-sound-effects.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/singer/quincy-jones.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/guitar-modes-g-minor-dorian.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/singer/pharrell-williams.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/noise-types-mixing-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/singer/timbaland.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/lps-vs-cds-vinyl-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/singer/max-martin.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.haolingsheng.com/music-production/songwriting-toolbox-2026.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/professional-saturation-plugin-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/spotify-to-wav-quality-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/diminished-chord-guitar-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/guitar-modes-phrygian-mixolydian.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/valhalla-room-reverb-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/serum-2-faq.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/audio-cable-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/techno-vs-house-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/log-drum-amapiano-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/circle-of-fifths-printable.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/transient-shaper-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/song-structure-masterclass.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/vst-vs-vst3-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/phonk-production-guide.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/guitar-chord-almanac.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/organic-percussion-realism.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.haolingsheng.com/music-production/pro-workflow-hotkeys.html</loc>
-    <lastmod>2026-02-17</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.haolingsheng.com/sheet-music/piano/beethoven-moonlight-sonata.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

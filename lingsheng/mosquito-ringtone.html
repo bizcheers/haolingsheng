@@ -19,32 +19,61 @@
 
     <style>
         .frequency-box {
-            background: var(--bg-secondary);
-            border: 1px solid var(--accent-green);
+            background: rgba(16, 185, 129, 0.05);
+            /* Lighter background */
+            border: 2px dashed var(--accent-green);
+            /* Dashed border for visual interest */
             border-radius: var(--radius-lg);
-            padding: 2rem;
+            padding: 2.5rem;
             text-align: center;
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
 
         .freq-display {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
             color: var(--accent-green);
             font-family: 'Monaco', monospace;
             display: block;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Ensure button text is visible against green background */
+        .article-content .btn-primary,
+        .btn-primary {
+            color: #000 !important;
+            font-weight: 700;
+        }
+
+        .article-content .btn-secondary,
+        .btn-secondary {
+            color: #fff !important;
         }
 
         .hearing-test-btn {
             background: var(--accent-green);
-            color: black;
-            padding: 1rem 2rem;
+            color: #000 !important;
+            /* Force black text */
+            padding: 1rem 2.5rem;
             border-radius: var(--radius-full);
             font-weight: 700;
             cursor: pointer;
             border: none;
             margin-top: 1rem;
-            transition: transform 0.2s;
+            transition: all 0.2s;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+        }
+
+        .category-label {
+            background: rgba(16, 185, 129, 0.2);
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
         }
 
         .hearing-test-btn:hover {
@@ -151,9 +180,10 @@
 
             <div class="tip-box">
                 <h3>Production Note</h3>
-                <p>When producing high-frequency tones, it's vital to use a high sample rate (at least 44.1 kHz or 48
-                    kHz) to avoid **aliasing**—a digital artifact where high frequencies "fold back" into lower, audible
-                    ranges. Our download is rendered at 48kHz for maximum purity.</p>
+                p>When producing high-frequency tones, it's vital to use a high sample rate (at least 44.1 kHz or 48
+                kHz) to avoid <strong>aliasing</strong>—a digital artifact where high frequencies "fold back" into
+                lower, audible
+                ranges. Our download is rendered at 48kHz for maximum purity.</p>
             </div>
 
             <p style="text-align: center; margin-top: 4rem;">

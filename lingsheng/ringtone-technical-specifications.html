@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Ringtone Technical Specifications: Formats, Length & EQ | Hao Ling Sheng</title>
+    <meta name="description"
+        content="The ultimate technical guide to ringtone creation. Learn about M4r vs MP3, bitrates, the 30-second rule, and frequency optimization for mobile speakers.">
+    <meta name="keywords"
+        content="how long can a ringtone be, ios ringtone format, best bitrate for ringtones, m4r vs mp3 ringtone, ringtone technical guide">
+    <link rel="canonical" href="https://www.haolingsheng.com/lingsheng/ringtone-technical-specifications.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css?v=11">
+    <link rel="stylesheet" href="../music-production/article.css">
+
+    <style>
+        .spec-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            border-radius: var(--radius-xl);
+            margin-bottom: 3rem;
+            text-align: center;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .spec-hero h1 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .spec-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .spec-card h4 {
+            color: var(--accent-green);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../index.html" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 0;">
+        <article class="article-content" style="max-width: 800px; margin: 0 auto;">
+            <div class="spec-hero">
+                <h1>Ringtone Technical Specifications</h1>
+                <p class="lead">The audio engineering behind the perfect mobile alert.</p>
+            </div>
+
+            <section>
+                <p>Creating a ringtone is more than just cutting a song. It is a specialized form of audio engineering
+                    that must account for extreme hardware limitations, varying OS architectures, and the physics of
+                    small-room acoustics. If you've ever asked <strong>"how long can a ringtone be?"</strong> or
+                    wondered
+                    why your favorite track sounds hollow on your phone, this guide is for you.</p>
+
+                <p>At <strong>Hao Ling Sheng</strong>, we apply DAW-level precision to every tone we host. Here is the
+                    behind-the-scenes look at the technical standards of modern mobile audio.</p>
+            </section>
+
+            <section>
+                <h2>1. The 30-Second Rule & System Limits</h2>
+                <p>One of the most frequent questions in the community is: <strong>"How long is a ringtone supposed to
+                        be?"</strong>
+                </p>
+                <div class="spec-grid">
+                    <div class="spec-card">
+                        <h4>Apple iOS (iPhone)</h4>
+                        <p><strong>Strict 40s Limit:</strong> Technically, the limit is 40 seconds, but any file over 29
+                            seconds usually triggers sync errors in older macOS versions. We recommend a safe
+                            <strong>30-second loop</strong>.
+                        </p>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Android OS</h4>
+                        <p><strong>Unlimited (Mostly):</strong> Android can play a 5-minute song as a ringtone. However,
+                            the
+                            phone will only play for about <strong>45-60 seconds</strong> before the call goes to
+                            voicemail.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Format Wars: M4R vs. MP3</h2>
+                <p>Understanding the <strong>iOS ringtone format</strong> is key to successful customization.</p>
+                <ul>
+                    <li><strong>M4R (MPEG-4 Audio):</strong> This is the proprietary extension for iPhone. It is
+                        essentially an AAC file (Advanced Audio Coding) with a different name. It offers better quality
+                        than MP3 at lower bitrates.</li>
+                    <li><strong>MP3:</strong> The universal standard. Native for Android, but requires conversion for
+                        iOS.
+                    </li>
+                    <li><strong>OGG:</strong> The native system format for Android UI sounds. It is computationally
+                        "cheap" to decode, saving battery life.</li>
+                </ul>
+                <p>For cross-platform compatibility, we always recommend starting with a high-fidelity WAV and
+                    converting to the target OS format. Our <a href="garageband-ringtone-masterclass.html">GarageBand
+                        guide</a>
+                    explains this conversion in detail for iOS users.</p>
+            </section>
+
+            <section>
+                <h2>3. Bitrate & Sample Rate Optimization</h2>
+                <p>More is not always better. A 24-bit/192kHz file is massive and invisible to phone hardware.
+                </p>
+                <div class="tip-box">
+                    <h4>The "Sweet Spot" Specs:</h4>
+                    <ul>
+                        <li><strong>Sample Rate:</strong> 44.1kHz (Matches the standard DAC in most phones).</li>
+                        <li><strong>Bitrate:</strong> 128kbps to 192kbps (Anything higher is lost on small speakers).
+                        </li>
+                        <li><strong>Mono vs. Stereo:</strong> While phones have "stereo" speakers,
+                            <strong>Dual-Mono</strong>
+                            is often better for ringtones to ensure phase consistency.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>4. The "Phone-Speaker" EQ Curve</h2>
+                <p>Mobile speakers cannot reproduce sub-bass (below 100Hz) or ultra-high air frequencies (above 15kHz).
+                    If your ringtone sounds "muddy," it's because the speakers are struggling to move air for
+                    frequencies they can't emit.</p>
+                <p><strong>The Fix:</strong> We apply a steep <strong>High-Pass Filter at 150Hz</strong> and a slight
+                    boost at <strong>2.5kHz</strong>. This makes the sound "piercing" in a good way, ensuring you hear
+                    it
+                    even from inside a pocket. This technique is what sets our <a
+                        href="google-pixel-ringtones.html">Pixel Essentials</a>
+                    apart from raw song clips.</p>
+            </section>
+
+            <section>
+                <h2>Summary Checklist</h2>
+                <p>Before you export your next custom tone, verify it against these specs:
+                    <br>✅ Format: .m4r (iOS) or .mp3 (Android)
+                    <br>✅ Length: 29.5 seconds
+                    <br>✅ Normalization: Peak at -1.0dB
+                    <br>✅ EQ: Cut the lows, boost the "clarity" mids.
+                </p>
+            </section>
+
+            <p style="text-align: center; margin-top: 4rem;">
+                <a href="index.html" class="dir-link">← Back to Ringtones Directory</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Master the Art of Sound.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

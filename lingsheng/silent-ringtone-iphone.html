@@ -28,13 +28,34 @@
         }
 
         .silent-badge {
-            background: var(--bg-tertiary);
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
             padding: 0.5rem 1rem;
             border-radius: var(--radius-sm);
             font-family: monospace;
-            color: var(--text-tertiary);
+            color: var(--accent-green);
             margin-bottom: 1rem;
             display: inline-block;
+        }
+
+        .play-silence-btn {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 1.5rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .play-silence-btn:hover {
+            background: var(--bg-elevated);
+            border-color: var(--accent-green);
         }
     </style>
 </head>
@@ -84,6 +105,12 @@
                     <h3>Download 10-Second Silent Loop</h3>
                     <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Pure digital silence in high-quality
                         WAV format.</p>
+
+                    <audio id="silent-audio" src="mp3/audio/silent-ringtone-10s.wav"></audio>
+                    <button class="play-silence-btn" onclick="document.getElementById('silent-audio').play()">
+                        <span>🔈</span> Listen to Silence
+                    </button>
+                    <br>
                     <a href="mp3/audio/silent-ringtone-10s.wav" download class="btn btn-primary">Download Silent WAV
                         ↓</a>
                 </div>
@@ -119,7 +146,8 @@
 
             <div class="tip-box">
                 <h3>Vibration Tip</h3>
-                <p>Don't forget to also set the **Vibration** to "None" for that contact if you want total stealth.
+                <p>Don't forget to also set the <strong>Vibration</strong> to "None" for that contact if you want total
+                    stealth.
                     You'll find this setting right below the Ringtone selection in the Edit Contact menu.</p>
             </div>
 

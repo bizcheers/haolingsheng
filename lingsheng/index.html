@@ -3,15 +3,215 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=mp3/">
-    <title>Redirecting...</title>
-    <link rel="canonical" href="https://www.haolingsheng.com/lingsheng/mp3/">
-    <meta name="robots" content="noindex,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Free Ringtones, Audio Samples & Creative Guides | Hao Ling Sheng</title>
+    <meta name="description"
+        content="Explore our collection of free ringtones, professional audio samples, and step-by-step guides on mobile audio personalization.">
+    <meta name="keywords"
+        content="free ringtones, audio samples, music production assets, ringtone guide, phone sounds">
+    <link rel="canonical" href="https://www.haolingsheng.com/lingsheng/">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css?v=10">
+
+    <style>
+        .directory-hero {
+            padding: 4rem 0 3rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0, 255, 157, 0.05) 0%, transparent 100%);
+        }
+
+        .directory-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-label {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--accent-green);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .dir-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .dir-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dir-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-green);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .dir-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-green);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .dir-card:hover::before {
+            opacity: 1;
+        }
+
+        .dir-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .dir-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .dir-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .dir-link {
+            font-weight: 600;
+            color: var(--accent-green);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dir-link span {
+            transition: transform 0.3s;
+        }
+
+        .dir-card:hover .dir-link span {
+            transform: translateX(5px);
+        }
+
+        /* Scalability badge */
+        .count-badge {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Redirecting to <a href="mp3/">Free Ringtones & Samples...</a></p>
-    <script>window.location.href = "mp3/";</script>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../gepu/">Music Notation</a></li>
+                    <li><a href="../geci/">Music Theory</a></li>
+                    <li><a href="../music-production/">Production</a></li>
+                    <li><a href="../music-business/">Music Business</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-bottom: 6rem;">
+        <section class="directory-hero">
+            <span class="category-label">Sound & Personalization</span>
+            <h1>Explore Good Sounds</h1>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">
+                From high-quality production loops to custom mobile ringtones, find everything you need to personalize
+                your audio experience.
+            </p>
+        </section>
+
+        <div class="dir-grid">
+            <!-- Card 1: Free Samples -->
+            <a href="mp3/" class="dir-card">
+                <span class="count-badge">Popular</span>
+                <div class="icon">🎹</div>
+                <h3>Free Audio Samples</h3>
+                <p>Download royalty-free loops, drum kits, and sound effects for your music production projects or
+                    ringtones.</p>
+                <div class="dir-link">Browse Library <span>→</span></div>
+            </a>
+
+            <!-- Card 2: Custom Ringtone Guide -->
+            <a href="how-to-set-custom-ringtone.html" class="dir-card">
+                <span class="count-badge">Essential</span>
+                <div class="icon">📱</div>
+                <h3>Ringtone Setup Guide</h3>
+                <p>Complete 2026 walkthrough for setting custom songs as ringtones on iPhone (GarageBand) and Android
+                    devices.</p>
+                <div class="dir-link">Read Guide <span>→</span></div>
+            </a>
+
+            <!-- Card 3: Future Category Placeholder 1 -->
+            <a href="#" class="dir-card" style="opacity: 0.7;">
+                <span class="count-badge">Coming Soon</span>
+                <div class="icon">🎷</div>
+                <h3>Genre Collections</h3>
+                <p>Curated ringtone lists by genre: Jazz, Lo-Fi, Cinematic, and Classic 8-bit sounds for your mobile
+                    device.</p>
+                <div class="dir-link">Stay Tuned <span>→</span></div>
+            </a>
+
+            <!-- Card 4: Future Category Placeholder 2 -->
+            <a href="#" class="dir-card" style="opacity: 0.7;">
+                <span class="count-badge">Coming Soon</span>
+                <div class="icon">🤖</div>
+                <h3>AI Tone Generator</h3>
+                <p>Learn how to use AI tools to generate unique, personalized alert sounds and ringtones in seconds.</p>
+                <div class="dir-link">Explore Future <span>→</span></div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. Master the Art of Sound.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

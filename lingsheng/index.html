@@ -119,14 +119,27 @@
             transform: translateX(5px);
         }
 
-        /* Scalability badge */
-        .count-badge {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            font-size: 0.75rem;
-            color: var(--text-tertiary);
-            font-weight: 600;
+        /* Section Headers */
+        .dir-section-header {
+            grid-column: 1 / -1;
+            margin: 4rem 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .dir-section-header h2 {
+            font-size: 1.75rem;
+            color: var(--text-primary);
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .dir-section-header ::after {
+            content: "";
+            height: 1px;
+            background: var(--border-subtle);
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -164,63 +177,119 @@
         </section>
 
         <div class="dir-grid">
-            <!-- Card 1: Free Samples -->
+            <!-- Section 1: Guides & Tools -->
+            <div class="dir-section-header">
+                <h2>Guides & Tools</h2>
+            </div>
+
             <a href="mp3/" class="dir-card">
                 <span class="count-badge">Popular</span>
                 <div class="icon">🎹</div>
                 <h3>Free Audio Samples</h3>
-                <p>Download royalty-free loops, drum kits, and sound effects for your music production projects or
-                    ringtones.</p>
+                <p>Download royalty-free loops, drum kits, and sound effects for your music production projects.</p>
                 <div class="dir-link">Browse Library <span>→</span></div>
             </a>
 
-            <!-- Card 2: Custom Ringtone Guide -->
             <a href="how-to-set-custom-ringtone.html" class="dir-card">
                 <span class="count-badge">Essential</span>
                 <div class="icon">📱</div>
                 <h3>Ringtone Setup Guide</h3>
-                <p>Complete 2026 walkthrough for setting custom songs as ringtones on iPhone (GarageBand) and Android
-                    devices.</p>
+                <p>Complete 2026 walkthrough for setting custom songs as ringtones on iPhone and Android.</p>
                 <div class="dir-link">Read Guide <span>→</span></div>
             </a>
 
-            <!-- Card 3: Mosquito Ringtone -->
+            <a href="spotify-to-ringtone.html" class="dir-card">
+                <div class="icon">🎧</div>
+                <h3>Spotify to Ringtone</h3>
+                <p>Learn how to legally turn your favorite Spotify tracks into custom ringtones for your device.</p>
+                <div class="dir-link">Instructions <span>→</span></div>
+            </a>
+
+            <a href="tiktok-to-ringtone.html" class="dir-card">
+                <div class="icon">🎵</div>
+                <h3>TikTok to Ringtone</h3>
+                <p>Extract audio from viral TikTok videos and convert them into high-quality personalized ringtones.</p>
+                <div class="dir-link">Extract Audio <span>→</span></div>
+            </a>
+
+            <!-- Section 2: Genre Collections -->
+            <div class="dir-section-header">
+                <h2>Genre Collections</h2>
+            </div>
+
+            <a href="lofi-ringtones.html" class="dir-card">
+                <div class="icon">☕</div>
+                <h3>Lo-Fi Beats</h3>
+                <p>Chill, atmospheric Lo-Fi loops perfect for subtle notifications and relaxing incoming calls.</p>
+                <div class="dir-link">Listen & Download <span>→</span></div>
+            </a>
+
+            <a href="8bit-retro-ringtones.html" class="dir-card">
+                <div class="icon">🕹️</div>
+                <h3>8-Bit Retro</h3>
+                <p>Vintage arcade sounds and chiptune melodies for a nostalgic 80s and 90s aesthetic.</p>
+                <div class="dir-link">Get Retro <span>→</span></div>
+            </a>
+
+            <a href="cinematic-sfx-ringtones.html" class="dir-card">
+                <div class="icon">🎬</div>
+                <h3>Cinematic SFX</h3>
+                <p>Epic movie-style sound effects, risers, and impact tones for a high-production alert experience.</p>
+                <div class="dir-link">Preview Effects <span>→</span></div>
+            </a>
+
+            <!-- Section 3: Specialized Tones -->
+            <div class="dir-section-header">
+                <h2>Specialized Tones</h2>
+            </div>
+
             <a href="mosquito-ringtone.html" class="dir-card">
                 <span class="count-badge">Viral</span>
                 <div class="icon">🦟</div>
                 <h3>Mosquito Ringtone</h3>
-                <p>High-frequency sound only teens can hear. Explore the science of ultrasonic tones and download the
-                    Stealth Tone.</p>
-                <div class="dir-link">Download & Learn <span>→</span></div>
+                <p>High-frequency sound only teens can hear. Explore the science of ultrasonic stealth tones.</p>
+                <div class="dir-link">Test Hearing <span>→</span></div>
             </a>
 
-            <!-- Card 4: Silent Ringtone -->
             <a href="silent-ringtone-iphone.html" class="dir-card">
                 <span class="count-badge">Utility</span>
                 <div class="icon">🔇</div>
-                <h3>Silent Ringtone for iPhone</h3>
-                <p>The stealth focus hack. Learn how to use a silent loop to mute specific contacts without blocking
-                    them.</p>
-                <div class="dir-link">Get Silent MP3 <span>→</span></div>
+                <h3>Silent Ringtone</h3>
+                <p>The stealth focus hack. Use a silent loop to mute specific contacts without blocking them.</p>
+                <div class="dir-link">Get Silence <span>→</span></div>
             </a>
 
-            <!-- Card 5: Spotify to Ringtone -->
-            <a href="spotify-to-ringtone.html" class="dir-card">
-                <span class="count-badge">Popular</span>
-                <div class="icon">🎧</div>
-                <h3>Spotify to Ringtone</h3>
-                <p>Learn how to legally turn your favorite Spotify tracks into custom ringtones for iPhone and Android.
-                </p>
-                <div class="dir-link">Start Converting <span>→</span></div>
+            <a href="loudest-ringtones.html" class="dir-card">
+                <div class="icon">📢</div>
+                <h3>Loudest Ringtones</h3>
+                <p>High-decibel, frequency-optimized tones designed specifically for noisy environments.</p>
+                <div class="dir-link">Check Volume <span>→</span></div>
             </a>
 
-            <!-- Card 6: TikTok to Ringtone -->
-            <a href="tiktok-to-ringtone.html" class="dir-card">
-                <span class="count-badge">Viral</span>
-                <div class="icon">🎵</div>
-                <h3>TikTok to Ringtone</h3>
-                <p>Extract audio from viral TikTok videos and convert them into high-quality personalized ringtones.</p>
-                <div class="dir-link">Level Up Audio <span>→</span></div>
+            <a href="zen-calm-ringtones.html" class="dir-card">
+                <div class="icon">🧘</div>
+                <h3>Zen & Calm Tones</h3>
+                <p>Gentle, non-intrusive sounds for professional office environments and peaceful focus.</p>
+                <div class="dir-link">Relaxed Audio <span>→</span></div>
+            </a>
+
+            <!-- Section 4: Device Themes -->
+            <div class="dir-section-header">
+                <h2>Device Themes</h2>
+            </div>
+
+            <a href="samsung-ringtones.html" class="dir-card">
+                <div class="icon">🌌</div>
+                <h3>Samsung Collections</h3>
+                <p>Best ringtones optimized for Galaxy devices, including remastered classic Samsung tones.</p>
+                <div class="dir-link">Galaxy Tracks <span>→</span></div>
+            </a>
+
+            <a href="google-pixel-ringtones.html" class="dir-card">
+                <div class="icon">💎</div>
+                <h3>Pixel Essentials</h3>
+                <p>Clean, minimalist soundscapes inspired by Google Pixel's exclusive material design audio.</p>
+                <div class="dir-link">Pixel Tones <span>→</span></div>
             </a>
         </div>
     </main>

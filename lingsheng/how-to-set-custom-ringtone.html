@@ -68,6 +68,23 @@
             margin: 2rem 0;
             border-radius: 0 var(--radius-md) var(--radius-md) 0;
         }
+
+        /* Fix for "thin and long" related cards */
+        .related-tools .category-grid {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+            gap: 2rem;
+        }
+
+        .related-tools .category-card {
+            padding: 2.5rem;
+            /* Increase padding for better proportions */
+            text-align: center;
+        }
+
+        .related-tools .category-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
     </style>
 
     <!-- Schema.org Structured Data -->
@@ -170,7 +187,8 @@
                 <div class="tip-box">
                     <h3>Pro Production Tips for Ringtones</h3>
                     <p>As a music production site, we don't just want you to have a ringtone—we want it to sound
-                        <strong>professional</strong>. Follow these tips:</p>
+                        <strong>professional</strong>. Follow these tips:
+                    </p>
                     <ul>
                         <li><strong>Fade In (3s):</strong> Phones often have a slight delay when playback starts. A
                             short fade-in prevents the audio from "popping" in aggressively.</li>

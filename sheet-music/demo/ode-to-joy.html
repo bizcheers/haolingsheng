@@ -15,8 +15,8 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.haolingsheng.com/sheet-music/demo/ode-to-joy.html">
 
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="../sheet-detail.css">
+    <link rel="stylesheet" href="../../styles.css?v=12">
+    <link rel="stylesheet" href="../sheet-detail.css?v=12">
     
     <!-- abcjs for high-quality SVG rendering -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.js" type="text/javascript"></script>
@@ -26,16 +26,47 @@
             --paper-bg: #fdfbf7;
             --sepia-text: #433422;
         }
+
+        /* OVERRIDE sheet-detail.css light-mode styles to match site dark theme */
+        body { background-color: var(--bg-primary); color: var(--text-primary); }
+        .main-content h1 { color: var(--text-primary) !important; margin-top: 0 !important; }
+        .breadcrumb { background-color: var(--bg-secondary) !important; border-bottom: 1px solid var(--border-subtle); padding: 1rem 0; width: 100%; }
+        .breadcrumb a, .breadcrumb span { color: var(--text-secondary) !important; }
         
+        .composer-info, .download-section, .sidebar-widget { 
+            background-color: var(--bg-secondary) !important; 
+            border: 1px solid var(--border-subtle) !important;
+            box-shadow: none !important;
+            color: var(--text-primary) !important;
+        }
+        .composer-info p, .download-section h2, .sidebar-widget h3, .info-list li { 
+            color: var(--text-primary) !important; 
+        }
+        .info-list li { border-bottom: 1px solid var(--border-subtle); }
+        .category-list a { color: var(--text-secondary) !important; }
+        .category-list a:hover { color: var(--accent-green) !important; background: var(--bg-tertiary) !important; }
+
+        .download-btn { background-color: var(--bg-tertiary) !important; border: 1px solid var(--border-subtle) !important; box-shadow: none !important; }
+        .download-btn strong { color: var(--text-primary) !important; }
+        .download-btn small { color: var(--text-secondary) !important; }
+        
+        .practice-tips { background: linear-gradient(135deg, #1a1a1a 0%, #000 100%) !important; border: 1px solid var(--border-default) !important; color: var(--text-primary) !important; }
+        .practice-tips h2 { color: var(--accent-green) !important; }
+        .practice-tips li { color: var(--text-secondary) !important; }
+        
+        /* Score Rendering Fixes */
         .sheet-rendering-container {
             position: relative;
             background: var(--paper-bg);
-            padding: 30px;
+            padding: 40px 20px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin: 25px 0;
-            overflow: hidden;
+            margin: 30px 0;
+            min-height: 500px; /* Force minimum height for rendering */
             border: 1px solid #e5e0d5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible !important; /* Allow SVG to expand */
         }
 
         /* Watermark */
@@ -45,81 +76,54 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(-30deg);
-            font-size: 4rem;
-            color: rgba(0, 0, 0, 0.03);
+            font-size: clamp(2rem, 10vw, 5rem);
+            color: rgba(0, 0, 0, 0.04);
             pointer-events: none;
             font-weight: 900;
-            white-space: nowrap;
             z-index: 10;
+            white-space: nowrap;
         }
 
         #paper {
-            width: 100%;
-            overflow-x: auto;
+            width: 100% !important;
+            min-height: 400px;
         }
 
-        /* Force ABCJS styles to be elegant */
+        #paper svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        /* Force ABCJS styles to be visible and elegant */
         #paper svg path, #paper svg text, #paper svg rect {
             fill: var(--sepia-text) !important;
             stroke: var(--sepia-text) !important;
         }
 
+        /* Tech Details */
         .details-dev {
-            background: #1a1a1a;
+            background: #111;
             border: 1px solid #333;
-            padding: 10px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-size: 0.85em;
-        }
-
-        .details-dev summary {
-            cursor: pointer;
-            color: #888;
-            padding: 5px;
-        }
-
-        .abc-code {
-            font-family: 'Courier New', Courier, monospace;
-            background: #000;
-            color: #0c0;
             padding: 15px;
-            display: block;
-            margin-top: 10px;
-            white-space: pre;
-            border-radius: 4px;
-        }
-
-        .article-section {
+            border-radius: 8px;
             margin: 40px 0;
-            border-top: 1px solid #333;
-            padding-top: 30px;
         }
+        .details-dev summary { color: var(--text-tertiary); cursor: pointer; font-size: 0.9rem; }
+        .abc-code { font-family: monospace; background: #000; color: #0c0; padding: 15px; margin-top: 10px; border-radius: 4px; overflow-x: auto; }
 
-        .article-section h2 {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
-            color: var(--accent-green);
-        }
-
-        .analysis-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-
-        .highlight-box {
-            background: #151515;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid var(--accent-purple);
-        }
+        /* Article Content */
+        .article-section { margin: 50px 0; border-top: 1px solid var(--border-subtle); padding-top: 40px; }
+        .article-section h2 { color: var(--accent-green) !important; font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+        .analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+        .highlight-box { background: var(--bg-secondary); padding: 25px; border-radius: 12px; border-left: 4px solid var(--accent-purple); border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+        .highlight-box h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary); }
 
         @media (max-width: 768px) {
             .analysis-grid { grid-template-columns: 1fr; }
-            .sheet-rendering-container::after { font-size: 2.5rem; }
+            .content-wrapper { grid-template-columns: 1fr; }
+            .sheet-rendering-container { padding: 20px 10px; min-height: 300px; }
         }
     </style>
 </head>
@@ -127,15 +131,17 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>🎵 Hao Ling Sheng</h1>
-                <p class="tagline">Professional Music Education</p>
+                <img src="../../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../../" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../index.html">Sheet Music</a></li>
-                    <li><a href="../../music-theory/index.html">Music Theory</a></li>
-                    <li><a href="../../instruments/index.html">Instruments</a></li>
+                    <li><a href="../../gepu/">Music Notation</a></li>
+                    <li><a href="../../geci/">Music Theory</a></li>
+                    <li><a href="../../music-production/">Production</a></li>
                     <li><a href="../../about.html">About</a></li>
                 </ul>
             </nav>
@@ -155,70 +161,70 @@
             <div class="container">
                 <div class="content-wrapper">
                     <div class="main-content">
-                        <h1>Ode to Joy <span class="badge" style="background: var(--accent-purple)">Free Resource</span></h1>
+                        <h1>Ode to Joy <span class="badge" style="background: var(--accent-purple); vertical-align: middle; font-size: 0.9rem; margin-left: 10px;">Free Standard Score</span></h1>
                         
                         <div class="composer-info">
                             <p><strong>Composer:</strong> Ludwig van Beethoven (1770–1827)</p>
-                            <p><strong>Work:</strong> Symphony No. 9 in D minor, Op. 125</p>
-                            <p><strong>Arrangement:</strong> Beginner Piano / Melody Solo</p>
+                            <p><strong>Original Work:</strong> Symphony No. 9 in D minor, Op. 125</p>
+                            <p><strong>Arrangement:</strong> Beginner Piano / Single Note Melody</p>
                         </div>
 
                         <div class="sheet-meta">
-                            <span class="badge">🎹 Piano Solo</span>
+                            <span class="badge">🎹 Piano / Keyboards</span>
                             <span class="badge">🎼 Classical</span>
-                            <span class="badge">📊 Level: Easy</span>
-                            <span class="badge">⏱️ Duration: 1:30</span>
+                            <span class="badge">📊 Level: 1 (Beginner)</span>
                         </div>
 
-                        <!-- Interactive Score with Watermark -->
+                        <!-- Score Area -->
                         <div class="sheet-rendering-container">
                             <div id="paper"></div>
                         </div>
 
                         <div class="download-section">
+                            <h2>📥 Printable Version</h2>
                             <div class="download-buttons">
                                 <a href="javascript:window.print()" class="download-btn">
                                     <span class="icon">📄</span>
-                                    <span class="text">
-                                        <strong>Print Professional PDF</strong>
-                                        <small>Optimized for A4/Letter sizing</small>
-                                    </span>
+                                    <div class="text">
+                                        <strong>Save / Print PDF</strong>
+                                        <small>High-quality vector graphics (SVG)</small>
+                                    </div>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Expanded Original Content -->
+                        <!-- Educational Content -->
                         <section class="article-section">
-                            <h2>📖 Historical Context</h2>
-                            <p>Composed between 1822 and 1824, the "Ode to Joy" theme is the crowning achievement of Beethoven's Ninth Symphony. What makes this melody so extraordinary is its creation: by the time the symphony premiered in Vienna, <strong>Beethoven was completely deaf</strong>. He never heard a single note of this anthem that would eventually become the official anthem of the European Union.</p>
-                            <p>The lyrics (not shown in this solo transcription) were taken from Friedrich Schiller's 1785 poem "An die Freude," a passionate call for universal brotherhood and equality among all people.</p>
+                            <h2>📖 Historical Background</h2>
+                            <p>Composed between 1822 and 1824, "Ode to Joy" is the final movement of Beethoven's Ninth Symphony. What makes this masterpiece truly astounding is that **Beethoven was completely deaf** when he composed it. He never actually heard the premiere of the melody that would eventually become the anthem of the European Union.</p>
+                            <p>The theme represents a message of peace and universal brotherhood, setting Friedrich Schiller's poem to music in a way that remains globally recognized today.</p>
                         </section>
 
                         <section class="article-section">
-                            <h2>🔬 Musical Analysis</h2>
+                            <h2>🔬 Musical Structure Analysis</h2>
                             <div class="analysis-grid">
                                 <div class="highlight-box">
-                                    <h3>Step-wise Melody</h3>
-                                    <p>The genius of Ode to Joy lies in its simplicity. Most of the melody moves in <strong>seconds</strong> (step-wise motion), making it the perfect piece for beginner pianists to master hand positioning and finger independent control.</p>
+                                    <h3>Step-wise Motion</h3>
+                                    <p>The melody is famous for moving almost entirely by 'steps' (neighboring notes) rather than large leaps. This makes it an ideal pedagogical piece for students practicing legato technique and hand stability.</p>
                                 </div>
                                 <div class="highlight-box">
-                                    <h3>A-A-B-A Structure</h3>
-                                    <p>The theme follows a classic periodic structure. The first phrase (A) establishes the home key (G Major), the second phrase (A) mirrors it with a stronger cadence, the bridge (B) provides rhythmic variation, and the final (A) returns home.</p>
+                                    <h3>A-A-B-A Periodic Form</h3>
+                                    <p>The piece follows a classic 8-bar period structure. The primary theme (A) is repeated, followed by a brief 'bridge' (B), before the final return to the main theme (A).</p>
                                 </div>
                             </div>
                         </section>
 
                         <section class="article-section">
-                            <h2>⌨️ Performance Guide</h2>
+                            <h2>⌨️ Piano Performance Tips</h2>
                             <ul>
-                                <li><strong>Hand Position</strong>: This arrangement sits perfectly in a C-position (or G-position depending on your transposition). Keep your fingers curved as if holding an orange.</li>
-                                <li><strong>The Dotted Rhythm</strong>: In measure 4 and 8, notice the dotted eighth note. This short-long feel is crucial to the anthem's "march-like" character.</li>
-                                <li><strong>Dynamics</strong>: Start <em>Mezzo-Forte</em> (medium loud). In the bridge section (A A B G...), try playing slightly softer (<em>Mezzo-Piano</em>) to build tension before the final triumphant return.</li>
+                                <li><strong>Fingerings</strong>: Try to keep your hand in a fixed "G Major" five-finger position (Thumb on G).</li>
+                                <li><strong>The Dotted Rhythm</strong>: Pay close attention to the "dotted eighth and sixteenth" rhythm in the 4th and 8th measures to give it a noble, march-like feel.</li>
+                                <li><strong>Singing Tone</strong>: Even though it's simple, play with a 'Cantabile' (singing) style, connecting each note smoothly.</li>
                             </ul>
                         </section>
 
                         <details class="details-dev">
-                            <summary>🛠️ Developer View (ABC Notation Source)</summary>
+                            <summary>🛠️ Developer Details (ABC Notation Data Source)</summary>
                             <div class="abc-code" id="abc-source">X: 1
 T: Ode to Joy
 C: Ludwig van Beethoven
@@ -235,20 +241,21 @@ B B c d | d c B A | G G A B | A>G G2 :|</div>
 
                     <aside class="sidebar">
                         <div class="sidebar-widget">
-                            <h3>Quick Info</h3>
+                            <h3>Sheet Metadata</h3>
                             <ul class="info-list">
-                                <li><strong>Source:</strong> Public Domain</li>
-                                <li><strong>Form:</strong> Anthology Theme</li>
-                                <li><strong>Key:</strong> G Major</li>
-                                <li><strong>Pages:</strong> 1 Page</li>
+                                <li><strong>Copyright:</strong> Public Domain</li>
+                                <li><strong>Key Signature:</strong> G Major</li>
+                                <li><strong>Instrumentation:</strong> Solo Piano</li>
+                                <li><strong>Pages:</strong> 1</li>
                             </ul>
                         </div>
 
                         <div class="sidebar-widget">
-                            <h3>Related Skills</h3>
+                            <h3>Helpful Links</h3>
                             <ul class="category-list">
-                                <li><a href="../../gepu/how-to-read-sheet-music.html">How to Read Staff</a></li>
-                                <li><a href="../../gepu/note-values-and-rhythm.html">Rhythm Basics</a></li>
+                                <li><a href="../../gepu/">How to Read Music</a></li>
+                                <li><a href="../../geci/">Music Theory 101</a></li>
+                                <li><a href="../../music-production/">Production Guides</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -258,22 +265,32 @@ B B c d | d c B A | G G A B | A>G G2 :|</div>
     </main>
 
     <script type="text/javascript">
-        window.onload = function() {
+        function renderScore() {
             var abc = document.getElementById("abc-source").innerText;
             ABCJS.renderAbc("paper", abc, {
                 responsive: "resize",
+                staffwidth: 740,
+                add_classes: true,
                 paddingtop: 0,
                 paddingbottom: 0,
-                staffwidth: 740,
-                add_classes: true
+                paddingleft: 0,
+                paddingright: 0
             });
         }
+
+        // Render on load with a tiny delay to ensure container is sized
+        window.addEventListener('load', function() {
+            setTimeout(renderScore, 100);
+        });
+
+        // Re-render on resize if needed (though responsive: "resize" handles most)
+        window.addEventListener('resize', renderScore);
     </script>
 
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. Educational content provided for learning purposes. Sheet music is public domain.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Professional music educational resources. Sheet music transcriptions are in the public domain.</p>
             </div>
         </div>
     </footer>

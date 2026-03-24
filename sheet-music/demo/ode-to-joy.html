@@ -69,24 +69,23 @@
             overflow: visible !important; /* Allow SVG to expand */
         }
 
-        /* Watermark */
-        .sheet-rendering-container::after {
-            content: "haolingsheng.com";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-30deg);
-            font-size: clamp(2rem, 10vw, 5rem);
-            color: rgba(0, 0, 0, 0.04);
-            pointer-events: none;
-            font-weight: 900;
-            z-index: 10;
-            white-space: nowrap;
-        }
+        /* Removed Watermark ::after rule per user request */
 
         #paper {
             width: 100% !important;
-            min-height: 400px;
+            min-height: 480px;
+        }
+
+        .sheet-footer-attribution {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #8a7c6a;
+            font-family: serif;
+            font-style: italic;
+            border-top: 1px solid #e5e0d5;
+            padding-top: 10px;
+            width: 100%;
+            text-align: right;
         }
 
         #paper svg {
@@ -168,7 +167,7 @@
                         <div class="composer-info">
                             <p><strong>Composer:</strong> Ludwig van Beethoven (1770–1827)</p>
                             <p><strong>Original Work:</strong> Symphony No. 9 in D minor, Op. 125</p>
-                            <p><strong>Arrangement:</strong> Beginner Piano / Melody with Chords</p>
+                            <p><strong>Arrangement:</strong> Standard Piano Score (Two Hands)</p>
                         </div>
 
                         <div class="sheet-meta">
@@ -180,6 +179,7 @@
                         <!-- Score Area -->
                         <div class="sheet-rendering-container">
                             <div id="paper"></div>
+                            <div class="sheet-footer-attribution">Produced by haolingsheng.com</div>
                         </div>
 
                         <div class="download-section">
@@ -189,7 +189,7 @@
                                     <span class="icon">📄</span>
                                     <div class="text">
                                         <strong>Save / Print PDF</strong>
-                                        <small>High-quality vector graphics (SVG)</small>
+                                        <small>Professional Grand Staff Format</small>
                                     </div>
                                 </a>
                             </div>
@@ -234,10 +234,16 @@ M: 4/4
 L: 1/4
 Q: 1/4=120
 K: G
-|: "G"B B "C"c "G"d | "G"d "C"c "G"B "D"A | "G"G G "D"A "G"B | "G"B>A "D"A2 |
-"G"B B "C"c "G"d | "G"d "C"c "G"B "D"A | "G"G G "D"A "G"B | "D"A>G "G"G2 :|
-|: "D"A A "G"B G | "D"A "G"B/c/ B G | "D"A "G"B/c/ B "D"A | "G"G "D"A D2 |
-"G"B B "C"c "G"d | "G"d "C"c "G"B "D"A | "G"G G "D"A "G"B | "D"A>G "G"G2 :|</div>
+V: 1 treble
+V: 2 bass
+[V: 1] |: B B c d | d c B A | G G A B | B>A A2 |
+[V: 2] |: G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 D,2 |
+[V: 1] B B c d | d c B A | G G A B | A>G G2 :|
+[V: 2] G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 G,2 :|
+[V: 1] |: A A B G | A B/c/ B G | A B/c/ B A | G A D2 |
+[V: 2] |: D,2 G,2 | D,2 G,2 | D,2 G,2 | G,2 D,2 |
+[V: 1] B B c d | d c B A | G G A B | A>G G2 :|
+[V: 2] G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 G,2 :|</div>
                         </details>
                     </div>
 

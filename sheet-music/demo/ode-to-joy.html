@@ -133,6 +133,42 @@
             .content-wrapper { grid-template-columns: 1fr; }
             .sheet-rendering-container { padding: 20px 10px; min-height: 300px; }
         }
+
+        /* Print Optimization - Only show the score */
+        @media print {
+            header, footer, .breadcrumb, .download-section, .sidebar, .article-section, .badge, .composer-info, .sheet-meta, .sheet-footer-attribution {
+                display: none !important;
+            }
+            body, main, .container, .content-wrapper, .main-content, .sheet-detail {
+                background: white !important;
+                color: black !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+                border: none !important;
+            }
+            .sheet-rendering-container {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+                box-shadow: none !important;
+                width: 100% !important;
+                min-height: auto !important;
+            }
+            #paper {
+                min-height: auto !important;
+            }
+            #paper svg {
+                width: 100% !important;
+                height: auto !important;
+                filter: contrast(150%) brightness(100%); /* Sharp black/white for print */
+            }
+        }
     </style>
 </head>
 <body>
@@ -234,7 +270,24 @@
                             </ul>
                         </section>
 
-                        <!-- Removed Developer Details per user request -->
+                        <!-- Hidden Data Source for ABCJS (Do not remove) -->
+                        <div id="abc-source" style="display:none !important;">X: 1
+T: Ode to Joy
+C: Ludwig van Beethoven
+M: 4/4
+L: 1/4
+Q: 1/4=120
+K: G
+V: 1 treble
+V: 2 bass
+[V: 1] |: B B c d | d c B A | G G A B | B>A A2 |
+[V: 2] |: G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 D,2 |
+[V: 1] B B c d | d c B A | G G A B | A>G G2 :|
+[V: 2] G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 G,2 :|
+[V: 1] |: A A B G | A B/c/ B G | A B/c/ B A | G A D2 |
+[V: 2] |: D,2 G,2 | D,2 G,2 | D,2 G,2 | G,2 D,2 |
+[V: 1] B B c d | d c B A | G G A B | A>G G2 :|
+[V: 2] G,2 D,2 | G,2 D,2 | G,2 D,2 | G,2 G,2 :|</div>
                     </div>
 
                     <aside class="sidebar">

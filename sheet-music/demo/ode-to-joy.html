@@ -3,51 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free sheet music for Ode to Joy by Ludwig van Beethoven. High-quality printable score for piano and beginners.">
-    <meta name="keywords" content="Ode to Joy, Beethoven, Free Sheet Music, Piano, ABC Notation, Demo">
-    <title>Ode to Joy | Free Sheet Music - Hao Ling Sheng</title>
+    
+    <!-- SEO & Metadata -->
+    <title>Ode to Joy Sheet Music | Free PDF & Interactive SVG - Hao Ling Sheng</title>
+    <meta name="description" content="Download free Ode to Joy sheet music by Beethoven. High-quality interactive SVG and printable PDF. Includes musical analysis, historical context, and beginner performance tips.">
+    <meta name="keywords" content="Ode to Joy sheet music, Beethoven Symphony 9, free piano music, classical sheet music pdf, learn ode to joy, music notation demo">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Ode to Joy | Free Interactive Sheet Music">
+    <meta property="og:description" content="Master Beethoven's masterpiece with our free, interactive SVG sheet music and performance guide.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.haolingsheng.com/sheet-music/demo/ode-to-joy.html">
+
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../sheet-detail.css">
+    
     <!-- abcjs for high-quality SVG rendering -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.js" type="text/javascript"></script>
+    
     <style>
-        .sheet-rendering {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin: 20px 0;
+        :root {
+            --paper-bg: #fdfbf7;
+            --sepia-text: #433422;
+        }
+        
+        .sheet-rendering-container {
+            position: relative;
+            background: var(--paper-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 25px 0;
+            overflow: hidden;
+            border: 1px solid #e5e0d5;
+        }
+
+        /* Watermark */
+        .sheet-rendering-container::after {
+            content: "haolingsheng.com";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 4rem;
+            color: rgba(0, 0, 0, 0.03);
+            pointer-events: none;
+            font-weight: 900;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        #paper {
+            width: 100%;
             overflow-x: auto;
         }
-        .data-source-info {
-            background: #f8f9fa;
-            border-left: 4px solid #4a90e2;
-            padding: 15px;
-            margin: 20px 0;
-            font-size: 0.9em;
+
+        /* Force ABCJS styles to be elegant */
+        #paper svg path, #paper svg text, #paper svg rect {
+            fill: var(--sepia-text) !important;
+            stroke: var(--sepia-text) !important;
         }
+
+        .details-dev {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.85em;
+        }
+
+        .details-dev summary {
+            cursor: pointer;
+            color: #888;
+            padding: 5px;
+        }
+
         .abc-code {
             font-family: 'Courier New', Courier, monospace;
-            background: #eee;
-            padding: 10px;
+            background: #000;
+            color: #0c0;
+            padding: 15px;
             display: block;
             margin-top: 10px;
             white-space: pre;
-            font-size: 0.8em;
-        }
-        .badge-premium {
-            background: linear-gradient(135deg, #ffd700, #ffa500);
-            color: #000;
-            font-weight: bold;
-            padding: 2px 8px;
             border-radius: 4px;
-            font-size: 0.8em;
-            margin-left: 10px;
         }
-        /* ABCJS Visibility Fix */
-        #paper svg path, #paper svg text, #paper svg rect {
-            fill: #000 !important;
-            stroke: #000 !important;
+
+        .article-section {
+            margin: 40px 0;
+            border-top: 1px solid #333;
+            padding-top: 30px;
+        }
+
+        .article-section h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            color: var(--accent-green);
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .highlight-box {
+            background: #151515;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        @media (max-width: 768px) {
+            .analysis-grid { grid-template-columns: 1fr; }
+            .sheet-rendering-container::after { font-size: 2.5rem; }
         }
     </style>
 </head>
@@ -56,7 +128,7 @@
         <div class="container">
             <div class="logo">
                 <h1>🎵 Hao Ling Sheng</h1>
-                <p class="tagline">Your Free Music Education Resource</p>
+                <p class="tagline">Professional Music Education</p>
             </div>
             <nav>
                 <ul>
@@ -75,7 +147,6 @@
             <div class="container">
                 <a href="../../index.html">Home</a> / 
                 <a href="../index.html">Sheet Music</a> / 
-                <a href="index.html">Demo</a> / 
                 <span>Ode to Joy</span>
             </div>
         </div>
@@ -84,27 +155,70 @@
             <div class="container">
                 <div class="content-wrapper">
                     <div class="main-content">
-                        <h1>Ode to Joy <span class="badge-premium">Data-Driven Demo</span></h1>
+                        <h1>Ode to Joy <span class="badge" style="background: var(--accent-purple)">Free Resource</span></h1>
                         
                         <div class="composer-info">
-                            <p><strong>Composer:</strong> Ludwig van Beethoven</p>
-                            <p><strong>Years:</strong> 1770-1827</p>
-                            <p><strong>Opus:</strong> Symphony No. 9, Op. 125</p>
+                            <p><strong>Composer:</strong> Ludwig van Beethoven (1770–1827)</p>
+                            <p><strong>Work:</strong> Symphony No. 9 in D minor, Op. 125</p>
+                            <p><strong>Arrangement:</strong> Beginner Piano / Melody Solo</p>
                         </div>
 
                         <div class="sheet-meta">
-                            <span class="badge">🎹 Piano / Keyboards</span>
+                            <span class="badge">🎹 Piano Solo</span>
                             <span class="badge">🎼 Classical</span>
-                            <span class="badge">📊 Easy</span>
-                            <span class="badge">⏱️ 1:30</span>
+                            <span class="badge">📊 Level: Easy</span>
+                            <span class="badge">⏱️ Duration: 1:30</span>
                         </div>
 
-                        <!-- The SVG Rendering Area -->
-                        <div id="paper" class="sheet-rendering"></div>
+                        <!-- Interactive Score with Watermark -->
+                        <div class="sheet-rendering-container">
+                            <div id="paper"></div>
+                        </div>
 
-                        <div class="data-source-info">
-                            <strong>🛠️ Developer View (Self-Made Data Source):</strong>
-                            <p>This score is not an image or a scan. It is rendered in real-time from the "ABC Notation" data below. This method is 100% legal for public domain works and allows for responsive design.</p>
+                        <div class="download-section">
+                            <div class="download-buttons">
+                                <a href="javascript:window.print()" class="download-btn">
+                                    <span class="icon">📄</span>
+                                    <span class="text">
+                                        <strong>Print Professional PDF</strong>
+                                        <small>Optimized for A4/Letter sizing</small>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Expanded Original Content -->
+                        <section class="article-section">
+                            <h2>📖 Historical Context</h2>
+                            <p>Composed between 1822 and 1824, the "Ode to Joy" theme is the crowning achievement of Beethoven's Ninth Symphony. What makes this melody so extraordinary is its creation: by the time the symphony premiered in Vienna, <strong>Beethoven was completely deaf</strong>. He never heard a single note of this anthem that would eventually become the official anthem of the European Union.</p>
+                            <p>The lyrics (not shown in this solo transcription) were taken from Friedrich Schiller's 1785 poem "An die Freude," a passionate call for universal brotherhood and equality among all people.</p>
+                        </section>
+
+                        <section class="article-section">
+                            <h2>🔬 Musical Analysis</h2>
+                            <div class="analysis-grid">
+                                <div class="highlight-box">
+                                    <h3>Step-wise Melody</h3>
+                                    <p>The genius of Ode to Joy lies in its simplicity. Most of the melody moves in <strong>seconds</strong> (step-wise motion), making it the perfect piece for beginner pianists to master hand positioning and finger independent control.</p>
+                                </div>
+                                <div class="highlight-box">
+                                    <h3>A-A-B-A Structure</h3>
+                                    <p>The theme follows a classic periodic structure. The first phrase (A) establishes the home key (G Major), the second phrase (A) mirrors it with a stronger cadence, the bridge (B) provides rhythmic variation, and the final (A) returns home.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="article-section">
+                            <h2>⌨️ Performance Guide</h2>
+                            <ul>
+                                <li><strong>Hand Position</strong>: This arrangement sits perfectly in a C-position (or G-position depending on your transposition). Keep your fingers curved as if holding an orange.</li>
+                                <li><strong>The Dotted Rhythm</strong>: In measure 4 and 8, notice the dotted eighth note. This short-long feel is crucial to the anthem's "march-like" character.</li>
+                                <li><strong>Dynamics</strong>: Start <em>Mezzo-Forte</em> (medium loud). In the bridge section (A A B G...), try playing slightly softer (<em>Mezzo-Piano</em>) to build tension before the final triumphant return.</li>
+                            </ul>
+                        </section>
+
+                        <details class="details-dev">
+                            <summary>🛠️ Developer View (ABC Notation Source)</summary>
                             <div class="abc-code" id="abc-source">X: 1
 T: Ode to Joy
 C: Ludwig van Beethoven
@@ -116,51 +230,25 @@ K: G
 B B c d | d c B A | G G A B | A>G G2 :|
 |: A A B G | A B/c/ B G | A B/c/ B A | G A D2 |
 B B c d | d c B A | G G A B | A>G G2 :|</div>
-                        </div>
-
-                        <div class="download-section">
-                            <h2>📥 Legal Download</h2>
-                            <div class="download-buttons">
-                                <a href="javascript:window.print()" class="download-btn">
-                                    <span class="icon">🖨️</span>
-                                    <span class="text">
-                                        <strong>Print / Save as PDF</strong>
-                                        <small>Perfect for practice</small>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="about-piece">
-                            <h2>About This Piece</h2>
-                            <p>Beethoven's "Ode to Joy" is the final movement of his Ninth Symphony. It is one of the most recognizable melodies in the world and serves as a celebration of universal brotherhood.</p>
-                        </div>
-
-                        <div class="practice-tips">
-                            <h2>💡 Practice Tips</h2>
-                            <ul>
-                                <li><strong>Keep a steady beat</strong>: Use a metronome at 120 BPM.</li>
-                                <li><strong>Watch the fingering</strong>: Even though it's simple, use consistent fingers for the scalar passages.</li>
-                                <li><strong>Dotted Eighth Note</strong>: Pay attention to the "B>A" (dotted eighth and sixteenth) rhythm in the 4th measure.</li>
-                            </ul>
-                        </div>
+                        </details>
                     </div>
 
                     <aside class="sidebar">
                         <div class="sidebar-widget">
                             <h3>Quick Info</h3>
                             <ul class="info-list">
-                                <li><strong>Resolution:</strong> Vector (SVG)</li>
-                                <li><strong>Accessibility:</strong> High</li>
-                                <li><strong>Copyright:</strong> Public Domain</li>
+                                <li><strong>Source:</strong> Public Domain</li>
+                                <li><strong>Form:</strong> Anthology Theme</li>
+                                <li><strong>Key:</strong> G Major</li>
+                                <li><strong>Pages:</strong> 1 Page</li>
                             </ul>
                         </div>
 
                         <div class="sidebar-widget">
-                            <h3>Browse Other Demos</h3>
+                            <h3>Related Skills</h3>
                             <ul class="category-list">
-                                <li><a href="#">Minuet in G</a></li>
-                                <li><a href="#">Moonlight Sonata</a></li>
+                                <li><a href="../../gepu/how-to-read-sheet-music.html">How to Read Staff</a></li>
+                                <li><a href="../../gepu/note-values-and-rhythm.html">Rhythm Basics</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -174,9 +262,10 @@ B B c d | d c B A | G G A B | A>G G2 :|</div>
             var abc = document.getElementById("abc-source").innerText;
             ABCJS.renderAbc("paper", abc, {
                 responsive: "resize",
-                paddingtop: 30,
-                paddingbottom: 30,
-                staffwidth: 740
+                paddingtop: 0,
+                paddingbottom: 0,
+                staffwidth: 740,
+                add_classes: true
             });
         }
     </script>
@@ -184,7 +273,7 @@ B B c d | d c B A | G G A B | A>G G2 :|</div>
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2026 Hao Ling Sheng. All sheet music is in the public domain. Educational use only.</p>
+                <p>&copy; 2026 Hao Ling Sheng. Educational content provided for learning purposes. Sheet music is public domain.</p>
             </div>
         </div>
     </footer>

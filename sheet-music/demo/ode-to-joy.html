@@ -266,25 +266,34 @@ B B c d | d c B A | G G A B | A>G G2 :|</div>
 
     <script type="text/javascript">
         function renderScore() {
-            var abc = document.getElementById("abc-source").innerText;
+            var abcElement = document.getElementById("abc-source");
+            if (!abcElement) return;
+            
+            // textContent is more reliable than innerText for hidden/details elements
+            var abc = abcElement.textContent.trim();
+            
             ABCJS.renderAbc("paper", abc, {
                 responsive: "resize",
-                staffwidth: 740,
                 add_classes: true,
                 paddingtop: 0,
                 paddingbottom: 0,
                 paddingleft: 0,
-                paddingright: 0
+                paddingright: 0,
+                minPadding: 0
             });
         }
 
         // Render on load with a tiny delay to ensure container is sized
         window.addEventListener('load', function() {
-            setTimeout(renderScore, 100);
+            setTimeout(renderScore, 200);
         });
 
-        // Re-render on resize if needed (though responsive: "resize" handles most)
-        window.addEventListener('resize', renderScore);
+        // Re-render on resize to ensure SVG scales properly
+        var resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(renderScore, 300);
+        });
     </script>
 
     <footer>

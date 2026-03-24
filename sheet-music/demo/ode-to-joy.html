@@ -58,7 +58,7 @@
         .sheet-rendering-container {
             position: relative;
             background: var(--paper-bg);
-            padding: 40px 20px;
+            padding: 40px 60px;
             border-radius: 12px;
             margin: 30px 0;
             min-height: 500px; /* Force minimum height for rendering */
@@ -154,7 +154,7 @@
                 left: 0 !important;
                 border: none !important;
                 margin: 0 !important;
-                padding: 0 !important;
+                padding: 1.5cm !important; /* Professional print margins */
                 background: white !important;
                 box-shadow: none !important;
                 width: 100% !important;
@@ -326,11 +326,11 @@ V: 2 bass
             ABCJS.renderAbc("paper", abc, {
                 responsive: "resize",
                 add_classes: true,
-                paddingtop: 0,
-                paddingbottom: 0,
-                paddingleft: 0,
-                paddingright: 0,
-                minPadding: 0
+                paddingtop: 10,
+                paddingbottom: 10,
+                paddingleft: 10,
+                paddingright: 10,
+                minPadding: 10
             });
         }
 

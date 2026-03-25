@@ -16,7 +16,7 @@ A static HTML website providing free sheet music, music theory tutorials, and in
 haolingsheng/
 ├── index.html              # Homepage
 ├── styles.css              # Main stylesheet
-├── sheet-music/            # Sheet music section
+├── gepu/            # Sheet music section
 │   ├── piano/              # Piano music
 │   ├── guitar/             # Guitar tabs
 │   ├── violin/             # Violin music
@@ -35,7 +35,7 @@ haolingsheng/
 ### View Sample Pages
 
 1. Open `index.html` in your browser to see the homepage
-2. Open `sheet-music/piano/beethoven-moonlight-sonata.html` to see a detailed sheet music page
+2. Open `gepu/piano/beethoven-moonlight-sonata.html` to see a detailed sheet music page
 
 ### Generate Pages from CSV Data
 
@@ -58,7 +58,7 @@ haolingsheng/
 
 2. **Edit generate.py** to specify your CSV file and output directory:
    ```python
-   generate_sheet_music_pages('data/your-data.csv', 'sheet-music/piano/')
+   generate_sheet_music_pages('data/your-data.csv', 'gepu/piano/')
    ```
 
 3. **Run the generator**:

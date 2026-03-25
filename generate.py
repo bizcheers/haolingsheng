@@ -18,7 +18,7 @@ SHEET_MUSIC_TEMPLATE = """<!DOCTYPE html>
     <meta name="description" content="{meta_description}">
     <meta name="keywords" content="{keywords}">
     <title>{title} | Free Sheet Music - Hao Ling Sheng</title>
-    <link rel="canonical" href="https://www.haolingsheng.com/sheet-music/{instrument_slug}/{filename}">
+    <link rel="canonical" href="https://www.haolingsheng.com/gepu/{instrument_slug}/{filename}">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../sheet-detail.css">
 </head>

@@ -1,10 +1,5 @@
 /* Sheet Detail Page Styles */
 
-:root {
-    --paper-bg: #fdfbf7;
-    --sepia-text: #433422;
-}
-
 /* Base Styles - Ensuring dark theme persists */
 body {
     background-color: var(--bg-primary);
@@ -30,12 +25,12 @@ body {
     color: var(--text-primary);
 }
 
-.composer-info, .download-section, .practice-tips, .sidebar-widget, .sheet-preview {
+.composer-info, .download-section, .article-section, .practice-tips, .sidebar-widget, .sheet-preview {
     background-color: var(--bg-secondary) !important;
     border: 1px solid var(--border-color);
 }
 
-.composer-info p, .download-section h2, .practice-tips h2, .sidebar-widget h3, .main-content h2, .main-content h3, .main-content p, .main-content li, .sidebar-widget li, .sidebar-widget p {
+.composer-info p, .download-section h2, .practice-tips h2, .sidebar-widget h3, .main-content h2, .main-content h3, .article-section p, .article-section li, .article-section h2, .article-section h3, .main-content p, .main-content li, .sidebar-widget li, .sidebar-widget p {
     color: var(--text-primary) !important;
 }
 
@@ -287,12 +282,14 @@ body {
     font-size: 0.9rem;
 }
 
+.article-section,
 .about-piece,
 .practice-tips,
 .historical-context {
     margin: 3rem 0;
 }
 
+.article-section h2,
 .about-piece h2,
 .practice-tips h2,
 .historical-context h2 {
@@ -301,6 +298,7 @@ body {
     color: var(--text-dark);
 }
 
+.article-section h3,
 .about-piece h3 {
     font-size: 1.3rem;
     margin-top: 1.5rem;
@@ -308,6 +306,7 @@ body {
     color: var(--text-dark);
 }
 
+.article-section p,
 .about-piece p,
 .historical-context p {
     margin-bottom: 1rem;
@@ -315,12 +314,14 @@ body {
     color: var(--text-dark);
 }
 
+.article-section ul,
 .about-piece ul,
 .practice-tips ul {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
 }
 
+.article-section li,
 .about-piece li,
 .practice-tips li {
     margin-bottom: 0.75rem;
@@ -518,3 +519,9 @@ body {
         text-align: center;
     }
 }
+/* DARK MODE & PREMIUM OVERRIDES (Must be at bottom to win cascade) */
+:root {
+    --paper-bg: #fdfbf7;
+    --sepia-text: #433422;
+}
+

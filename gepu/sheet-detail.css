@@ -1,5 +1,137 @@
 /* Sheet Detail Page Styles */
 
+:root {
+    --paper-bg: #fdfbf7;
+    --sepia-text: #433422;
+}
+
+/* Base Styles - Ensuring dark theme persists */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.sheet-rendering-container {
+    position: relative;
+    background: var(--paper-bg);
+    padding: 40px 60px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* Give the page an elegant feel */
+.sheet-detail {
+    background-color: var(--bg-primary);
+}
+
+.main-content h1 {
+    color: var(--text-primary);
+}
+
+.composer-info, .download-section, .practice-tips, .sidebar-widget, .sheet-preview {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color);
+}
+
+.composer-info p, .download-section h2, .practice-tips h2, .sidebar-widget h3, .main-content h2, .main-content h3, .main-content p, .main-content li, .sidebar-widget li, .sidebar-widget p {
+    color: var(--text-primary) !important;
+}
+
+.download-btn {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+.download-btn:hover {
+    background-color: var(--bg-hover);
+}
+
+.download-btn strong, .download-btn small {
+    color: var(--text-primary) !important;
+}
+
+.sheet-footer-attribution {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--sepia-text);
+    opacity: 0.7;
+    margin-top: 20px;
+    border-top: 1px solid rgba(67, 52, 34, 0.2);
+    padding-top: 10px;
+}
+
+#paper {
+    min-height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#paper svg {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+#paper svg path {
+    fill: var(--sepia-text);
+}
+
+#paper svg text {
+    fill: var(--sepia-text);
+}
+
+#paper svg line {
+    stroke: var(--sepia-text);
+}
+
+@media print {
+    body, main, .container, .content-wrapper, .main-content, .sheet-detail {
+        background: white !important;
+        color: black !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        border: none !important;
+        display: block !important;
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .sheet-rendering-container {
+        position: relative !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 1.5cm auto !important;
+        background: white !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    #paper svg {
+        width: 100% !important;
+        filter: contrast(150%) brightness(100%);
+    }
+
+    #paper svg path, #paper svg text {
+        fill: black !important;
+    }
+    
+    #paper svg line {
+        stroke: black !important;
+    }
+
+    header, footer, .breadcrumb, .composer-info, .sheet-meta, 
+    .download-section, .article-section, .sidebar, 
+    .sheet-footer-attribution, h1, .badge {
+        display: none !important;
+    }
+}
+
+
 .breadcrumb {
     background-color: var(--bg-light);
     padding: 1rem 0;

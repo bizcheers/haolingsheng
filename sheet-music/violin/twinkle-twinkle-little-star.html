@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>Twinkle Twinkle Little Star Violin Sheet Music | Beginners PDF - Hao Ling Sheng</title>
+    <meta name="description" content="Download free Twinkle Twinkle Little Star sheet music for violin. Easy beginner-friendly score with printable PDF, historical facts, and performance tips.">
+    <meta name="keywords" content="twinkle twinkle little star violin sheet music, beginner violin scores, simple violin music, easy violin sheet music pdf">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Twinkle Twinkle Little Star | Free Easy Violin Sheet Music">
+    <meta property="og:description" content="Start your violin journey with our free beginner sheet music and performance guide.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.haolingsheng.com/sheet-music/violin/twinkle-twinkle-little-star.html">
+
+    <link rel="stylesheet" href="../../styles.css?v=12">
+    <link rel="stylesheet" href="../sheet-detail.css?v=12">
+    
+    <!-- abcjs for high-quality SVG rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.js" type="text/javascript"></script>
+    
+    <style>
+        :root {
+            --paper-bg: #fdfbf7;
+            --sepia-text: #433422;
+        }
+
+        /* OVERRIDE sheet-detail.css light-mode styles to match site dark theme */
+        body { background-color: var(--bg-primary); color: var(--text-primary); }
+        .main-content h1 { color: var(--text-primary) !important; margin-top: 0 !important; }
+        .breadcrumb { background-color: var(--bg-secondary) !important; border-bottom: 1px solid var(--border-subtle); padding: 1rem 0; width: 100%; }
+        .breadcrumb a, .breadcrumb span { color: var(--text-secondary) !important; }
+        
+        .composer-info, .download-section, .sidebar-widget { 
+            background-color: var(--bg-secondary) !important; 
+            border: 1px solid var(--border-subtle) !important;
+            box-shadow: none !important;
+            color: var(--text-primary) !important;
+        }
+        .composer-info p, .download-section h2, .sidebar-widget h3, .info-list li { 
+            color: var(--text-primary) !important; 
+        }
+        .info-list li { border-bottom: 1px solid var(--border-subtle); }
+        .category-list a { color: var(--text-secondary) !important; }
+        .category-list a:hover { color: var(--accent-green) !important; background: var(--bg-tertiary) !important; }
+
+        .download-btn { background-color: var(--bg-tertiary) !important; border: 1px solid var(--border-subtle) !important; box-shadow: none !important; }
+        .download-btn strong { color: var(--text-primary) !important; }
+        .download-btn small { color: var(--text-secondary) !important; }
+        
+        .practice-tips { background: linear-gradient(135deg, #1a1a1a 0%, #000 100%) !important; border: 1px solid var(--border-default) !important; color: var(--text-primary) !important; }
+        .practice-tips h2 { color: var(--accent-green) !important; }
+        .practice-tips li { color: var(--text-secondary) !important; }
+        
+        /* Score Rendering Fixes */
+        .sheet-rendering-container {
+            position: relative;
+            background: var(--paper-bg);
+            padding: 40px 60px;
+            border-radius: 12px;
+            margin: 30px 0;
+            min-height: 500px; /* Force minimum height for rendering */
+            border: 1px solid #e5e0d5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: visible !important; /* Allow SVG to expand */
+        }
+
+        /* Removed Watermark ::after rule per user request */
+
+        #paper {
+            width: 100% !important;
+            min-height: 480px;
+        }
+
+        .sheet-footer-attribution {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #8a7c6a;
+            font-family: serif;
+            font-style: italic;
+            border-top: 1px solid #e5e0d5;
+            padding-top: 10px;
+            width: 100%;
+            text-align: right;
+        }
+
+        #paper svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        /* Force ABCJS styles to be visible and elegant */
+        #paper svg path, #paper svg text, #paper svg rect {
+            fill: var(--sepia-text) !important;
+            stroke: var(--sepia-text) !important;
+        }
+
+        /* Tech Details */
+        .details-dev {
+            background: #111;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .details-dev summary { color: var(--text-tertiary); cursor: pointer; font-size: 0.9rem; }
+        .abc-code { font-family: monospace; background: #000; color: #0c0; padding: 15px; margin-top: 10px; border-radius: 4px; overflow-x: auto; }
+
+        /* Article Content */
+        /* Article & Section Headings */
+        .article-section h2, .download-section h2 { 
+            color: var(--accent-green) !important; 
+            font-size: 1.25rem; 
+            margin-top: 10px;
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            line-height: 1.4;
+        }
+        .analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+        .highlight-box { background: var(--bg-secondary); padding: 25px; border-radius: 12px; border-left: 4px solid var(--accent-purple); border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+        .highlight-box h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary); }
+
+        @media (max-width: 768px) {
+            .analysis-grid { grid-template-columns: 1fr; }
+            .content-wrapper { grid-template-columns: 1fr; }
+            .sheet-rendering-container { padding: 20px 10px; min-height: 300px; }
+        }
+
+        /* Print Optimization - Only show the score */
+        @media print {
+            header, footer, .breadcrumb, .download-section, .sidebar, .article-section, .badge, .composer-info, .sheet-meta, .sheet-footer-attribution, h1, .practice-tips, .details-dev {
+                display: none !important;
+            }
+            body, main, .container, .content-wrapper, .main-content, .sheet-detail {
+                background: white !important;
+                color: black !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+                border: none !important;
+                display: block !important;
+                height: auto !important;
+                min-height: auto !important;
+            }
+            .sheet-rendering-container {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 1.5cm !important; /* Professional print margins */
+                background: white !important;
+                box-shadow: none !important;
+                width: 100% !important;
+                min-height: auto !important;
+                display: block !important;
+            }
+            #paper {
+                min-height: auto !important;
+            }
+            #paper svg {
+                width: 100% !important;
+                height: auto !important;
+                filter: contrast(150%) brightness(100%); /* Sharp black/white for print */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
+                <a href="../../" class="logo-text">
+                    <h1>Hao Ling Sheng</h1>
+                    <p class="tagline">Professional Music Education</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../gepu/">Music Notation</a></li>
+                    <li><a href="../../geci/">Music Theory</a></li>
+                    <li><a href="../../music-production/">Production</a></li>
+                    <li><a href="../../music-business/">Music Business</a></li>
+                    <li><a href="../../singer/index.html">Producers</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="../../index.html">Home</a> / 
+                <a href="../../gepu/index.html">Sheet Music</a> / 
+                <a href="../violin/">Violin</a> / 
+                <span>Twinkle Twinkle Little Star</span>
+            </div>
+        </div>
+
+        <article class="sheet-detail">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="main-content">
+                        <h1>Twinkle Twinkle Little Star <span class="badge" style="background: var(--accent-purple); vertical-align: middle; font-size: 0.9rem; margin-left: 10px;">Easy Violin Score</span></h1>
+                        
+                        <div class="composer-info">
+                            <p><strong>Composer:</strong> Traditional (French: "Ah! vous dirai-je, maman")</p>
+                            <p><strong>Original Work:</strong> "Ah! vous dirai-je, maman" (1761)</p>
+                            <p><strong>Arrangement:</strong> Easy Violin Score (Single Voice)</p>
+                        </div>
+
+                        <div class="sheet-meta">
+                            <span class="badge">🎻 Violin / Strings</span>
+                            <span class="badge">🎼 Traditional</span>
+                            <span class="badge">📊 Level: 1 (Beginner)</span>
+                        </div>
+
+                        <!-- Score Area -->
+                        <div class="sheet-rendering-container">
+                            <div id="paper"></div>
+                            <div class="sheet-footer-attribution">Produced by haolingsheng.com</div>
+                        </div>
+
+                        <div class="download-section">
+                            <h2>📥 Printable Twinkle Twinkle Sheet Music</h2>
+                            <div class="download-buttons">
+                                <a href="javascript:window.print()" class="download-btn">
+                                    <span class="icon">📄</span>
+                                    <div class="text">
+                                        <strong>Save / Print PDF</strong>
+                                        <small>Professional Grand Staff Format</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Educational Content -->
+                        <section class="article-section" style="border-top: none; margin-top: 0;">
+                            <h2>📖 Historical Background</h2>
+                            <p>While the melody of "Twinkle, Twinkle, Little Star" is often associated with Mozart, he didn't actually write it! He did, however, write a famous set of variations on the tune, which was an existing French folk song titled <strong>"Ah! vous dirai-je, maman."</strong></p>
+                            <p>The English lyrics were written as a poem by Jane Taylor in 1806. For violinists, this is almost always the very first song learned in the <strong>Suzuki Method</strong>, making it a foundational milestone for millions of musicians.</p>
+                        </section>
+
+                        <section class="article-section">
+                            <h2>🔬 Musical Structure Analysis</h2>
+                            <div class="analysis-grid">
+                                <div class="highlight-box">
+                                    <h3>A-B-A Binary Form</h3>
+                                    <p>The song is built on a clear three-part structure. The 'A' section is the main theme, the 'B' section provides contrast, and then 'A' returns. This simplicity helps beginners understand musical form.</p>
+                                </div>
+                                <div class="highlight-box">
+                                    <h3>Open String Jumps</h3>
+                                    <p>In the key of D major, this melody utilizes the open D and A strings, allowing students to focus on their bowing technique without complicated left-hand shifts.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="article-section">
+                            <h2>🎻 Violin Performance Tips</h2>
+                            <ul>
+                                <li><strong>Full Bows</strong>: On the half-notes at the end of each phrase (the "A2"), try to use a full, smooth bow stroke to create a resonant and clear sound.</li>
+                                <li><strong>Finger Placement</strong>: Keep your fingers close to the fingerboard even when playing open strings to ensure you can quickly transition to the next notes.</li>
+                                <li><strong>Bowing Direction</strong>: Start with a "Down-bow" on the first note. This establishes the strong beat of the measure.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Hidden Data Source for ABCJS (Do not remove) -->
+                        <div id="abc-source" style="display:none !important;">X:1
+T:Twinkle Twinkle Little Star (Easy Violin)
+C:Traditional
+M:4/4
+L:1/4
+Q:1/4=100
+K:D
+V:1 clef=treble
+D D A A | B B A2 | G G F F | E E D2 |
+A A G G | F F E2 | A A G G | F F E2 |
+D D A A | B B A2 | G G F F | E E D2 |]</div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Sheet Metadata</h3>
+                            <ul class="info-list">
+                                <li><strong>Copyright:</strong> Public Domain</li>
+                                <li><strong>Key Signature:</strong> D Major</li>
+                                <li><strong>Instrumentation:</strong> Solo Violin</li>
+                                <li><strong>Pages:</strong> 1</li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Helpful Links</h3>
+                            <ul class="category-list">
+                                <li><a href="../../index.html">Haolingsheng - Free Sheet Music For Beginners</a></li>
+                                <li><a href="../../gepu/">How to Read Music</a></li>
+                                <li><a href="../../geci/">Music Theory 101</a></li>
+                                <li><a href="../../music-production/">Production Guides</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script type="text/javascript">
+        function renderScore() {
+            var abcElement = document.getElementById("abc-source");
+            if (!abcElement) return;
+            
+            // textContent is more reliable than innerText for hidden/details elements
+            var abc = abcElement.textContent.trim();
+            
+            ABCJS.renderAbc("paper", abc, {
+                responsive: "resize",
+                add_classes: true,
+                paddingtop: 10,
+                paddingbottom: 10,
+                paddingleft: 10,
+                paddingright: 10,
+                minPadding: 10
+            });
+        }
+
+        // Render on load with a tiny delay to ensure container is sized
+        window.addEventListener('load', function() {
+            setTimeout(renderScore, 200);
+        });
+
+        // Re-render on resize to ensure SVG scales properly
+        var resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(renderScore, 300);
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../../gepu/">Music Notation</a></li>
+                        <li><a href="../../geci/">Music Theory</a></li>
+                        <li><a href="../../music-production/">Production</a></li>
+                        <li><a href="../../music-business/">Music Business</a></li>
+                        <li><a href="../../singer/index.html">Music Producers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../../about.html">About Us</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                        <li><a href="../../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../../terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone Converter</a></li>
+                        <li><a href="https://gotbookseriesinorder.com" rel="dofollow noopener" target="_blank">got book series in order</a></li>
+                        <li><a href="https://dinosaurhas500teeth.com" rel="dofollow noopener" target="_blank">What Dinosaur Has 500 Teeth</a></li>
+                        <li><a href="https://drgo.ca" rel="dofollow noopener" target="_blank">Canada Driving School Near Me</a></li>
+                        <li><a href="http://printingnumbering.com" rel="dofollow noopener" target="_blank">printing numbering</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

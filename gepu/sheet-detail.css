@@ -25,7 +25,7 @@ body {
     color: var(--text-primary);
 }
 
-.composer-info, .download-section, .article-section, .practice-tips, .sidebar-widget, .sheet-preview {
+.composer-info, .download-section, .practice-tips, .sidebar-widget, .sheet-preview {
     background-color: var(--bg-secondary) !important;
     border: 1px solid var(--border-color);
 }
@@ -246,7 +246,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: white;
+    background-color: var(--bg-secondary);
     padding: 1.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -292,7 +292,8 @@ body {
 .article-section h2,
 .about-piece h2,
 .practice-tips h2,
-.historical-context h2 {
+.historical-context h2,
+.download-section h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
@@ -413,7 +414,7 @@ body {
 }
 
 .sidebar-widget {
-    background-color: white;
+    background-color: var(--bg-secondary);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: var(--shadow);

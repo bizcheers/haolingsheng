@@ -356,23 +356,30 @@ body {
 
 .related-grid {
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .related-item {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
     transition: all 0.3s;
 }
 
 .related-item:hover {
     box-shadow: var(--shadow-lg);
-    transform: translateX(5px);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .related-thumb {

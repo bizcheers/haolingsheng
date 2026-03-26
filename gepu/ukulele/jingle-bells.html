@@ -18,7 +18,7 @@
 <link href="../../styles.css" rel="stylesheet"/>
 <link href="../sheet-detail.css" rel="stylesheet"/>
 <!-- ABCjs for Music Notation -->
-<script src="https://cdn.jsdelivr.net/npm/abcjs@6.2.2/dist/abcjs-full-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.js"></script>
 </head>
 <body>
 <header>
@@ -118,17 +118,16 @@ T:Jingle Bells
 M:4/4
 L:1/4
 K:C
-%%tablature ukulele
-V:1 clef=tab-ukulele
-[E,0] [E,0] [E,0]2 | [E,0] [E,0] [E,0]2 | [E,0] [G,2] [C,0] [D,2] | [E,0]4 |
-[F,1] [F,1] [F,1]3/2 [F,1]/2 | [F,1] [E,0] [E,0] [E,0]/2[E,0]/2 | [E,0] [D,2] [D,2] [E,0] | [D,2]2 [G,2]2 |
-[E,0] [E,0] [E,0]2 | [E,0] [E,0] [E,0]2 | [E,0] [G,2] [C,0] [D,2] | [E,0]4 |
-[F,1] [F,1] [F,1]3/2 [F,1]/2 | [F,1] [E,0] [E,0] [E,0]/2[E,0]/2 | [G,2] [G,2] [F,1] [D,2] | [C,0]4 |]
-        `;
+V:1
+E E E2 | E E E2 | E G C D | E4 |
+%
+fret: 0 0 0 | 0 0 0 | 0 3 0 2 | 0 |
+                `;
 
         window.onload = function () {
             ABCJS.renderAbc("paper", abcData, {
                 responsive: "resize",
+                tablature: [{ instrument: "ukulele" }],
                 paddingleft: 0,
                 paddingright: 0
             });

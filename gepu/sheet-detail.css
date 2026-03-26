@@ -520,9 +520,121 @@ body {
         text-align: center;
     }
 }
-/* DARK MODE & PREMIUM OVERRIDES (Must be at bottom to win cascade) */
+
+
+/* ==================================================== */
+/* ORIGINAL PREMIUM DARK MODE TEMPLATE STYLES RESTORED  */
+/* ==================================================== */
+
 :root {
     --paper-bg: #fdfbf7;
     --sepia-text: #433422;
 }
 
+body { background-color: var(--bg-primary); color: var(--text-primary); }
+.main-content h1 { color: var(--text-primary) !important; margin-top: 0 !important; }
+.breadcrumb { background-color: var(--bg-secondary) !important; border-bottom: 1px solid var(--border-subtle); padding: 1rem 0; width: 100%; }
+.breadcrumb a, .breadcrumb span { color: var(--text-secondary) !important; }
+
+.composer-info, .sidebar-widget { 
+    background-color: var(--bg-secondary) !important; 
+    border: 1px solid var(--border-subtle) !important;
+    box-shadow: none !important;
+    color: var(--text-primary) !important;
+}
+.composer-info p, .sidebar-widget h3, .info-list li { 
+    color: var(--text-primary) !important; 
+}
+.info-list li { border-bottom: 1px solid var(--border-subtle); }
+.category-list a { color: var(--text-secondary) !important; }
+.category-list a:hover { color: var(--accent-green) !important; background: var(--bg-tertiary) !important; }
+
+.download-section {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-subtle) !important;
+}
+.download-btn { background-color: var(--bg-tertiary) !important; border: 1px solid var(--border-subtle) !important; box-shadow: none !important; }
+.download-btn strong { color: var(--text-primary) !important; }
+.download-btn small { color: var(--text-secondary) !important; }
+
+.practice-tips { background: linear-gradient(135deg, #1a1a1a 0%, #000 100%) !important; border: 1px solid var(--border-default) !important; color: var(--text-primary) !important; }
+.practice-tips h2 { color: var(--accent-green) !important; }
+.practice-tips li { color: var(--text-secondary) !important; }
+
+/* Score Rendering Fixes */
+.sheet-rendering-container {
+    position: relative;
+    background: var(--paper-bg) !important;
+    padding: 40px 60px;
+    border-radius: 12px;
+    margin: 30px 0;
+    min-height: 500px;
+    border: 1px solid #e5e0d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible !important;
+}
+
+#paper {
+    width: 100% !important;
+    min-height: 480px;
+}
+
+.sheet-footer-attribution {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #8a7c6a;
+    font-family: serif;
+    font-style: italic;
+    border-top: 1px solid #e5e0d5;
+    padding-top: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+#paper svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+#paper svg path, #paper svg text, #paper svg rect {
+    fill: var(--sepia-text) !important;
+    stroke: var(--sepia-text) !important;
+}
+
+/* Tech Details */
+.details-dev {
+    background: #111;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+.details-dev summary { color: var(--text-tertiary); cursor: pointer; font-size: 0.9rem; }
+.abc-code { font-family: monospace; background: #000; color: #0c0; padding: 15px; margin-top: 10px; border-radius: 4px; overflow-x: auto; }
+
+/* Article Content */
+/* Article & Section Headings */
+.article-section h2, .download-section h2 { 
+    color: var(--accent-green) !important; 
+    font-size: 1.25rem !important; 
+    margin-top: 10px !important;
+    margin-bottom: 15px !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    gap: 15px !important; 
+    line-height: 1.4 !important;
+}
+.analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+.highlight-box { background: var(--bg-secondary); padding: 25px; border-radius: 12px; border-left: 4px solid var(--accent-purple); border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); color: var(--text-primary); }
+.highlight-box h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary); }
+.highlight-box p { color: var(--text-secondary); }
+
+@media (max-width: 768px) {
+    .analysis-grid { grid-template-columns: 1fr; }
+    .content-wrapper { grid-template-columns: 1fr; }
+    .sheet-rendering-container { padding: 20px 10px; min-height: 300px; }
+}

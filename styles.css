@@ -298,7 +298,24 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+
+/* Hero Sheet Music Cards row */
+.hero-sheet-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.hero-sheet-cards .fancy-hero-card {
+    flex: 1 1 220px;
+    max-width: 280px;
+    margin: 0;
+    padding: 1.2rem 1.5rem;
+}
+
 /* Fancy Hero Card */
+
 .fancy-hero-card {
     display: flex;
     align-items: center;

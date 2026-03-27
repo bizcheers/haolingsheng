@@ -49,14 +49,17 @@
             <h1>Free Printable Sheet Music<br>for Beginners</h1>
             <p>100+ free beginner sheet music scores &mdash; Piano, Guitar, Violin, Flute, Trumpet &amp; more.<br>Simple arrangements, public domain songs, printable PDF.</p>
             <div class="search-box-wrap" style="position:relative;max-width:640px;margin:2rem auto 0;">
-                <div style="position:absolute;inset:0;border-radius:16px;background:linear-gradient(135deg,#10b981,#6366f1,#f59e0b);opacity:.7;filter:blur(12px);z-index:0;pointer-events:none;"></div>
-                <div style="position:relative;z-index:1;border-radius:16px;background:linear-gradient(135deg,rgba(16,185,129,.18),rgba(99,102,241,.18));border:2px solid rgba(16,185,129,.6);box-shadow:0 0 0 1px rgba(99,102,241,.3),0 8px 32px rgba(0,0,0,.4);overflow:visible;">
-                    <input id="sheet-search" type="text" placeholder="&#x1F3B5; Search by song, instrument or composer... e.g. Silent Night violin"
-                        style="width:100%;padding:1rem 1.4rem 1rem 3.4rem;border:none;border-radius:14px;background:transparent;color:#fff;font-size:1.05rem;outline:none;box-sizing:border-box;"
+                <!-- glow ring -->
+                <div style="position:absolute;inset:-3px;border-radius:18px;background:linear-gradient(135deg,#10b981,#6366f1);opacity:.85;filter:blur(10px);z-index:0;pointer-events:none;"></div>
+                <!-- input shell -->
+                <div style="position:relative;z-index:1;display:flex;align-items:center;border-radius:14px;background:#111827;border:2px solid rgba(16,185,129,.7);box-shadow:0 0 24px rgba(16,185,129,.25),inset 0 1px 0 rgba(255,255,255,.06);">
+                    <span style="padding-left:1.1rem;font-size:1.25rem;flex-shrink:0;">&#128269;</span>
+                    <input id="sheet-search" type="text" placeholder="Search sheet music by song, instrument or composer..."
+                        style="flex:1;padding:1rem 1.2rem;border:none;background:transparent;color:#f1f5f9;font-size:1rem;outline:none;box-sizing:border-box;"
                         autocomplete="off">
-                    <span style="position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);font-size:1.3rem;pointer-events:none;">&#128269;</span>
+                    <span style="padding-right:1.1rem;font-size:0.78rem;color:#10b981;white-space:nowrap;font-weight:600;">70+ scores</span>
                 </div>
-                <div id="search-results" style="display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#0d0d0d;border:2px solid rgba(16,185,129,.5);border-radius:14px;max-height:360px;overflow-y:auto;z-index:1000;box-shadow:0 12px 40px rgba(0,0,0,.7);"></div>
+                <div id="search-results" style="display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111827;border:2px solid rgba(16,185,129,.5);border-radius:14px;max-height:360px;overflow-y:auto;z-index:1000;box-shadow:0 12px 40px rgba(0,0,0,.8);"></div>
             </div>
             <div class="hero-sheet-cards">
                 <a href="gepu/piano/ode-to-joy.html" class="fancy-hero-card">

@@ -271,6 +271,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/gepu/alto-sax/jingle-bells.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/alto-sax/london-bridge.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/alto-sax/silent-night.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/gepu/alto-sax/swanee.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -835,6 +853,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/gepu/recorder/jingle-bells.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/gepu/recorder/mary-had-a-little-lamb.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -842,6 +866,12 @@
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/recorder/silent-night.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/recorder/twinkle-twinkle-little-star.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -901,7 +931,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.haolingsheng.com/gepu/trombone/amazing-grace.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.haolingsheng.com/gepu/trombone/easy-solos.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/trombone/silent-night.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/trombone/twinkle-twinkle-little-star.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -998,6 +1046,30 @@
   </url>
   <url>
     <loc>https://www.haolingsheng.com/gepu/viola/amazing-grace.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/viola/jingle-bells.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/viola/ode-to-joy.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/viola/silent-night.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.haolingsheng.com/gepu/viola/twinkle-twinkle-little-star.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

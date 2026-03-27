@@ -46,9 +46,15 @@
                 <span>New: Free Ringtones & Audio Samples</span>
                 <span>&#8594;</span>
             </a>
-            <h1>Master Music Theory<br>& Production</h1>
-            <p>Comprehensive guides on music notation, theory, production, and business.<br>Free educational resources
-                to help you master music skills.</p>
+            <h1>Free Printable Sheet Music<br>for Beginners</h1>
+            <p>100+ free beginner sheet music scores &mdash; Piano, Guitar, Violin, Flute, Trumpet &amp; more.<br>Simple arrangements, public domain songs, printable PDF.</p>
+            <div class="search-box-wrap" style="position:relative;max-width:620px;margin:1.8rem auto 0;">
+                <input id="sheet-search" type="text" placeholder="Search by song, instrument or composer&hellip; e.g. Silent Night violin, Bach piano"
+                    style="width:100%;padding:0.9rem 1.3rem 0.9rem 3.2rem;border-radius:14px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;font-size:1rem;outline:none;box-sizing:border-box;transition:border-color .2s;backdrop-filter:blur(6px);"
+                    autocomplete="off">
+                <span style="position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);font-size:1.2rem;pointer-events:none;">&#128269;</span>
+                <div id="search-results" style="display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;background:#111;border:2px solid rgba(255,255,255,.15);border-radius:12px;max-height:340px;overflow-y:auto;z-index:1000;box-shadow:0 8px 32px rgba(0,0,0,.6);"></div>
+            </div>
             <div class="hero-sheet-cards">
                 <a href="gepu/piano/ode-to-joy.html" class="fancy-hero-card">
                     <div class="fancy-card-content">
@@ -126,20 +132,6 @@
 
 
 
-    <!-- Sheet Music Search -->
-    <section class="sheet-search-section" style="padding:2.5rem 0 1rem;">
-        <div class="container">
-            <h2 style="margin-bottom:0.5rem;">&#128269; Search Sheet Music</h2>
-            <p style="color:var(--text-muted,#888);margin-bottom:1.2rem;font-size:0.95rem;">Search 138+ free scores by title, instrument, or composer</p>
-            <div class="search-box-wrap" style="position:relative;max-width:600px;">
-                <input id="sheet-search" type="text" placeholder="e.g. silent night violin, jingle bells piano, Bach&#8230;"
-                    style="width:100%;padding:0.85rem 1.2rem 0.85rem 3rem;border-radius:12px;border:2px solid var(--border-color,#333);background:var(--card-bg,#111);color:var(--text-primary,#fff);font-size:1rem;outline:none;box-sizing:border-box;transition:border-color .2s;"
-                    autocomplete="off">
-                <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:1.2rem;pointer-events:none;">&#128269;</span>
-                <div id="search-results" style="display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--card-bg,#111);border:2px solid var(--border-color,#333);border-radius:12px;max-height:340px;overflow-y:auto;z-index:1000;box-shadow:0 8px 32px rgba(0,0,0,.4);"></div>
-            </div>
-        </div>
-    </section>
 
     <!-- Good Sounds card (moved from hero) -->
     <section style="padding:0.5rem 0 1.5rem;">

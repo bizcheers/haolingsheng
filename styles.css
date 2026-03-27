@@ -1,5 +1,5 @@
 /* Dark Modern Design System - Inspired by Modern SaaS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Pacifico&family=Playfair+Display:wght@700;800;900&family=Cinzel:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700;800;900&family=Cinzel:wght@600;700;800&display=swap');
 
 
 * {
@@ -138,24 +138,28 @@ header .container {
 }
 
 .logo-image {
-    width: 40px;
-    height: 40px;
-    filter: brightness(0) invert(1);
+    width: 36px;
+    height: 36px;
+    display: none;
 }
 
+
 .logo-text h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: 0.01em;
+    letter-spacing: 0.06em;
+    line-height: 1.15;
+    margin-bottom: 2px;
 }
 
 .logo-text .tagline {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     color: #10b981;
     font-weight: 500;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
 }
 
 /* Logo link styling */

@@ -115,19 +115,22 @@
         const abcData = `
 X:1
 T:Old MacDonald Had a Farm
+C:Traditional
 M:4/4
 L:1/4
+Q:1/4=100
 K:C
-V:1 name="Piano"
-C C C G, | A, A, G,2 | E E D D | C2 z G,/2G,/2 | 
-C C C G, | A, A, G,2 | E E D D | C2 z2 |
-C/2C/2C G, | C/2C/2C G, | C/2C/2C/2C/2 C/2C/2C/2C/2 | C/2C/2C/2C/2 C/2C/2C/2C/2 |
-C C C G, | A, A, G,2 | E E D D | C2 |]
-V:2
-z | [C,E,G,]4 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]2 z2 |
-[C,E,G,]4 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]2 z2 |
-[C,E,G,]4 | [C,E,G,]4 | [C,E,G,]4 | [C,E,G,]4 |
-[C,E,G,]4 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]2 |]
+V:1 clef=treble name="Right Hand"
+V:2 clef=bass name="Left Hand"
+%%score (1 2)
+[V:1] C C C G, | A, A, G,2 | E E D D | C2 z G/2G/2 |
+[V:1] C C C G, | A, A, G,2 | E E D D | C2 z2 |
+[V:1] C/2C/2C G, | C/2C/2C G, | C/2C/2C/2C/2 C/2C/2C/2C/2 | C/2C/2C/2C/2 C/2C/2C/2C/2 |
+[V:1] C C C G, | A, A, G,2 | E E D D | C4 |]
+[V:2] [C,E,G,]2 [C,E,G,]2 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]- [C,E,G,] z2 |
+[V:2] [C,E,G,]2 [C,E,G,]2 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]- [C,E,G,] z2 |
+[V:2] [C,E,G,]2 [C,E,G,]2 | [C,E,G,]2 [C,E,G,]2 | [C,E,G,]2 [C,E,G,]2 | [C,E,G,]2 [C,E,G,]2 |
+[V:2] [C,E,G,]2 [C,E,G,]2 | [F,,A,,C,]2 [C,E,G,]2 | [C,E,G,]2 [G,,B,,D,]2 | [C,E,G,]4 |]
         `;
 
         window.onload = function () {

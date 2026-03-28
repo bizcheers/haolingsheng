@@ -46,7 +46,7 @@
 <main class="">
 <div class="container">
 <!-- Breadcrumbs -->
-<article class="sheet-detail"><div class="content-wrapper"><div class="main-content"><h1>Silent Night<span class="badge" style="background: var(--accent-purple); vertical-align: middle; font-size: 0.9rem; margin-left: 10px;">Free Score</span></h1><div class="composer-info"><p><strong>Composer: </strong>Traditional / Various</p><p><strong>Arrangement: </strong>Standard Format</p></div><div class="sheet-meta"><span class="badge">Instrument: Cello</span><span class="badge">Key: G Major</span><span class="badge">Level: Beginner</span></div>
+<article class="sheet-detail"><div class="content-wrapper"><div class="main-content"><h1>Silent Night<span class="badge" style="background: var(--accent-purple); vertical-align: middle; font-size: 0.9rem; margin-left: 10px;">Premium Score</span></h1><div class="composer-info"><p><strong>Composer: </strong>Franz Xaver Gruber (1818)</p><p><strong>Arrangement: </strong>Standard Cello Solo</p></div><div class="sheet-meta"><span class="badge">Instrument: Cello</span><span class="badge">Key: G Major</span><span class="badge">Level: Beginner</span></div>
 <!-- Interactive Score Container -->
 <div class="sheet-rendering-container"><div class="" id="paper"></div><div class="sheet-footer-attribution">Produced by haolingsheng.com</div></div>
 <!-- Print-only static placeholder or instructions -->
@@ -119,14 +119,17 @@
         const abcData = `
 X:1
 T:Silent Night
+C:Franz Xaver Gruber
 M:3/4
-L:1/4
+L:1/8
+Q:1/4=66
 K:G
-Q:1/4=80
-V:1 clef=bass
-D3/4E/4 D B, | D3/4E/4 D B, | A2 A | F2 F | G2 G | D2 D |
-E2 E | G3/4F/4 E | D3/4E/4 D B, | E2 E | G3/4F/4 E | D3/4E/4 D B, |
-A2 A | c3/4A/4 F | G3 | B3 | G/2D/2 B, A, | G,3 |]
+V:1 clef=bass name="Cello"
+[V:1] |: (D3 E) D2 | B,6 | (D3 E) D2 | B,6 |
+[V:1] (A4 A2) | F6 | (G4 G2) | D6 |
+[V:1] (B4 B2) | (d3 c) B2 | (D3 E) D2 | B,6 |
+[V:1] (B4 B2) | (d3 c) B2 | (D3 E) D2 | B,6 |
+[V:1] (A4 A2) | (c3 A) F2 | (G6 | G4) z2 :|
         `;
 
         window.onload = function () {

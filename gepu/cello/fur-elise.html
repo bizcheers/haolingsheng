@@ -115,14 +115,18 @@
         const abcData = `
 X:1
 T:Für Elise
+C:Ludwig van Beethoven
 M:3/8
 L:1/16
+Q:1/4=70
 K:Am
-V:1 clef=bass
-e_e | e_e eB | d c A2 | z E A B | c2 E ^G | B2 A2 |
-e_e | e_e eB | d c A2 | z E A B | c2 B A | A4 |
-B c | d2 E G | f2 e d | e2 F E | e2 e2 |
-e_e | e_e eB | d c A2 | z E A B | c2 B A | A4 |]
+V:1 clef=bass name="Cello"
+% Original melody transposed for beginner cello range
+(E^D) | (E^D) (EB,) | (DC) A,2 | z E,A,B, | (C2 E,^G,) | (B,2 A,2) |
+z E,A,B, | (C2 B,A,) | A,2 (E^D) | (E^D) (EB,) | (DC) A,2 |
+z E,A,B, | (C2 B,A,) | A,4 |
+(B,C) | (D2 E,G) | (F2 E)D | (E2 F,)E | (E2 E) (E^D) |
+(E^D) (EB,) | (DC) A,2 | z E,A,B, | (C2 E,^G,) | (B,2 A,2) |]
         `;
 
         window.onload = function () {

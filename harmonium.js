@@ -288,7 +288,10 @@ function generateKeyboard() {
 }
 
 function updateSargamLabels() {
-    const root = parseInt(document.getElementById('scale-root').value);
+    const rootSelect = document.getElementById('scale-root');
+    if (!rootSelect) return;
+    
+    const root = parseInt(rootSelect.value);
     document.querySelectorAll('.key').forEach(key => {
         const note = parseInt(key.dataset.note);
         const diff = (note - root + 120) % 12;
@@ -310,8 +313,12 @@ const ragas = {
 };
 
 function updateRagaHighlight() {
-    const ragaKey = document.getElementById('raga-select').value;
-    const root = parseInt(document.getElementById('scale-root').value);
+    const ragaSelect = document.getElementById('raga-select');
+    const rootSelect = document.getElementById('scale-root');
+    if (!ragaSelect || !rootSelect) return;
+
+    const ragaKey = ragaSelect.value;
+    const root = parseInt(rootSelect.value);
     const intervals = ragas[ragaKey] || null;
 
     document.querySelectorAll('.key').forEach(key => {
@@ -399,5 +406,7 @@ metronomeBtn.onclick = () => {
 };
 
 // Initialize
-generateKeyboard();
-console.log("Harmonium initialized");
+window.addEventListener('DOMContentLoaded', () => {
+    generateKeyboard();
+    console.log("Harmonium keyboard generated and UI ready.");
+});

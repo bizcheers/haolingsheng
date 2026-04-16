@@ -13,223 +13,284 @@
         content="web harmonium, harmonium online, free online harmonium, virtual harmonium keyboard, harmonium simulator, sargam, raga practice, Indian classical music, tanpura drone">
     <link rel="canonical" href="https://www.haolingsheng.com/web-harmonium.html">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Web Harmonium Simulator",
-      "url": "https://www.haolingsheng.com/web-harmonium.html",
-      "description": "A high-fidelity virtual Indian harmonium with recording, Tanpura drone, and Sargam support.",
-      "applicationCategory": "EducationalApplication",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
 
     <style>
         :root {
-            --wood-dark: #3e2723;
-            --wood-mid: #5d4037;
-            --wood-light: #8d6e63;
-            --gold: #ffc107;
-            --ivory: #fffff0;
-            --ebony: #212121;
+            --wood-dark: #2d1b0d;
+            --wood-mid: #4a2c16;
+            --wood-light: #6d4c41;
+            --brass: #d4af37;
+            --brass-glow: #ffd700;
+            --ivory: #fdfaf0;
+            --ebony: #1a1a1a;
+            --accent: #ff8f00;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #0c0c0c;
+            color: #d1d1d1;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', serif;
+            color: #ffffff;
+            letter-spacing: -0.01em;
         }
 
         .harmonium-app {
-            max-width: 1000px;
-            margin: 2rem auto;
-            background: linear-gradient(135deg, #5d4037 0%, #3e2723 100%);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.6), inset 0 0 100px rgba(0,0,0,0.5);
-            color: white;
+            max-width: 1040px;
+            margin: 3rem auto;
+            background: linear-gradient(135deg, #3e2723 0%, #211512 100%);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 
+                0 30px 60px rgba(0,0,0,0.8), 
+                inset 0 0 80px rgba(0,0,0,0.4),
+                0 0 2px rgba(255,255,255,0.1);
             position: relative;
             overflow: hidden;
-            border: 8px solid #2d1b18;
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
         .harmonium-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            align-items: flex-end;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
         .harmonium-header h2 {
             margin: 0;
-            font-family: serif;
-            letter-spacing: 2px;
-            color: var(--gold);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--brass);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         .controls-top {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            background: rgba(0,0,0,0.2);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            background: rgba(0,0,0,0.3);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
         .control-group {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 8px;
         }
 
         .control-group label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            color: var(--gold);
-            font-weight: bold;
+            color: var(--brass);
+            font-weight: 600;
+            letter-spacing: 0.1em;
         }
 
         select, button {
-            background: #2a2a2a;
-            color: white;
-            border: 1px solid #444;
-            padding: 8px 12px;
-            border-radius: 4px;
+            background: #1a1a1a;
+            color: #ddd;
+            border: 1px solid #333;
+            padding: 10px 14px;
+            border-radius: 6px;
             cursor: pointer;
-            transition: all 0.2s;
+            font-size: 0.85rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.05);
         }
 
-        button:hover {
-            background: #333;
-            border-color: var(--gold);
+        button:hover, select:hover {
+            background: #252525;
+            border-color: var(--brass);
+            color: #fff;
         }
 
         button.active {
-            background: var(--gold);
-            color: black;
-            border-color: white;
+            background: var(--brass);
+            color: #000;
+            font-weight: 600;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
         }
 
         .keyboard-wrapper {
-            background: #111;
-            padding: 20px;
-            border-radius: 10px;
+            background: #080808;
+            padding: 30px;
+            border-radius: 14px;
             position: relative;
-            user-select: none;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.8);
             overflow-x: auto;
         }
 
         .keyboard {
             display: flex;
-            height: 200px;
+            height: 220px;
             min-width: 800px;
             position: relative;
+            padding-bottom: 20px;
         }
 
         .key {
-            border: 1px solid #ccc;
-            border-radius: 0 0 5px 5px;
+            border-radius: 0 0 6px 6px;
             cursor: pointer;
-            transition: transform 0.1s, background 0.1s;
+            transition: all 0.1s ease;
+            position: relative;
+            box-shadow: 
+                0 4px 6px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.1);
         }
 
         .key.white {
-            width: 40px;
+            width: 44px;
             height: 100%;
-            background: var(--ivory);
+            background: linear-gradient(to bottom, #fff 0%, var(--ivory) 100%);
+            border: 1px solid #ccc;
             z-index: 1;
         }
 
         .key.black {
-            width: 24px;
+            width: 28px;
             height: 60%;
-            background: var(--ebony);
-            margin-left: -12px;
-            margin-right: -12px;
+            background: linear-gradient(to bottom, #333 0%, var(--ebony) 100%);
+            margin-left: -14px;
+            margin-right: -14px;
             z-index: 2;
+            border: 1px solid #000;
+            box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
         }
 
         .key.active {
-            transform: translateY(4px);
-            background: #eee;
+            filter: brightness(0.9);
+            transform: translateY(6px);
+            box-shadow: none;
         }
 
         .key.highlight {
-            box-shadow: inset 0 0 10px var(--gold);
+            box-shadow: 0 0 20px var(--brass-glow);
+            border-color: var(--brass);
             background: #fff9c4 !important;
         }
 
         .key.black.highlight {
-            background: #4527a0 !important;
+            background: #4a148c !important;
         }
 
         .key-label {
             position: absolute;
-            bottom: 10px;
+            bottom: 12px;
             left: 0;
             right: 0;
             text-align: center;
-            color: #666;
-            font-size: 0.8rem;
+            color: #999;
+            font-size: 0.75rem;
             pointer-events: none;
+            font-weight: 500;
         }
 
         .sargam-label {
             position: absolute;
-            bottom: 30px;
+            bottom: 35px;
             left: 0;
             right: 0;
             text-align: center;
             color: var(--wood-mid);
-            font-weight: bold;
-            font-size: 0.7rem;
+            font-weight: 700;
+            font-size: 0.75rem;
             pointer-events: none;
         }
 
         .bellows-indicator {
-            height: 10px;
-            background: #222;
-            border-radius: 5px;
-            margin-top: 15px;
+            height: 6px;
+            background: #111;
+            border-radius: 3px;
+            margin-top: 25px;
             overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
         }
 
         .bellows-fill {
             height: 100%;
             width: 0%;
-            background: var(--gold);
+            background: var(--brass);
+            box-shadow: 0 0 10px var(--brass-glow);
             transition: width 0.1s linear;
         }
 
+        /* Content Typography */
         .instructions {
-            margin-top: 2rem;
-            line-height: 1.6;
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .instructions section {
+            margin-bottom: 4rem;
+        }
+
+        .instructions h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .instructions h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--brass);
+        }
+
+        .instructions p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 4rem 0;
         }
 
         .feature-card {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-subtle);
+            background: #161616;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brass);
         }
 
         .feature-card h3 {
-            color: var(--accent-cyan);
-            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--brass);
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -300,7 +361,7 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label>Reeds</label>
+                        <label>Reeds / Tone</label>
                         <select id="reed-type">
                             <option value="single">Single Reed</option>
                             <option value="double" selected>Double Reed (Bass+Male)</option>
@@ -308,11 +369,25 @@
                         </select>
                     </div>
                     <div class="control-group">
+                        <label>Raga Practice Guide</label>
+                        <select id="raga-select">
+                            <option value="none">Off (Free Play)</option>
+                            <option value="bilaval">Bilaval (Major)</option>
+                            <option value="yaman">Yaman</option>
+                            <option value="bhairav">Bhairav</option>
+                            <option value="kafi">Kafi</option>
+                            <option value="khamaj">Khamaj</option>
+                            <option value="asavari">Asavari</option>
+                            <option value="bhairavi">Bhairavi</option>
+                            <option value="todi">Todi</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
                         <label>Metronome</label>
                         <button id="metronome-btn">OFF</button>
                     </div>
                     <div class="control-group">
-                        <label>Record</label>
+                        <label>Recorder</label>
                         <button id="record-btn" style="color: #ff4444;">REC</button>
                     </div>
                 </div>

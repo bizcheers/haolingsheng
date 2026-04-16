@@ -6,7 +6,12 @@ from datetime import datetime
 # Configuration
 BASE_URL = "https://www.haolingsheng.com/"
 CONTENT_DIRS = ['geci', 'gepu', 'music-production', 'music-business', 'lingsheng', 'singer', 'sheet-music']
-ROOT_FILES = ['index.html', 'about.html', 'contact.html', 'privacy.html', 'terms.html']
+ROOT_FILES = [
+    'index.html', 'about.html', 'contact.html', 'privacy.html', 'terms.html',
+    'web-harmonium.html', 'lufs-loudness-meter.html', 'bpm-to-milliseconds-calculator.html',
+    'chord-progression-chart.html', 'delay-time-calculator.html', 'note-to-hz.html',
+    'suno-prompt-generator.html', 'tuning-frequency-tool.html', 'lyrics-singability-checker.html'
+]
 EXCLUDE_FILES = ['debug_layout.html', 'google', '404.html']
 
 def get_priority(path):

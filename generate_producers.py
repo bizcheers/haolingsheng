@@ -59,7 +59,7 @@ TEMPLATE = """<!DOCTYPE html>
                     <li><a href="../music-production/">Production</a></li>
                     <li><a href="../music-business/">Music Business</a></li>
                     <li><a href="index.html" class="active">Producers</a></li>
-                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../about.html">About</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li>
                 </ul>
             </nav>
         </div>
@@ -191,7 +191,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                     <li><a href="../music-production/">Production</a></li>
                     <li><a href="../music-business/">Music Business</a></li>
                     <li><a href="index.html" class="active">Producers</a></li>
-                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../about.html">About</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li>
                 </ul>
             </nav>
         </div>

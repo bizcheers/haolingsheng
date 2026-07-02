@@ -120,7 +120,7 @@ template = '''<!DOCTYPE html>
                 <img src="../logo.svg" alt="Hao Ling Sheng Logo" class="logo-image">
                 <a href="../index.html" class="logo-text"><h1>Hao Ling Sheng</h1><p class="tagline">Professional Music Education</p></a>
             </div>
-            <nav><ul><li><a href="../gepu/">Music Notation</a></li><li><a href="../geci/">Music Theory</a></li><li><a href="../music-production/">Production</a></li><li><a href="../music-business/">Music Business</a></li><li><a href="../about.html">About</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li></ul></nav>
+            <nav><ul><li><a href="../gepu/">Music Notation</a></li><li><a href="../geci/">Music Theory</a></li><li><a href="../music-production/">Production</a></li><li><a href="../music-business/">Music Business</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li></ul></nav>
         </div>
     </header>
     <main class="article-page">

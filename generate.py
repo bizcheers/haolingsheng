@@ -34,8 +34,7 @@ SHEET_MUSIC_TEMPLATE = """<!DOCTYPE html>
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../index.html">Sheet Music</a></li>
                     <li><a href="../../music-theory/index.html">Music Theory</a></li>
-                    <li><a href="../../instruments/index.html">Instruments</a></li>
-                    <li><a href="../../about.html">About</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li>
+                    <li><a href="../../instruments/index.html">Instruments</a></li><li><a href="https://timeuo.com/" rel="dofollow">Time Zone</a></li>
                 </ul>
             </nav>
         </div>

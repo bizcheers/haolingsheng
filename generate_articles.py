@@ -150,7 +150,8 @@ template = '''<!DOCTYPE html>
             <div class="footer-content">
                 <div class="footer-section"><h4>Resources</h4><ul><li><a href="../gepu/">Music Notation</a></li><li><a href="../geci/">Music Theory</a></li><li><a href="../music-production/">Production</a></li><li><a href="../music-business/">Music Business</a></li></ul></div>
                 <div class="footer-section"><h4>Company</h4><ul><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Service</a></li></ul></div>
-                <div class="footer-section"><h4>Connect</h4><ul><li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone Converter</a></li></ul></div>
+                <div class="footer-section"><h4>Connect</h4><ul><li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone Converter</a></li>    <li><a href="https://www.aiforlegalresearch.com/" rel="dofollow noopener" target="_blank">AI For Legal Research</a></li>
+</ul></div>
             </div>
             <div class="footer-bottom"><p>&copy; 2026 Hao Ling Sheng. All educational content is provided for learning purposes.</p></div>
         </div>

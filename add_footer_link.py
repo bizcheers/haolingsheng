@@ -23,7 +23,8 @@ def update_footer_in_file(filepath):
                         <li><a href="#" rel="noopener">Instagram</a></li>
                         <li><a href="#" rel="noopener">YouTube</a></li>
                         <li><a href="https://timeuo.com/" rel="dofollow noopener" target="_blank">Time Zone Converter</a></li>
-                    </ul>'''
+                        <li><a href="https://www.aiforlegalresearch.com/" rel="dofollow noopener" target="_blank">AI For Legal Research</a></li>
+</ul>'''
     
     # Check if already has the link
     if 'timeuo.com' in content:
